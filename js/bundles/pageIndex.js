@@ -324,7 +324,7 @@ goog.loadModule(function (exports) {
     ie_close('p');
     ie_close('div');
     ie_open('div', null, null, 'class', 'col-md-5 col-md-offset-1');
-    ie_open('img', null, null, 'class', 'highlight-image', 'src', '/images/highlight_1.png', 'alt', 'Fluent API', 'height', '200');
+    ie_open('img', null, null, 'class', 'highlight-image', 'src', '/r-apex/images/highlight_1.png', 'alt', 'Fluent API', 'height', '200');
     ie_close('img');
     ie_close('div');
     ie_close('section');
@@ -338,7 +338,7 @@ goog.loadModule(function (exports) {
     ie_close('p');
     ie_close('div');
     ie_open('div', null, null, 'class', 'col-md-5 col-md-offset-2 col-md-pull-6');
-    ie_open('img', null, null, 'class', 'highlight-image', 'src', '/images/highlight_2.png', 'alt', 'Collection Support', 'height', '200');
+    ie_open('img', null, null, 'class', 'highlight-image', 'src', '/r-apex/images/highlight_2.png', 'alt', 'Collection Support', 'height', '200');
     ie_close('img');
     ie_close('div');
     ie_close('section');
@@ -352,7 +352,7 @@ goog.loadModule(function (exports) {
     ie_close('p');
     ie_close('div');
     ie_open('div', null, null, 'class', 'col-md-5 col-md-offset-1');
-    ie_open('img', null, null, 'class', 'highlight-image', 'src', '/images/highlight_3.png', 'alt', 'Function Composition', 'height', '200');
+    ie_open('img', null, null, 'class', 'highlight-image', 'src', '/r-apex/images/highlight_3.png', 'alt', 'Function Composition', 'height', '200');
     ie_close('img');
     ie_close('div');
     ie_close('section');
