@@ -5314,11 +5314,11 @@ goog.loadModule(function (exports) {
         ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/icon-12/icon-12.css');
         ie_close('link');
-        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/galano/galano.css');
+        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/senna/senna.css');
         ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/icon-16/icon-16.css');
         ie_close('link');
-        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/senna/senna.css');
+        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/galano/galano.css');
         ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/codemirror/lib/codemirror.css');
         ie_close('link');
@@ -5327,9 +5327,9 @@ goog.loadModule(function (exports) {
         ie_void('script', null, null, 'src', '/r-apex/js/bundles/shared.electric.js');
         ie_void('script', null, null, 'src', '/r-apex/vendor/senna/senna.js');
         ie_void('script', null, null, 'src', '/r-apex/vendor/codemirror/lib/codemirror.js');
+        ie_void('script', null, null, 'src', '/r-apex/vendor/codemirror/mode/xml/xml.js');
         ie_void('script', null, null, 'src', '/r-apex/vendor/codemirror/mode/javascript/javascript.js');
         ie_void('script', null, null, 'src', '/r-apex/vendor/codemirror/mode/css/css.js');
-        ie_void('script', null, null, 'src', '/r-apex/vendor/codemirror/mode/xml/xml.js');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', (($$temp = opt_data.site.basePath) == null ? '' : $$temp) + '/styles/main.css');
         ie_close('link');
         ie_close('electrichead');
