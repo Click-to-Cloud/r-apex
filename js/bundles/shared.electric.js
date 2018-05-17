@@ -5304,19 +5304,19 @@ goog.loadModule(function (exports) {
         ie_open('meta', null, null, 'name', 'description', 'content', ($$temp = opt_data.page.description) == null ? '' : $$temp);
         ie_close('meta');
         ie_open('title');
-        var dyn0 = opt_data.page.title;
-        if (typeof dyn0 == 'function') dyn0();else if (dyn0 != null) itext(dyn0);
+        var dyn8 = opt_data.page.title;
+        if (typeof dyn8 == 'function') dyn8();else if (dyn8 != null) itext(dyn8);
         itext(' - ');
-        var dyn1 = opt_data.site.title;
-        if (typeof dyn1 == 'function') dyn1();else if (dyn1 != null) itext(dyn1);
+        var dyn9 = opt_data.site.title;
+        if (typeof dyn9 == 'function') dyn9();else if (dyn9 != null) itext(dyn9);
         ie_close('title');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto+Mono');
-        ie_close('link');
-        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/icon-12/icon-12.css');
         ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/galano/galano.css');
         ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/icon-16/icon-16.css');
+        ie_close('link');
+        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/icon-12/icon-12.css');
         ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/senna/senna.css');
         ie_close('link');
@@ -5337,16 +5337,16 @@ goog.loadModule(function (exports) {
         ie_open('div', null, null, 'data-senna-surface', '', 'id', 'wrapper');
         ie_void('div', null, null, 'class', 'senna-loading-bar');
         ie_open('div', null, null, 'id', 'pageComponent');
-        var dyn2 = opt_data.content;
-        if (typeof dyn2 == 'function') dyn2();else if (dyn2 != null) itext(dyn2);
+        var dyn10 = opt_data.content;
+        if (typeof dyn10 == 'function') dyn10();else if (dyn10 != null) itext(dyn10);
         ie_close('div');
         if (opt_data.page.componentName) {
             ie_void('script', null, null, 'src', opt_data.site.basePath + '/js/bundles/' + opt_data.page.componentName + '.js');
         }
         ie_open('script');
         itext('var data = \'');
-        var dyn3 = opt_data.serialized;
-        if (typeof dyn3 == 'function') dyn3();else if (dyn3 != null) itext(dyn3);
+        var dyn11 = opt_data.serialized;
+        if (typeof dyn11 == 'function') dyn11();else if (dyn11 != null) itext(dyn11);
         itext('\'; if (typeof electric !== \'undefined\') {electric.init(data);}else {document.addEventListener(\'DOMContentLoaded\', function() {electric.init(data);});}');
         ie_close('script');
         ie_close('div');
@@ -5461,13 +5461,13 @@ goog.loadModule(function (exports) {
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
     opt_data = opt_data || {};
-    var param28 = function param28() {
+    var param125 = function param125() {
       ie_open('div', null, null, 'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
       ie_close('div');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param28 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param125 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
@@ -5490,23 +5490,23 @@ goog.loadModule(function (exports) {
     ie_open('header');
     ie_open('small');
     itext('By ');
-    var dyn4 = opt_data.page.author;
-    if (typeof dyn4 == 'function') dyn4();else if (dyn4 != null) itext(dyn4);
+    var dyn12 = opt_data.page.author;
+    if (typeof dyn12 == 'function') dyn12();else if (dyn12 != null) itext(dyn12);
     itext(' ');
     ie_open('span');
     itext('| ');
-    var dyn5 = opt_data.page.date;
-    if (typeof dyn5 == 'function') dyn5();else if (dyn5 != null) itext(dyn5);
+    var dyn13 = opt_data.page.date;
+    if (typeof dyn13 == 'function') dyn13();else if (dyn13 != null) itext(dyn13);
     ie_close('span');
     ie_close('small');
     ie_open('h3');
-    var dyn6 = opt_data.page.title;
-    if (typeof dyn6 == 'function') dyn6();else if (dyn6 != null) itext(dyn6);
+    var dyn14 = opt_data.page.title;
+    if (typeof dyn14 == 'function') dyn14();else if (dyn14 != null) itext(dyn14);
     ie_close('h3');
     ie_close('header');
     ie_open('div', null, null, 'class', 'content');
-    var dyn7 = opt_data.content;
-    if (typeof dyn7 == 'function') dyn7();else if (dyn7 != null) itext(dyn7);
+    var dyn15 = opt_data.content;
+    if (typeof dyn15 == 'function') dyn15();else if (dyn15 != null) itext(dyn15);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
     ie_close('article');
@@ -5527,8 +5527,8 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $olderPosts(opt_data, opt_ignored, opt_ijData) {
-    var blogObject__soy48 = opt_data.site.index.children['blog'];
-    $templateAlias3({ blogObject: blogObject__soy48, url: opt_data.page.url }, null, opt_ijData);
+    var blogObject__soy145 = opt_data.site.index.children['blog'];
+    $templateAlias3({ blogObject: blogObject__soy145, url: opt_data.page.url }, null, opt_ijData);
   }
   exports.olderPosts = $olderPosts;
   if (goog.DEBUG) {
@@ -5647,7 +5647,7 @@ goog.loadModule(function (exports) {
     ie_open('div', null, null, 'class', 'main');
     ie_open('main', null, null, 'class', 'guide');
     ie_open('div', null, null, 'class', 'docs');
-    $templateAlias1({ items: opt_data.site.topbar, style: 'topbar-light topbar-docs', logo: { text: opt_data.site.title, icon: 'icon-16-hammer' } }, null, opt_ijData);
+    $templateAlias1({ items: opt_data.site.topbar, style: 'topbar-light topbar-docs', logo: { text: opt_data.site.title, href: '/r-apex', icon: 'icon-16-hammer' } }, null, opt_ijData);
     $templateAlias2({ section: opt_data.site.index.children['docs'], site: opt_data.site }, null, opt_ijData);
     $guide(opt_data, null, opt_ijData);
     ie_close('div');
@@ -5675,8 +5675,8 @@ goog.loadModule(function (exports) {
     ie_open('header', null, null, 'class', 'guide-header');
     ie_open('div', null, null, 'class', 'container-hybrid');
     ie_open('h1', null, null, 'class', 'title');
-    var dyn8 = opt_data.page.title;
-    if (typeof dyn8 == 'function') dyn8();else if (dyn8 != null) itext(dyn8);
+    var dyn16 = opt_data.page.title;
+    if (typeof dyn16 == 'function') dyn16();else if (dyn16 != null) itext(dyn16);
     itext(' Guide');
     ie_close('h1');
     ie_close('div');
@@ -5685,8 +5685,8 @@ goog.loadModule(function (exports) {
     ie_open('div', null, null, 'class', 'docs-guide row');
     ie_open('div', null, null, 'class', 'docs-content col-xs-16 col-md-9');
     ie_open('div', null, null, 'class', 'guide-content');
-    var dyn9 = opt_data.content;
-    if (typeof dyn9 == 'function') dyn9();else if (dyn9 != null) itext(dyn9);
+    var dyn17 = opt_data.content;
+    if (typeof dyn17 == 'function') dyn17();else if (dyn17 != null) itext(dyn17);
     ie_close('div');
     if (opt_data.site.githubRepo) {
       $contribute(opt_data, null, opt_ijData);
@@ -5846,8 +5846,8 @@ goog.loadModule(function (exports) {
     ie_open('div', null, null, 'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
     ie_open('main', null, null, 'class', 'content');
     $templateAlias1({ items: opt_data.site.topbar, style: 'topbar-light', logo: { text: opt_data.site.title, href: '/r-apex', icon: 'icon-16-hammer' } }, null, opt_ijData);
-    var dyn10 = opt_data.content;
-    if (typeof dyn10 == 'function') dyn10();else if (dyn10 != null) itext(dyn10);
+    var dyn18 = opt_data.content;
+    if (typeof dyn18 == 'function') dyn18();else if (dyn18 != null) itext(dyn18);
     ie_close('main');
     ie_close('div');
   }
@@ -5993,16 +5993,16 @@ goog.loadModule(function (exports) {
    */
   function $tutorials(opt_data, opt_ignored, opt_ijData) {
     ie_open('div', null, null, 'class', 'sidebar-offset');
-    $templateAlias1({ items: opt_data.site.topbar, style: 'topbar-light', logo: { text: opt_data.site.title, icon: 'icon-16-hammer' } }, null, opt_ijData);
+    $templateAlias1({ items: opt_data.site.topbar, style: 'topbar-light', logo: { text: opt_data.site.title, href: '/r-apex', icon: 'icon-16-hammer' } }, null, opt_ijData);
     ie_open('div', null, null, 'class', 'container');
     ie_open('h6', null, null, 'class', 'tutorial-title');
-    var dyn11 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-    if (typeof dyn11 == 'function') dyn11();else if (dyn11 != null) itext(dyn11);
+    var dyn19 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+    if (typeof dyn19 == 'function') dyn19();else if (dyn19 != null) itext(dyn19);
     ie_close('h6');
     $templateAlias2(null, null, opt_ijData);
     ie_open('div', null, null, 'class', 'container-blog card');
-    var dyn12 = opt_data.content;
-    if (typeof dyn12 == 'function') dyn12();else if (dyn12 != null) itext(dyn12);
+    var dyn20 = opt_data.content;
+    if (typeof dyn20 == 'function') dyn20();else if (dyn20 != null) itext(dyn20);
     $footerButtons(opt_data, null, opt_ijData);
     ie_close('div');
     ie_close('div');
@@ -6025,13 +6025,13 @@ goog.loadModule(function (exports) {
    */
   function $footerButtons(opt_data, opt_ignored, opt_ijData) {
     ie_open('div', null, null, 'class', 'tutorial-page-nav');
-    var tutorialObject__soy127 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy127.childIds.length) {
+    var tutorialObject__soy224 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy224.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy132 = tutorialObject__soy127.children[tutorialObject__soy127.childIds[opt_data.page.weight]].url;
-        ie_open('a', null, null, 'href', nextPageUrl__soy132, 'class', 'btn btn-accent btn-sm');
-        var dyn13 = opt_data.page.buttonTitle;
-        if (typeof dyn13 == 'function') dyn13();else if (dyn13 != null) itext(dyn13);
+        var nextPageUrl__soy229 = tutorialObject__soy224.children[tutorialObject__soy224.childIds[opt_data.page.weight]].url;
+        ie_open('a', null, null, 'href', nextPageUrl__soy229, 'class', 'btn btn-accent btn-sm');
+        var dyn21 = opt_data.page.buttonTitle;
+        if (typeof dyn21 == 'function') dyn21();else if (dyn21 != null) itext(dyn21);
         ie_close('a');
       }
     }
@@ -6072,25 +6072,25 @@ goog.loadModule(function (exports) {
    * @return {void}
    * @suppress {checkTypes}
    */
-  function __deltemplate_s147_88c0813b(opt_data, opt_ignored, opt_ijData) {
+  function __deltemplate_s244_88c0813b(opt_data, opt_ignored, opt_ijData) {
     ie_open('a', null, null, 'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''), 'href', opt_data.page.url, 'data-time', opt_data.page.time);
     ie_void('span', null, null, 'class', 'before');
     ie_open('span', null, null, 'class', 'tutorial-step');
-    var dyn14 = opt_data.page.weight;
-    if (typeof dyn14 == 'function') dyn14();else if (dyn14 != null) itext(dyn14);
+    var dyn22 = opt_data.page.weight;
+    if (typeof dyn22 == 'function') dyn22();else if (dyn22 != null) itext(dyn22);
     ie_close('span');
     ie_open('span', null, null, 'class', 'section-title');
-    var dyn15 = opt_data.page.title;
-    if (typeof dyn15 == 'function') dyn15();else if (dyn15 != null) itext(dyn15);
+    var dyn23 = opt_data.page.title;
+    if (typeof dyn23 == 'function') dyn23();else if (dyn23 != null) itext(dyn23);
     ie_close('span');
     ie_void('span', null, null, 'class', 'after');
     ie_close('a');
   }
-  exports.__deltemplate_s147_88c0813b = __deltemplate_s147_88c0813b;
+  exports.__deltemplate_s244_88c0813b = __deltemplate_s244_88c0813b;
   if (goog.DEBUG) {
-    __deltemplate_s147_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s147_88c0813b';
+    __deltemplate_s244_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s244_88c0813b';
   }
-  soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s147_88c0813b);
+  soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s244_88c0813b);
 
   exports.render.params = ["content", "page", "site", "elementClasses"];
   exports.render.types = { "content": "?", "page": "?", "site": "?", "elementClasses": "?" };
@@ -45544,8 +45544,8 @@ goog.loadModule(function (exports) {
     ie_open('div', null, null, 'class', 'row');
     ie_open('p', null, null, 'class', 'footer-description col-md-6 col-md-offset-2');
     itext('Copyright \xA9 ');
-    var dyn18 = opt_data.year;
-    if (typeof dyn18 == 'function') dyn18();else if (dyn18 != null) itext(dyn18);
+    var dyn2 = opt_data.year;
+    if (typeof dyn2 == 'function') dyn2();else if (dyn2 != null) itext(dyn2);
     itext(' ');
     ie_open('a', null, null, 'href', 'http://www.clicktocloud.com/');
     itext('Click to Cloud Pty Ltd');
@@ -45661,26 +45661,26 @@ goog.loadModule(function (exports) {
     ie_open('div', null, null, 'class', 'posts-list');
     ie_open('div', null, null, 'class', 'container');
     if (opt_data.posts) {
-      var postList202 = opt_data.posts;
-      var postListLen202 = postList202.length;
-      for (var postIndex202 = 0; postIndex202 < postListLen202; postIndex202++) {
-        var postData202 = postList202[postIndex202];
+      var postList44 = opt_data.posts;
+      var postListLen44 = postList44.length;
+      for (var postIndex44 = 0; postIndex44 < postListLen44; postIndex44++) {
+        var postData44 = postList44[postIndex44];
         ie_open('div', null, null, 'class', 'post-item container-blog');
-        ie_open('a', null, null, 'class', 'post-item__link', 'href', postData202.url);
+        ie_open('a', null, null, 'class', 'post-item__link', 'href', postData44.url);
         ie_open('small');
         itext('By ');
-        var dyn19 = postData202.author;
-        if (typeof dyn19 == 'function') dyn19();else if (dyn19 != null) itext(dyn19);
+        var dyn3 = postData44.author;
+        if (typeof dyn3 == 'function') dyn3();else if (dyn3 != null) itext(dyn3);
         itext(' ');
         ie_open('span');
         itext('| ');
-        var dyn20 = postData202.date;
-        if (typeof dyn20 == 'function') dyn20();else if (dyn20 != null) itext(dyn20);
+        var dyn4 = postData44.date;
+        if (typeof dyn4 == 'function') dyn4();else if (dyn4 != null) itext(dyn4);
         ie_close('span');
         ie_close('small');
         ie_open('h4', null, null, 'class', 'post-item__title');
-        var dyn21 = postData202.title;
-        if (typeof dyn21 == 'function') dyn21();else if (dyn21 != null) itext(dyn21);
+        var dyn5 = postData44.title;
+        if (typeof dyn5 == 'function') dyn5();else if (dyn5 != null) itext(dyn5);
         ie_close('h4');
         ie_close('a');
         ie_close('div');
@@ -45831,22 +45831,22 @@ goog.loadModule(function (exports) {
    * @return {void}
    * @suppress {checkTypes}
    */
-  function __deltemplate_s220_d34389eb(opt_data, opt_ignored, opt_ijData) {
+  function __deltemplate_s62_d34389eb(opt_data, opt_ignored, opt_ijData) {
     ie_open('a', null, null, 'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''), 'href', opt_data.page.url);
     if (opt_data.page.icon) {
       ie_void('span', null, null, 'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-    var dyn22 = opt_data.page.title;
-    if (typeof dyn22 == 'function') dyn22();else if (dyn22 != null) itext(dyn22);
+    var dyn6 = opt_data.page.title;
+    if (typeof dyn6 == 'function') dyn6();else if (dyn6 != null) itext(dyn6);
     ie_close('span');
     ie_close('a');
   }
-  exports.__deltemplate_s220_d34389eb = __deltemplate_s220_d34389eb;
+  exports.__deltemplate_s62_d34389eb = __deltemplate_s62_d34389eb;
   if (goog.DEBUG) {
-    __deltemplate_s220_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s220_d34389eb';
+    __deltemplate_s62_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s62_d34389eb';
   }
-  soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s220_d34389eb);
+  soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s62_d34389eb);
 
   exports.render.params = ["section", "site"];
   exports.render.types = { "section": "?", "site": "?" };
@@ -46368,8 +46368,8 @@ goog.loadModule(function (exports) {
     if (opt_data.time) {
       ie_void('span', null, null, 'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn23 = opt_data.time;
-      if (typeof dyn23 == 'function') dyn23();else if (dyn23 != null) itext(dyn23);
+      var dyn7 = opt_data.time;
+      if (typeof dyn7 == 'function') dyn7();else if (dyn7 != null) itext(dyn7);
     }
     ie_close('p');
   }
