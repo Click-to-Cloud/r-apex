@@ -188,14 +188,14 @@ goog.loadModule(function (exports) {
     var dyn1 = opt_data.site.index.description;
     if (typeof dyn1 == 'function') dyn1();else if (dyn1 != null) itext(dyn1);
     ie_close('h2');
-    ie_open('div', null, null, 'class', 'header-cta');
+    ie_open('div', null, null, 'class', 'btn-group');
     ie_open('a', null, null, 'href', '/r-apex/tutorials/getting_started/step_1.html', 'class', 'btn btn-accent btn-sm');
     itext('Get Started');
     ie_close('a');
     ie_open('a', null, null, 'href', 'https://github.com/Click-to-Cloud/R.apex/', 'class', 'btn btn-success btn-sm');
     itext('GitHub');
     ie_close('a');
-    ie_open('a', null, null, 'href', 'https://click-to-cloud.github.io/', 'class', 'btn btn-default btn-sm');
+    ie_open('a', null, null, 'href', '/', 'onclick', 'location.reload()', 'class', 'btn btn-default btn-sm');
     itext('Not Interested');
     ie_close('a');
     ie_close('div');

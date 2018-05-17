@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([9],{
+webpackJsonppageComponent([14],{
 
-/***/ 302:
+/***/ 298:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _indexSoy = __webpack_require__(303);
+var _indexSoy = __webpack_require__(299);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tutorialFirst = function (_Component) {
-  _inherits(tutorialFirst, _Component);
+var pvQcA = function (_Component) {
+  _inherits(pvQcA, _Component);
 
-  function tutorialFirst() {
-    _classCallCheck(this, tutorialFirst);
+  function pvQcA() {
+    _classCallCheck(this, pvQcA);
 
-    return _possibleConstructorReturn(this, (tutorialFirst.__proto__ || Object.getPrototypeOf(tutorialFirst)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (pvQcA.__proto__ || Object.getPrototypeOf(pvQcA)).apply(this, arguments));
   }
 
-  return tutorialFirst;
+  return pvQcA;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(tutorialFirst, _indexSoy2.default);
+_metalSoy2.default.register(pvQcA, _indexSoy2.default);
 
-exports.default = tutorialFirst;
+exports.default = pvQcA;
 
 /***/ }),
 
-/***/ 303:
+/***/ 299:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = tutorialFirst;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.tutorialFirst = undefined;
+exports.templates = exports.pvQcA = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace tutorialFirst.
+   * @fileoverview Templates in namespace pvQcA.
    * @public
    */
 
-  goog.module('tutorialFirst.incrementaldom');
+  goog.module('pvQcA.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,9 +137,14 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
+  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
+
+  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
+
   /**
    * @param {{
-   *    page: (?)
+   *    page: (?),
+   *    site: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -147,44 +152,56 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    ie_open('html', null, null, 'lang', 'en');
-    ie_open('head');
-    ie_open('meta', null, null, 'charset', 'UTF-8');
-    ie_close('meta');
-    ie_open('meta', null, null, 'http-equiv', 'refresh', 'content', '0; URL=\'' + opt_data.page.url + '\'');
-    ie_close('meta');
-    ie_close('head');
-    ie_close('html');
+    var param1370 = function param1370() {
+      ie_open('h6');
+      var dyn42 = opt_data.page.description;
+      if (typeof dyn42 == 'function') dyn42();else if (dyn42 != null) itext(dyn42);
+      ie_close('h6');
+      ie_open('article', null, null, 'id', '1');
+      ie_open('h2');
+      itext('R Instance Method Reference');
+      ie_close('h2');
+      ie_open('p');
+      itext('Here is the reference of the methods from R instance. You can use them in the way below:');
+      ie_close('p');
+      $templateAlias2({ code: 'R.of(new List<String>{ \'a\', \'b\', \'c\' })\n    .reverse()\n    .join(\'-\')\n    .toString();', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+      ie_close('input');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+      ie_close('input');
+    };
+    $templateAlias1(soy.$$assignDefaults({ content: param1370 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'tutorialFirst.render';
+    $render.soyTemplateName = 'pvQcA.render';
   }
 
-  exports.render.params = ["page"];
-  exports.render.types = { "page": "?" };
+  exports.render.params = ["page", "site"];
+  exports.render.types = { "page": "?", "site": "?" };
   exports.templates = templates = exports;
   return exports;
 });
 
-var tutorialFirst = function (_Component) {
-  _inherits(tutorialFirst, _Component);
+var pvQcA = function (_Component) {
+  _inherits(pvQcA, _Component);
 
-  function tutorialFirst() {
-    _classCallCheck(this, tutorialFirst);
+  function pvQcA() {
+    _classCallCheck(this, pvQcA);
 
-    return _possibleConstructorReturn(this, (tutorialFirst.__proto__ || Object.getPrototypeOf(tutorialFirst)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (pvQcA.__proto__ || Object.getPrototypeOf(pvQcA)).apply(this, arguments));
   }
 
-  return tutorialFirst;
+  return pvQcA;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(tutorialFirst, templates);
-exports.tutorialFirst = tutorialFirst;
+_metalSoy2.default.register(pvQcA, templates);
+exports.pvQcA = pvQcA;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[302]);
+},[298]);
