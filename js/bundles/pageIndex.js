@@ -189,8 +189,14 @@ goog.loadModule(function (exports) {
     if (typeof dyn17 == 'function') dyn17();else if (dyn17 != null) itext(dyn17);
     ie_close('h2');
     ie_open('div', null, null, 'class', 'header-cta');
-    ie_open('a', null, null, 'href', '/r-apex/tutorials/getting_started/step_1.html', 'class', 'btn btn-accent');
+    ie_open('a', null, null, 'href', '/r-apex/tutorials/getting_started/step_1.html', 'class', 'btn btn-accent btn-sm');
     itext('Get Started');
+    ie_close('a');
+    ie_open('a', null, null, 'href', 'https://github.com/Click-to-Cloud/R.apex/', 'class', 'btn btn-success btn-sm');
+    itext('GitHub');
+    ie_close('a');
+    ie_open('a', null, null, 'href', '/', 'class', 'btn btn-default btn-sm');
+    itext('Not Interested');
     ie_close('a');
     ie_close('div');
     ie_close('div');
