@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([9],{
+webpackJsonppageComponent([1],{
 
-/***/ 304:
+/***/ 320:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _indexSoy = __webpack_require__(305);
+var _step_8Soy = __webpack_require__(321);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _step_8Soy2 = _interopRequireDefault(_step_8Soy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tutorialFirst = function (_Component) {
-  _inherits(tutorialFirst, _Component);
+var TOtqI = function (_Component) {
+  _inherits(TOtqI, _Component);
 
-  function tutorialFirst() {
-    _classCallCheck(this, tutorialFirst);
+  function TOtqI() {
+    _classCallCheck(this, TOtqI);
 
-    return _possibleConstructorReturn(this, (tutorialFirst.__proto__ || Object.getPrototypeOf(tutorialFirst)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (TOtqI.__proto__ || Object.getPrototypeOf(TOtqI)).apply(this, arguments));
   }
 
-  return tutorialFirst;
+  return TOtqI;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(tutorialFirst, _indexSoy2.default);
+_metalSoy2.default.register(TOtqI, _step_8Soy2.default);
 
-exports.default = tutorialFirst;
+exports.default = TOtqI;
 
 /***/ }),
 
-/***/ 305:
+/***/ 321:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = tutorialFirst;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.tutorialFirst = undefined;
+exports.templates = exports.TOtqI = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from index.soy.
+  // This file was automatically generated from step_8.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace tutorialFirst.
+   * @fileoverview Templates in namespace TOtqI.
    * @public
    */
 
-  goog.module('tutorialFirst.incrementaldom');
+  goog.module('TOtqI.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,9 +137,13 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
+  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
+
   /**
    * @param {{
-   *    page: (?)
+   *    page: (?),
+   *    site: (?),
+   *    elementClasses: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -147,44 +151,53 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    ie_open('html', null, null, 'lang', 'en');
-    ie_open('head');
-    ie_open('meta', null, null, 'charset', 'UTF-8');
-    ie_close('meta');
-    ie_open('meta', null, null, 'http-equiv', 'refresh', 'content', '0; URL=\'' + opt_data.page.url + '\'');
-    ie_close('meta');
-    ie_close('head');
-    ie_close('html');
+    var param2095 = function param2095() {
+      ie_open('h2');
+      var dyn52 = opt_data.page.title;
+      if (typeof dyn52 == 'function') dyn52();else if (dyn52 != null) itext(dyn52);
+      ie_close('h2');
+      ie_open('p');
+      itext('It is your personal preference to choose between functional composition and function chaining. And the key takeaway is to use whatever is suitable in your case.');
+      ie_close('p');
+      ie_open('p');
+      itext('It is sad that the discovery of R.apex almost comes to an end. Realizing that the functions provided by R.apex is limited, you have to come up with your functions to tackle all the difficult business logic. The suggestion will be to encapsulate your core business logic in small custom functions and glue them together with the power of R.apex to build your own application. And this is the way you extend R.apex.');
+      ie_close('p');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+      ie_close('input');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+      ie_close('input');
+    };
+    $templateAlias1(soy.$$assignDefaults({ content: param2095 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'tutorialFirst.render';
+    $render.soyTemplateName = 'TOtqI.render';
   }
 
-  exports.render.params = ["page"];
-  exports.render.types = { "page": "?" };
+  exports.render.params = ["page", "site"];
+  exports.render.types = { "page": "?", "site": "?" };
   exports.templates = templates = exports;
   return exports;
 });
 
-var tutorialFirst = function (_Component) {
-  _inherits(tutorialFirst, _Component);
+var TOtqI = function (_Component) {
+  _inherits(TOtqI, _Component);
 
-  function tutorialFirst() {
-    _classCallCheck(this, tutorialFirst);
+  function TOtqI() {
+    _classCallCheck(this, TOtqI);
 
-    return _possibleConstructorReturn(this, (tutorialFirst.__proto__ || Object.getPrototypeOf(tutorialFirst)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (TOtqI.__proto__ || Object.getPrototypeOf(TOtqI)).apply(this, arguments));
   }
 
-  return tutorialFirst;
+  return TOtqI;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(tutorialFirst, templates);
-exports.tutorialFirst = tutorialFirst;
+_metalSoy2.default.register(TOtqI, templates);
+exports.TOtqI = TOtqI;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[304]);
+},[320]);

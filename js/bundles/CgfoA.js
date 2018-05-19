@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([9],{
+webpackJsonppageComponent([5],{
 
-/***/ 304:
+/***/ 312:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _indexSoy = __webpack_require__(305);
+var _step_4Soy = __webpack_require__(313);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _step_4Soy2 = _interopRequireDefault(_step_4Soy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tutorialFirst = function (_Component) {
-  _inherits(tutorialFirst, _Component);
+var CgfoA = function (_Component) {
+  _inherits(CgfoA, _Component);
 
-  function tutorialFirst() {
-    _classCallCheck(this, tutorialFirst);
+  function CgfoA() {
+    _classCallCheck(this, CgfoA);
 
-    return _possibleConstructorReturn(this, (tutorialFirst.__proto__ || Object.getPrototypeOf(tutorialFirst)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (CgfoA.__proto__ || Object.getPrototypeOf(CgfoA)).apply(this, arguments));
   }
 
-  return tutorialFirst;
+  return CgfoA;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(tutorialFirst, _indexSoy2.default);
+_metalSoy2.default.register(CgfoA, _step_4Soy2.default);
 
-exports.default = tutorialFirst;
+exports.default = CgfoA;
 
 /***/ }),
 
-/***/ 305:
+/***/ 313:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = tutorialFirst;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.tutorialFirst = undefined;
+exports.templates = exports.CgfoA = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from index.soy.
+  // This file was automatically generated from step_4.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace tutorialFirst.
+   * @fileoverview Templates in namespace CgfoA.
    * @public
    */
 
-  goog.module('tutorialFirst.incrementaldom');
+  goog.module('CgfoA.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,9 +137,15 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
+  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
+
+  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
+
   /**
    * @param {{
-   *    page: (?)
+   *    page: (?),
+   *    site: (?),
+   *    elementClasses: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -147,44 +153,69 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    ie_open('html', null, null, 'lang', 'en');
-    ie_open('head');
-    ie_open('meta', null, null, 'charset', 'UTF-8');
-    ie_close('meta');
-    ie_open('meta', null, null, 'http-equiv', 'refresh', 'content', '0; URL=\'' + opt_data.page.url + '\'');
-    ie_close('meta');
-    ie_close('head');
-    ie_close('html');
+    var param2001 = function param2001() {
+      ie_open('h2');
+      var dyn48 = opt_data.page.title;
+      if (typeof dyn48 == 'function') dyn48();else if (dyn48 != null) itext(dyn48);
+      ie_close('h2');
+      ie_open('p');
+      itext('So far so good. What if we need to handle functions that take variadic arguments? Let\'s extend our ');
+      ie_open('code');
+      itext('AddFunc');
+      ie_close('code');
+      itext(' to allow adding multiple numbers.');
+      ie_close('p');
+      $templateAlias2({ code: 'public class AddFunc extends Func {\n    public AddFunc() {\n        super(-1);\n    }\n\n    public override Object execN(List<Object> args) {\n        Integer sum = 0;\n        for(Object arg : args) {\n            sum += (Integer)arg;\n        }\n        return sum;\n    }\n}', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('Now this time, we specify the length of the function to be -1, which means that it takes any number of arguments. Also we have our ');
+      ie_open('code');
+      itext('execN(List<Object>)');
+      ie_close('code');
+      itext(' overridden to get the sum of all the numbers.');
+      ie_close('p');
+      ie_open('p');
+      itext('By the way, the default length is -1, so if we want a variadic function, we don\'t even need to call ');
+      ie_open('code');
+      itext('super(-1)');
+      ie_close('code');
+      itext('. In our case, we can simply omit the constructor.');
+      ie_close('p');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+      ie_close('input');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+      ie_close('input');
+    };
+    $templateAlias1(soy.$$assignDefaults({ content: param2001 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'tutorialFirst.render';
+    $render.soyTemplateName = 'CgfoA.render';
   }
 
-  exports.render.params = ["page"];
-  exports.render.types = { "page": "?" };
+  exports.render.params = ["page", "site"];
+  exports.render.types = { "page": "?", "site": "?" };
   exports.templates = templates = exports;
   return exports;
 });
 
-var tutorialFirst = function (_Component) {
-  _inherits(tutorialFirst, _Component);
+var CgfoA = function (_Component) {
+  _inherits(CgfoA, _Component);
 
-  function tutorialFirst() {
-    _classCallCheck(this, tutorialFirst);
+  function CgfoA() {
+    _classCallCheck(this, CgfoA);
 
-    return _possibleConstructorReturn(this, (tutorialFirst.__proto__ || Object.getPrototypeOf(tutorialFirst)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (CgfoA.__proto__ || Object.getPrototypeOf(CgfoA)).apply(this, arguments));
   }
 
-  return tutorialFirst;
+  return CgfoA;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(tutorialFirst, templates);
-exports.tutorialFirst = tutorialFirst;
+_metalSoy2.default.register(CgfoA, templates);
+exports.CgfoA = CgfoA;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[304]);
+},[312]);

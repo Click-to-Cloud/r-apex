@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([9],{
+webpackJsonppageComponent([19],{
 
-/***/ 304:
+/***/ 298:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _indexSoy = __webpack_require__(305);
+var _relationSoy = __webpack_require__(299);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _relationSoy2 = _interopRequireDefault(_relationSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tutorialFirst = function (_Component) {
-  _inherits(tutorialFirst, _Component);
+var VRwJO = function (_Component) {
+  _inherits(VRwJO, _Component);
 
-  function tutorialFirst() {
-    _classCallCheck(this, tutorialFirst);
+  function VRwJO() {
+    _classCallCheck(this, VRwJO);
 
-    return _possibleConstructorReturn(this, (tutorialFirst.__proto__ || Object.getPrototypeOf(tutorialFirst)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (VRwJO.__proto__ || Object.getPrototypeOf(VRwJO)).apply(this, arguments));
   }
 
-  return tutorialFirst;
+  return VRwJO;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(tutorialFirst, _indexSoy2.default);
+_metalSoy2.default.register(VRwJO, _relationSoy2.default);
 
-exports.default = tutorialFirst;
+exports.default = VRwJO;
 
 /***/ }),
 
-/***/ 305:
+/***/ 299:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = tutorialFirst;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.tutorialFirst = undefined;
+exports.templates = exports.VRwJO = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from index.soy.
+  // This file was automatically generated from relation.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace tutorialFirst.
+   * @fileoverview Templates in namespace VRwJO.
    * @public
    */
 
-  goog.module('tutorialFirst.incrementaldom');
+  goog.module('VRwJO.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,9 +137,14 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
+  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
+
+  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
+
   /**
    * @param {{
-   *    page: (?)
+   *    page: (?),
+   *    site: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -147,44 +152,110 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    ie_open('html', null, null, 'lang', 'en');
-    ie_open('head');
-    ie_open('meta', null, null, 'charset', 'UTF-8');
-    ie_close('meta');
-    ie_open('meta', null, null, 'http-equiv', 'refresh', 'content', '0; URL=\'' + opt_data.page.url + '\'');
-    ie_close('meta');
-    ie_close('head');
-    ie_close('html');
+    var param1760 = function param1760() {
+      ie_open('h6');
+      var dyn42 = opt_data.page.description;
+      if (typeof dyn42 == 'function') dyn42();else if (dyn42 != null) itext(dyn42);
+      ie_close('h6');
+      ie_open('article', null, null, 'id', '1');
+      ie_open('h2');
+      itext('equals');
+      ie_close('h2');
+      ie_open('p');
+      itext('Check if two values are equal.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.equals.run(1, 1)\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '2');
+      ie_open('h2');
+      itext('gt');
+      ie_close('h2');
+      ie_open('p');
+      itext('Check for \'greater than\'.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.gt.run(3, 2)\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '3');
+      ie_open('h2');
+      itext('gte');
+      ie_close('h2');
+      ie_open('p');
+      itext('Check for \'greater than or equal\'.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.gte.run(3, 2)\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '4');
+      ie_open('h2');
+      itext('lt');
+      ie_close('h2');
+      ie_open('p');
+      itext('Check for \'less than\'.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.lt.run(1, 2)\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '5');
+      ie_open('h2');
+      itext('lte');
+      ie_close('h2');
+      ie_open('p');
+      itext('Check for \'less than or equal\'.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.lte.run(1, 2)\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '6');
+      ie_open('h2');
+      itext('max');
+      ie_close('h2');
+      ie_open('p');
+      itext('Check for the max value between the two.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.max.run(1, 2)\n// 2', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '7');
+      ie_open('h2');
+      itext('min');
+      ie_close('h2');
+      ie_open('p');
+      itext('Check for the min value between the two.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.min.run(1, 2)\n// 1', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+      ie_close('input');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+      ie_close('input');
+    };
+    $templateAlias1(soy.$$assignDefaults({ content: param1760 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'tutorialFirst.render';
+    $render.soyTemplateName = 'VRwJO.render';
   }
 
-  exports.render.params = ["page"];
-  exports.render.types = { "page": "?" };
+  exports.render.params = ["page", "site"];
+  exports.render.types = { "page": "?", "site": "?" };
   exports.templates = templates = exports;
   return exports;
 });
 
-var tutorialFirst = function (_Component) {
-  _inherits(tutorialFirst, _Component);
+var VRwJO = function (_Component) {
+  _inherits(VRwJO, _Component);
 
-  function tutorialFirst() {
-    _classCallCheck(this, tutorialFirst);
+  function VRwJO() {
+    _classCallCheck(this, VRwJO);
 
-    return _possibleConstructorReturn(this, (tutorialFirst.__proto__ || Object.getPrototypeOf(tutorialFirst)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (VRwJO.__proto__ || Object.getPrototypeOf(VRwJO)).apply(this, arguments));
   }
 
-  return tutorialFirst;
+  return VRwJO;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(tutorialFirst, templates);
-exports.tutorialFirst = tutorialFirst;
+_metalSoy2.default.register(VRwJO, templates);
+exports.VRwJO = VRwJO;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[304]);
+},[298]);
