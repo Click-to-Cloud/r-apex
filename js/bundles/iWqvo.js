@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([29],{
+webpackJsonppageComponent([18],{
 
-/***/ 270:
+/***/ 318:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _arithmeticSoy = __webpack_require__(271);
+var _stringSoy = __webpack_require__(319);
 
-var _arithmeticSoy2 = _interopRequireDefault(_arithmeticSoy);
+var _stringSoy2 = _interopRequireDefault(_stringSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var zmqxr = function (_Component) {
-  _inherits(zmqxr, _Component);
+var iWqvo = function (_Component) {
+  _inherits(iWqvo, _Component);
 
-  function zmqxr() {
-    _classCallCheck(this, zmqxr);
+  function iWqvo() {
+    _classCallCheck(this, iWqvo);
 
-    return _possibleConstructorReturn(this, (zmqxr.__proto__ || Object.getPrototypeOf(zmqxr)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (iWqvo.__proto__ || Object.getPrototypeOf(iWqvo)).apply(this, arguments));
   }
 
-  return zmqxr;
+  return iWqvo;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(zmqxr, _arithmeticSoy2.default);
+_metalSoy2.default.register(iWqvo, _stringSoy2.default);
 
-exports.default = zmqxr;
+exports.default = iWqvo;
 
 /***/ }),
 
-/***/ 271:
+/***/ 319:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = zmqxr;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.zmqxr = undefined;
+exports.templates = exports.iWqvo = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from arithmetic.soy.
+  // This file was automatically generated from string.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace zmqxr.
+   * @fileoverview Templates in namespace iWqvo.
    * @public
    */
 
-  goog.module('zmqxr.incrementaldom');
+  goog.module('iWqvo.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,102 +152,129 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param366 = function param366() {
+    var param1237 = function param1237() {
       ie_open('h6');
-      var dyn28 = opt_data.page.description;
-      if (typeof dyn28 == 'function') dyn28();else if (dyn28 != null) itext(dyn28);
+      var dyn39 = opt_data.page.description;
+      if (typeof dyn39 == 'function') dyn39();else if (dyn39 != null) itext(dyn39);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      itext('add');
+      itext('capitalize');
       ie_close('h2');
       ie_open('p');
-      itext('Add two numbers.');
+      itext('Capitalize the string.');
       ie_close('p');
-      $templateAlias2({ code: 'R.add.run(1, 2)\n// 3', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.capitalize.run(\'cat\')\n// Cat', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '2');
       ie_open('h2');
-      itext('dec');
+      itext('match');
       ie_close('h2');
       ie_open('p');
-      itext('Decrement the number.');
+      itext('Check regex match.');
       ie_close('p');
-      $templateAlias2({ code: 'R.dec.run(1)\n// 0', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.match.run(\'.*(a).*\', \'cat\')\n// (cat, a)', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '3');
       ie_open('h2');
-      itext('divide');
+      itext('pad');
       ie_close('h2');
       ie_open('p');
-      itext('Divide two numbers.');
+      itext('Pad the string to the length, with given padding.');
       ie_close('p');
-      $templateAlias2({ code: 'R.divide.run(1, 2)\n// 0.5', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.pad.run(5, \'*\', \'cat\')\n// *cat*', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '4');
       ie_open('h2');
-      itext('inc');
+      itext('padLeft');
       ie_close('h2');
       ie_open('p');
-      itext('Increment the number.');
+      itext('Pad the string to the left to the length, with given padding.');
       ie_close('p');
-      $templateAlias2({ code: 'R.inc.run(1)\n// 2', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.pad.run(5, \'*\', \'cat\')\n// **cat', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '5');
       ie_open('h2');
-      itext('mod');
+      itext('padRight');
       ie_close('h2');
       ie_open('p');
-      itext('Calculate the modulo.');
+      itext('Pad the string to the right to the length, with given padding.');
       ie_close('p');
-      $templateAlias2({ code: 'R.mod.run(1, 2)\n// 1', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.pad.run(5, \'*\', \'cat\')\n// cat**', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '6');
       ie_open('h2');
-      itext('multiply');
+      itext('replace');
       ie_close('h2');
       ie_open('p');
-      itext('Multiply two numbers.');
+      itext('Replace the string with replacement, only for the first occurrence of the matching.');
       ie_close('p');
-      $templateAlias2({ code: 'R.multiply.run(1, 2)\n// 2', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.replace.run(\'cat\', \'dog\', \'I love cats\')\n// I love dogs', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '7');
       ie_open('h2');
-      itext('negate');
+      itext('replaceAll');
       ie_close('h2');
       ie_open('p');
-      itext('Negate the number.');
+      itext('Replace the string with replacement, for all occurrences of the matching.');
       ie_close('p');
-      $templateAlias2({ code: 'R.negate.run(1)\n// -1', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.replaceAll.run(\'cat\', \'dog\', \'I love cats\')\n// I love dogs', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '8');
       ie_open('h2');
-      itext('product');
+      itext('split');
       ie_close('h2');
       ie_open('p');
-      itext('Multiply all the numbers.');
+      itext('Split the string into a list.');
       ie_close('p');
-      $templateAlias2({ code: 'R.product.run(1, 2, 3)\n// 6', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.split.run(\' \', \'a b c\')\n// (a, b, c)', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '9');
       ie_open('h2');
-      itext('subtract');
+      itext('test');
       ie_close('h2');
       ie_open('p');
-      itext('Subtract one number from another.');
+      itext('Test for the string matching.');
       ie_close('p');
-      $templateAlias2({ code: 'R.subtract.run(1, 2)\n// -1', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.test.run(\'.*a.*\', \'cat\')\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '10');
+      ie_open('h2');
+      itext('toLower');
+      ie_close('h2');
+      ie_open('p');
+      itext('Convert the string into lowercase.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.toLower.run(\'ABC\')\n// abc', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '11');
+      ie_open('h2');
+      itext('toUpper');
+      ie_close('h2');
+      ie_open('p');
+      itext('Convert the string into uppercase.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.toUpper.run(\'abc\')\n// ABC', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '12');
+      ie_open('h2');
+      itext('trim');
+      ie_close('h2');
+      ie_open('p');
+      itext('Trim the string.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.trim.run(\' abc \')\n// abc', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param366 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1237 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'zmqxr.render';
+    $render.soyTemplateName = 'iWqvo.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -256,24 +283,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var zmqxr = function (_Component) {
-  _inherits(zmqxr, _Component);
+var iWqvo = function (_Component) {
+  _inherits(iWqvo, _Component);
 
-  function zmqxr() {
-    _classCallCheck(this, zmqxr);
+  function iWqvo() {
+    _classCallCheck(this, iWqvo);
 
-    return _possibleConstructorReturn(this, (zmqxr.__proto__ || Object.getPrototypeOf(zmqxr)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (iWqvo.__proto__ || Object.getPrototypeOf(iWqvo)).apply(this, arguments));
   }
 
-  return zmqxr;
+  return iWqvo;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(zmqxr, templates);
-exports.zmqxr = zmqxr;
+_metalSoy2.default.register(iWqvo, templates);
+exports.iWqvo = iWqvo;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[270]);
+},[318]);

@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([17],{
+webpackJsonppageComponent([20],{
 
-/***/ 294:
+/***/ 314:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _utilitySoy = __webpack_require__(295);
+var _mapSoy = __webpack_require__(315);
 
-var _utilitySoy2 = _interopRequireDefault(_utilitySoy);
+var _mapSoy2 = _interopRequireDefault(_mapSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var eVbRe = function (_Component) {
-  _inherits(eVbRe, _Component);
+var utqbq = function (_Component) {
+  _inherits(utqbq, _Component);
 
-  function eVbRe() {
-    _classCallCheck(this, eVbRe);
+  function utqbq() {
+    _classCallCheck(this, utqbq);
 
-    return _possibleConstructorReturn(this, (eVbRe.__proto__ || Object.getPrototypeOf(eVbRe)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (utqbq.__proto__ || Object.getPrototypeOf(utqbq)).apply(this, arguments));
   }
 
-  return eVbRe;
+  return utqbq;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(eVbRe, _utilitySoy2.default);
+_metalSoy2.default.register(utqbq, _mapSoy2.default);
 
-exports.default = eVbRe;
+exports.default = utqbq;
 
 /***/ }),
 
-/***/ 295:
+/***/ 315:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = eVbRe;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.eVbRe = undefined;
+exports.templates = exports.utqbq = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from utility.soy.
+  // This file was automatically generated from map.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace eVbRe.
+   * @fileoverview Templates in namespace utqbq.
    * @public
    */
 
-  goog.module('eVbRe.incrementaldom');
+  goog.module('utqbq.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,162 +152,172 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param1308 = function param1308() {
+    var param1105 = function param1105() {
       ie_open('h6');
-      var dyn40 = opt_data.page.description;
-      if (typeof dyn40 == 'function') dyn40();else if (dyn40 != null) itext(dyn40);
+      var dyn37 = opt_data.page.description;
+      if (typeof dyn37 == 'function') dyn37();else if (dyn37 != null) itext(dyn37);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      itext('F');
+      itext('doMerge');
       ie_close('h2');
       ie_open('p');
-      itext('A function that always returns false.');
+      itext('Merge the two objects.');
       ie_close('p');
-      $templateAlias2({ code: 'R.F.run()\n// false', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.doMerge.run(R.withObj(\'name\', \'b\'), R.withObj(\'name\', \'a\'))\n// {name=b}', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '2');
       ie_open('h2');
-      itext('T');
+      itext('has');
       ie_close('h2');
       ie_open('p');
-      itext('A function that always returns true.');
+      itext('Check if the wrapped object has a non-null value of the field.');
       ie_close('p');
-      $templateAlias2({ code: 'R.T.run()\n// true', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.has.run(\'Description\', new Account())\n// false', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '3');
       ie_open('h2');
-      itext('compact');
+      itext('invert');
       ie_close('h2');
       ie_open('p');
-      itext('Remove any null value from the elements.');
+      itext('Invert the wrapped object, with values mapped by the same key added to a list.');
       ie_close('p');
-      $templateAlias2({ code: 'R.compact.run(R.with(1, null, 2))\n// (1, 2)', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.invert.run(R.withObj(\'name\', \'test\'))\n// {name=test}', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '4');
       ie_open('h2');
-      itext('debug');
+      itext('invertObj');
       ie_close('h2');
       ie_open('p');
-      itext('Print the debug log.');
+      itext('Invert the wrapped object.');
       ie_close('p');
-      $templateAlias2({ code: 'R.debug.run(1)\n// 1', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.invertObj.run(R.withObj(\'name\', \'test\'))\n// {name=test}', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '5');
       ie_open('h2');
-      itext('defaultTo');
+      itext('keys');
       ie_close('h2');
       ie_open('p');
-      itext('Default to a value.');
+      itext('Get the keys.');
       ie_close('p');
-      $templateAlias2({ code: 'R.defaultTo.run(5, null)\n// 5', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.keys.run(R.withObj(\'name\', \'test\'))\n// {name}', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '6');
       ie_open('h2');
-      itext('doClone');
+      itext('omit');
       ie_close('h2');
       ie_open('p');
-      itext('Get the clone.');
+      itext('Omit the fields and pick remaining fields into a map.');
       ie_close('p');
-      $templateAlias2({ code: 'R.doClone.run(new Account())\n// Account:{}', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.omit.run(R.with(\'Description\'), new Account(Description=\'desc\', FirstName=\'name\'))\n// {FirstName=name}', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '7');
       ie_open('h2');
-      itext('isNil');
+      itext('pick');
       ie_close('h2');
       ie_open('p');
-      itext('Check if it is null.');
+      itext('Pick the fields into a map.');
       ie_close('p');
-      $templateAlias2({ code: 'R.isNil.run(null)\n// true', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.pick.run(R.with(\'Description\'), new Account(Description=\'desc\', FirstName=\'name\'))\n// {Description=desc}', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '8');
       ie_open('h2');
-      itext('isNotNil');
+      itext('prop');
       ie_close('h2');
       ie_open('p');
-      itext('Check if it is not null.');
+      itext('Get the property value.');
       ie_close('p');
-      $templateAlias2({ code: 'R.isNotNil.run(null)\n// false', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.prop.run(\'Description\', new Account(Description=\'desc\'))\n// desc', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '9');
       ie_open('h2');
-      itext('isNotNull');
+      itext('propEq');
       ie_close('h2');
       ie_open('p');
-      itext('Same as ');
-      ie_open('code');
-      itext('isNotNil');
-      ie_close('code');
-      itext('.');
+      itext('Check that its property value equals given value.');
       ie_close('p');
+      $templateAlias2({ code: 'R.propEq.run(\'Description\', \'desc\', new Account(Description=\'desc\'))\n// true', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '10');
       ie_open('h2');
-      itext('isNull');
+      itext('propOr');
       ie_close('h2');
       ie_open('p');
-      itext('Same as ');
-      ie_open('code');
-      itext('isNil');
-      ie_close('code');
-      itext('.');
+      itext('Get the property value, or return the default value if it is null.');
       ie_close('p');
+      $templateAlias2({ code: 'R.propOr.run(\'Description\', \'desc\', new Account())\n// desc', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '11');
       ie_open('h2');
-      itext('isNumber');
+      itext('propSObject');
       ie_close('h2');
       ie_open('p');
-      itext('Check if it is number.');
+      itext('Get the property value by \'getSObject\'.');
       ie_close('p');
-      $templateAlias2({ code: 'R.isNumber.run(1)\n// true', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '12');
       ie_open('h2');
-      itext('noop');
+      itext('propSObjects');
       ie_close('h2');
       ie_open('p');
-      itext('No op function.');
+      itext('Get the property value by \'getSObjects\'.');
       ie_close('p');
-      $templateAlias2({ code: 'R.noop.run()\n// null', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '13');
       ie_open('h2');
-      itext('assert');
+      itext('propSatisfies');
       ie_close('h2');
       ie_open('p');
-      itext('Do System assert');
+      itext('Check if the property value satisfies the predicate.');
       ie_close('p');
-      $templateAlias2({ code: 'R.assert.run(1 == 1, \'should equal\');', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.propSatisfies.run(\'Description\', R.isNotNull, new Account())\n// false', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '14');
       ie_open('h2');
-      itext('assertEquals');
+      itext('values');
       ie_close('h2');
       ie_open('p');
-      itext('Do System assertEquals');
+      itext('Get the values.');
       ie_close('p');
-      $templateAlias2({ code: 'R.assertEquals.run(1, 1, \'should equal\');', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.values.run(R.withObj(\'name\', \'test\'))\n// (test)', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '15');
       ie_open('h2');
-      itext('assertNotEquals');
+      itext('whereEq');
       ie_close('h2');
       ie_open('p');
-      itext('Do System assertNotEquals');
+      itext('Check if matching the key-values.');
       ie_close('p');
-      $templateAlias2({ code: 'R.assertNotEquals.run(1, 2, \'should not equal\');', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.whereEq.run(R.withObj(\'Description\', \'desc\'), new Account(Description=\'desc\'))\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '16');
+      ie_open('h2');
+      itext('whereSatisfies');
+      ie_close('h2');
+      ie_open('p');
+      itext('Check if matching the key-predicates.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.whereSatisfies.run(R.withObj(\'Description\', R.isNotNull), new Account(Description=\'desc\'))\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '17');
+      ie_open('h2');
+      itext('path');
+      ie_close('h2');
+      ie_open('p');
+      itext('Get the property value according to the field path, separated by \'.\'.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.path.run(\'Owner.Id\', acc)\n// desc', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param1308 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1105 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'eVbRe.render';
+    $render.soyTemplateName = 'utqbq.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -316,24 +326,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var eVbRe = function (_Component) {
-  _inherits(eVbRe, _Component);
+var utqbq = function (_Component) {
+  _inherits(utqbq, _Component);
 
-  function eVbRe() {
-    _classCallCheck(this, eVbRe);
+  function utqbq() {
+    _classCallCheck(this, utqbq);
 
-    return _possibleConstructorReturn(this, (eVbRe.__proto__ || Object.getPrototypeOf(eVbRe)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (utqbq.__proto__ || Object.getPrototypeOf(utqbq)).apply(this, arguments));
   }
 
-  return eVbRe;
+  return utqbq;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(eVbRe, templates);
-exports.eVbRe = eVbRe;
+_metalSoy2.default.register(utqbq, templates);
+exports.utqbq = utqbq;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[294]);
+},[314]);

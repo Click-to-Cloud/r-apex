@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([6],{
 
-/***/ 310:
+/***/ 274:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _step_3Soy = __webpack_require__(311);
+var _step_3Soy = __webpack_require__(275);
 
 var _step_3Soy2 = _interopRequireDefault(_step_3Soy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var EdtHd = function (_Component) {
-  _inherits(EdtHd, _Component);
+var guRKi = function (_Component) {
+  _inherits(guRKi, _Component);
 
-  function EdtHd() {
-    _classCallCheck(this, EdtHd);
+  function guRKi() {
+    _classCallCheck(this, guRKi);
 
-    return _possibleConstructorReturn(this, (EdtHd.__proto__ || Object.getPrototypeOf(EdtHd)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (guRKi.__proto__ || Object.getPrototypeOf(guRKi)).apply(this, arguments));
   }
 
-  return EdtHd;
+  return guRKi;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(EdtHd, _step_3Soy2.default);
+_metalSoy2.default.register(guRKi, _step_3Soy2.default);
 
-exports.default = EdtHd;
+exports.default = guRKi;
 
 /***/ }),
 
-/***/ 311:
+/***/ 275:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = EdtHd;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.EdtHd = undefined;
+exports.templates = exports.guRKi = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace EdtHd.
+   * @fileoverview Templates in namespace guRKi.
    * @public
    */
 
-  goog.module('EdtHd.incrementaldom');
+  goog.module('guRKi.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -213,7 +213,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'EdtHd.render';
+    $render.soyTemplateName = 'guRKi.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -222,24 +222,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var EdtHd = function (_Component) {
-  _inherits(EdtHd, _Component);
+var guRKi = function (_Component) {
+  _inherits(guRKi, _Component);
 
-  function EdtHd() {
-    _classCallCheck(this, EdtHd);
+  function guRKi() {
+    _classCallCheck(this, guRKi);
 
-    return _possibleConstructorReturn(this, (EdtHd.__proto__ || Object.getPrototypeOf(EdtHd)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (guRKi.__proto__ || Object.getPrototypeOf(guRKi)).apply(this, arguments));
   }
 
-  return EdtHd;
+  return guRKi;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(EdtHd, templates);
-exports.EdtHd = EdtHd;
+_metalSoy2.default.register(guRKi, templates);
+exports.guRKi = guRKi;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[310]);
+},[274]);

@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([27],{
+webpackJsonppageComponent([17],{
 
-/***/ 274:
+/***/ 320:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _conditionSoy = __webpack_require__(275);
+var _utilitySoy = __webpack_require__(321);
 
-var _conditionSoy2 = _interopRequireDefault(_conditionSoy);
+var _utilitySoy2 = _interopRequireDefault(_utilitySoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var iSZvg = function (_Component) {
-  _inherits(iSZvg, _Component);
+var wnRLh = function (_Component) {
+  _inherits(wnRLh, _Component);
 
-  function iSZvg() {
-    _classCallCheck(this, iSZvg);
+  function wnRLh() {
+    _classCallCheck(this, wnRLh);
 
-    return _possibleConstructorReturn(this, (iSZvg.__proto__ || Object.getPrototypeOf(iSZvg)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (wnRLh.__proto__ || Object.getPrototypeOf(wnRLh)).apply(this, arguments));
   }
 
-  return iSZvg;
+  return wnRLh;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(iSZvg, _conditionSoy2.default);
+_metalSoy2.default.register(wnRLh, _utilitySoy2.default);
 
-exports.default = iSZvg;
+exports.default = wnRLh;
 
 /***/ }),
 
-/***/ 275:
+/***/ 321:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = iSZvg;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.iSZvg = undefined;
+exports.templates = exports.wnRLh = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from condition.soy.
+  // This file was automatically generated from utility.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace iSZvg.
+   * @fileoverview Templates in namespace wnRLh.
    * @public
    */
 
-  goog.module('iSZvg.incrementaldom');
+  goog.module('wnRLh.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,57 +152,162 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param463 = function param463() {
+    var param1308 = function param1308() {
       ie_open('h6');
-      var dyn30 = opt_data.page.description;
-      if (typeof dyn30 == 'function') dyn30();else if (dyn30 != null) itext(dyn30);
+      var dyn40 = opt_data.page.description;
+      if (typeof dyn40 == 'function') dyn40();else if (dyn40 != null) itext(dyn40);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      itext('cond');
+      itext('F');
       ie_close('h2');
       ie_open('p');
-      itext('Returns a function, fn, which encapsulates if/else, if/else, logic. It takes a list of functions, alternated by predicate and transformer. All of the arguments to fn are applied to each of the predicates in turn until one returns a "truthy" value, at which point fn returns the result of applying its arguments to the corresponding transformer.');
+      itext('A function that always returns false.');
       ie_close('p');
-      $templateAlias2({ code: 'Func testF = (Func)R.cond.runN(new List<Object>{\n    R.lt.apply(0), R.always.run(1),\n    R.gt.apply(0), R.always.run(-1),\n    R.equals.apply(0), R.always.run(0)\n});\ntestF.run(3); // 1', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.F.run()\n// false', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '2');
       ie_open('h2');
-      itext('doWhen');
+      itext('T');
       ie_close('h2');
       ie_open('p');
-      itext('Tests the final argument by passing it to the given predicate function. If the predicate is satisfied, the function will return the result of calling the whenTrueFn function with the same argument. If the predicate is not satisfied, the argument is returned as a wrapping list.');
+      itext('A function that always returns true.');
       ie_close('p');
-      $templateAlias2({ code: 'Func testF = (Func)R.doWhen.run(\n    R.lt.apply(0),\n    R.always.run(1)\n);\ntestF.run(3); // 1', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.T.run()\n// true', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '3');
       ie_open('h2');
-      itext('ifElse');
+      itext('compact');
       ie_close('h2');
       ie_open('p');
-      itext('Creates a function that will process either the onTrue or the onFalse function depending upon the result of the condition predicate.');
+      itext('Remove any null value from the elements.');
       ie_close('p');
-      $templateAlias2({ code: 'Func testF = (Func)R.ifElse.run(\n    R.lt.apply(0),\n    R.always.run(1),\n    R.always.run(0)\n);\ntestF.run(3); // 1', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.compact.run(R.with(1, null, 2))\n// (1, 2)', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '4');
       ie_open('h2');
-      itext('unless');
+      itext('debug');
       ie_close('h2');
       ie_open('p');
-      itext('Tests the final argument by passing it to the given predicate function. If the predicate is not satisfied, the function will return the result of calling the whenFalseFn function with the same argument. If the predicate is satisfied, the argument is returned as a wrapping list.');
+      itext('Print the debug log.');
       ie_close('p');
-      $templateAlias2({ code: 'Func testF = (Func)R.unless.run(\n    R.lt.apply(0),\n    R.always.run(0)\n);\ntestF.run(-3); // 0', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.debug.run(1)\n// 1', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '5');
+      ie_open('h2');
+      itext('defaultTo');
+      ie_close('h2');
+      ie_open('p');
+      itext('Default to a value.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.defaultTo.run(5, null)\n// 5', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '6');
+      ie_open('h2');
+      itext('doClone');
+      ie_close('h2');
+      ie_open('p');
+      itext('Get the clone.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.doClone.run(new Account())\n// Account:{}', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '7');
+      ie_open('h2');
+      itext('isNil');
+      ie_close('h2');
+      ie_open('p');
+      itext('Check if it is null.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.isNil.run(null)\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '8');
+      ie_open('h2');
+      itext('isNotNil');
+      ie_close('h2');
+      ie_open('p');
+      itext('Check if it is not null.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.isNotNil.run(null)\n// false', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '9');
+      ie_open('h2');
+      itext('isNotNull');
+      ie_close('h2');
+      ie_open('p');
+      itext('Same as ');
+      ie_open('code');
+      itext('isNotNil');
+      ie_close('code');
+      itext('.');
+      ie_close('p');
+      ie_close('article');
+      ie_open('article', null, null, 'id', '10');
+      ie_open('h2');
+      itext('isNull');
+      ie_close('h2');
+      ie_open('p');
+      itext('Same as ');
+      ie_open('code');
+      itext('isNil');
+      ie_close('code');
+      itext('.');
+      ie_close('p');
+      ie_close('article');
+      ie_open('article', null, null, 'id', '11');
+      ie_open('h2');
+      itext('isNumber');
+      ie_close('h2');
+      ie_open('p');
+      itext('Check if it is number.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.isNumber.run(1)\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '12');
+      ie_open('h2');
+      itext('noop');
+      ie_close('h2');
+      ie_open('p');
+      itext('No op function.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.noop.run()\n// null', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '13');
+      ie_open('h2');
+      itext('assert');
+      ie_close('h2');
+      ie_open('p');
+      itext('Do System assert');
+      ie_close('p');
+      $templateAlias2({ code: 'R.assert.run(1 == 1, \'should equal\');', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '14');
+      ie_open('h2');
+      itext('assertEquals');
+      ie_close('h2');
+      ie_open('p');
+      itext('Do System assertEquals');
+      ie_close('p');
+      $templateAlias2({ code: 'R.assertEquals.run(1, 1, \'should equal\');', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '15');
+      ie_open('h2');
+      itext('assertNotEquals');
+      ie_close('h2');
+      ie_open('p');
+      itext('Do System assertNotEquals');
+      ie_close('p');
+      $templateAlias2({ code: 'R.assertNotEquals.run(1, 2, \'should not equal\');', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param463 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1308 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'iSZvg.render';
+    $render.soyTemplateName = 'wnRLh.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -211,24 +316,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var iSZvg = function (_Component) {
-  _inherits(iSZvg, _Component);
+var wnRLh = function (_Component) {
+  _inherits(wnRLh, _Component);
 
-  function iSZvg() {
-    _classCallCheck(this, iSZvg);
+  function wnRLh() {
+    _classCallCheck(this, wnRLh);
 
-    return _possibleConstructorReturn(this, (iSZvg.__proto__ || Object.getPrototypeOf(iSZvg)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (wnRLh.__proto__ || Object.getPrototypeOf(wnRLh)).apply(this, arguments));
   }
 
-  return iSZvg;
+  return wnRLh;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(iSZvg, templates);
-exports.iSZvg = iSZvg;
+_metalSoy2.default.register(wnRLh, templates);
+exports.wnRLh = wnRLh;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[274]);
+},[320]);

@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([14],{
+webpackJsonppageComponent([25],{
 
-/***/ 300:
+/***/ 304:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _indexSoy = __webpack_require__(301);
+var _databaseSoy = __webpack_require__(305);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _databaseSoy2 = _interopRequireDefault(_databaseSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var VMful = function (_Component) {
-  _inherits(VMful, _Component);
+var tvQeK = function (_Component) {
+  _inherits(tvQeK, _Component);
 
-  function VMful() {
-    _classCallCheck(this, VMful);
+  function tvQeK() {
+    _classCallCheck(this, tvQeK);
 
-    return _possibleConstructorReturn(this, (VMful.__proto__ || Object.getPrototypeOf(VMful)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (tvQeK.__proto__ || Object.getPrototypeOf(tvQeK)).apply(this, arguments));
   }
 
-  return VMful;
+  return tvQeK;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(VMful, _indexSoy2.default);
+_metalSoy2.default.register(tvQeK, _databaseSoy2.default);
 
-exports.default = VMful;
+exports.default = tvQeK;
 
 /***/ }),
 
-/***/ 301:
+/***/ 305:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = VMful;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.VMful = undefined;
+exports.templates = exports.tvQeK = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from index.soy.
+  // This file was automatically generated from database.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace VMful.
+   * @fileoverview Templates in namespace tvQeK.
    * @public
    */
 
-  goog.module('VMful.incrementaldom');
+  goog.module('tvQeK.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,30 +152,57 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param1446 = function param1446() {
+    var param530 = function param530() {
       ie_open('h6');
-      var dyn43 = opt_data.page.description;
-      if (typeof dyn43 == 'function') dyn43();else if (dyn43 != null) itext(dyn43);
+      var dyn32 = opt_data.page.description;
+      if (typeof dyn32 == 'function') dyn32();else if (dyn32 != null) itext(dyn32);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      itext('R Instance Method Reference');
+      itext('dbInsert');
       ie_close('h2');
       ie_open('p');
-      itext('Here is the reference of the methods from R instance. You can use them in the way below:');
+      itext('Insert SObject(s) into database');
       ie_close('p');
-      $templateAlias2({ code: 'R.of(new List<String>{ \'a\', \'b\', \'c\' })\n    .reverse()\n    .join(\'-\')\n    .toString();', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Account acc = ...;\nR.dbInsert.run(acc);', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '2');
+      ie_open('h2');
+      itext('dbUpdate');
+      ie_close('h2');
+      ie_open('p');
+      itext('Update SObject(s) into database');
+      ie_close('p');
+      $templateAlias2({ code: 'Account acc = ...;\nR.dbUpdate.run(acc);', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '3');
+      ie_open('h2');
+      itext('dbDelete');
+      ie_close('h2');
+      ie_open('p');
+      itext('Delete SObject(s) from database');
+      ie_close('p');
+      $templateAlias2({ code: 'Account acc = ...;\nR.dbDelete.run(acc);', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '4');
+      ie_open('h2');
+      itext('dbQuery');
+      ie_close('h2');
+      ie_open('p');
+      itext('Query SObject(s) from database');
+      ie_close('p');
+      $templateAlias2({ code: 'String query = \'...\':\nR.dbQuery.run(query);', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param1446 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param530 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'VMful.render';
+    $render.soyTemplateName = 'tvQeK.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -184,24 +211,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var VMful = function (_Component) {
-  _inherits(VMful, _Component);
+var tvQeK = function (_Component) {
+  _inherits(tvQeK, _Component);
 
-  function VMful() {
-    _classCallCheck(this, VMful);
+  function tvQeK() {
+    _classCallCheck(this, tvQeK);
 
-    return _possibleConstructorReturn(this, (VMful.__proto__ || Object.getPrototypeOf(VMful)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (tvQeK.__proto__ || Object.getPrototypeOf(tvQeK)).apply(this, arguments));
   }
 
-  return VMful;
+  return tvQeK;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(VMful, templates);
-exports.VMful = VMful;
+_metalSoy2.default.register(tvQeK, templates);
+exports.tvQeK = tvQeK;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[300]);
+},[304]);

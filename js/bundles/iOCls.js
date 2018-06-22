@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([21],{
 
-/***/ 286:
+/***/ 312:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _logicSoy = __webpack_require__(287);
+var _logicSoy = __webpack_require__(313);
 
 var _logicSoy2 = _interopRequireDefault(_logicSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var MwPDB = function (_Component) {
-  _inherits(MwPDB, _Component);
+var iOCls = function (_Component) {
+  _inherits(iOCls, _Component);
 
-  function MwPDB() {
-    _classCallCheck(this, MwPDB);
+  function iOCls() {
+    _classCallCheck(this, iOCls);
 
-    return _possibleConstructorReturn(this, (MwPDB.__proto__ || Object.getPrototypeOf(MwPDB)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (iOCls.__proto__ || Object.getPrototypeOf(iOCls)).apply(this, arguments));
   }
 
-  return MwPDB;
+  return iOCls;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(MwPDB, _logicSoy2.default);
+_metalSoy2.default.register(iOCls, _logicSoy2.default);
 
-exports.default = MwPDB;
+exports.default = iOCls;
 
 /***/ }),
 
-/***/ 287:
+/***/ 313:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = MwPDB;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.MwPDB = undefined;
+exports.templates = exports.iOCls = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace MwPDB.
+   * @fileoverview Templates in namespace iOCls.
    * @public
    */
 
-  goog.module('MwPDB.incrementaldom');
+  goog.module('iOCls.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -220,7 +220,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'MwPDB.render';
+    $render.soyTemplateName = 'iOCls.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -229,24 +229,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var MwPDB = function (_Component) {
-  _inherits(MwPDB, _Component);
+var iOCls = function (_Component) {
+  _inherits(iOCls, _Component);
 
-  function MwPDB() {
-    _classCallCheck(this, MwPDB);
+  function iOCls() {
+    _classCallCheck(this, iOCls);
 
-    return _possibleConstructorReturn(this, (MwPDB.__proto__ || Object.getPrototypeOf(MwPDB)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (iOCls.__proto__ || Object.getPrototypeOf(iOCls)).apply(this, arguments));
   }
 
-  return MwPDB;
+  return iOCls;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(MwPDB, templates);
-exports.MwPDB = MwPDB;
+_metalSoy2.default.register(iOCls, templates);
+exports.iOCls = iOCls;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[286]);
+},[312]);
