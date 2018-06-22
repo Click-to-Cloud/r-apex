@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([2],{
+webpackJsonppageComponent([15],{
 
-/***/ 318:
+/***/ 290:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _step_7Soy = __webpack_require__(319);
+var _creationSoy = __webpack_require__(291);
 
-var _step_7Soy2 = _interopRequireDefault(_step_7Soy);
+var _creationSoy2 = _interopRequireDefault(_creationSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var dbjVE = function (_Component) {
-  _inherits(dbjVE, _Component);
+var ZLglf = function (_Component) {
+  _inherits(ZLglf, _Component);
 
-  function dbjVE() {
-    _classCallCheck(this, dbjVE);
+  function ZLglf() {
+    _classCallCheck(this, ZLglf);
 
-    return _possibleConstructorReturn(this, (dbjVE.__proto__ || Object.getPrototypeOf(dbjVE)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ZLglf.__proto__ || Object.getPrototypeOf(ZLglf)).apply(this, arguments));
   }
 
-  return dbjVE;
+  return ZLglf;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(dbjVE, _step_7Soy2.default);
+_metalSoy2.default.register(ZLglf, _creationSoy2.default);
 
-exports.default = dbjVE;
+exports.default = ZLglf;
 
 /***/ }),
 
-/***/ 319:
+/***/ 291:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = dbjVE;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.dbjVE = undefined;
+exports.templates = exports.ZLglf = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from step_7.soy.
+  // This file was automatically generated from creation.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace dbjVE.
+   * @fileoverview Templates in namespace ZLglf.
    * @public
    */
 
-  goog.module('dbjVE.incrementaldom');
+  goog.module('ZLglf.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -139,13 +139,12 @@ goog.loadModule(function (exports) {
 
   var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
 
-  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
 
   /**
    * @param {{
    *    page: (?),
-   *    site: (?),
-   *    elementClasses: (?)
+   *    site: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -153,38 +152,93 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param2114 = function param2114() {
+    var param1395 = function param1395() {
+      ie_open('h6');
+      var dyn42 = opt_data.page.description;
+      if (typeof dyn42 == 'function') dyn42();else if (dyn42 != null) itext(dyn42);
+      ie_close('h6');
+      ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      var dyn51 = opt_data.page.title;
-      if (typeof dyn51 == 'function') dyn51();else if (dyn51 != null) itext(dyn51);
+      itext('emptyList');
       ie_close('h2');
       ie_open('p');
-      itext('It is totally okay if you feel the last section a little too strange, not quite like the code we usually write. We have the alternate option for you: the easy way of function composition through chaining.');
+      itext('Factory function to create instance of R(empty list).');
       ie_close('p');
+      $templateAlias2({ code: 'R.emptyList().size().debug(); // 0', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '2');
+      ie_open('h2');
+      itext('emptyMap');
+      ie_close('h2');
       ie_open('p');
-      itext('R.apex adopts the similar chaining style as that of jQuery, Lodash or Promise. If you have experiences of any of these libraries, you will easily pick up R.apex.');
+      itext('Factory function to create instance of R(empty set).');
       ie_close('p');
+      $templateAlias2({ code: 'R.emptySet().size().debug(); // 0', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '3');
+      ie_open('h2');
+      itext('emptySet');
+      ie_close('h2');
       ie_open('p');
-      itext('Here is what function chaining looks like:');
+      itext('Factory function to create instance of R(empty set).');
       ie_close('p');
-      $templateAlias2({ code: 'Integer sum = R.with(1, 2, 3)\n    .doMap(R.inc)\n    .sum()\n    .toInteger();', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.emptySet().size().debug(); // 0', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '4');
+      ie_open('h2');
+      itext('emptyString');
+      ie_close('h2');
       ie_open('p');
-      itext('Pretty familiar, right? In fact, most functions in R.apex are designed to be avaiable both in function composition and function chaining. Check this example:');
+      itext('Factory function to create instance of R(empty string).');
       ie_close('p');
-      $templateAlias2({ code: 'Func sum = (Func)R.pipe.run(\n    R.doMap.apply(R.inc),\n    R.sum,\n    R.toInteger\n);\nInteger result = (Integer)sum.run(R.with(1, 2, 3));', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.emptyString().size().debug(); // 0', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '5');
+      ie_open('h2');
+      itext('of');
+      ie_close('h2');
       ie_open('p');
-      itext('This example is a rewrite of the previous example in functional composition style, and they are equivalent.');
+      itext('Factory function to create instance of R.');
       ie_close('p');
+      $templateAlias2({ code: 'R.of(\'message\').size().debug(); // 7', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '6');
+      ie_open('h2');
+      itext('range');
+      ie_close('h2');
+      ie_open('p');
+      itext('Factory function to create instance of R(list of decimals in range).');
+      ie_close('p');
+      $templateAlias2({ code: 'R.range(1, 3).debug(); // (1, 2)', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '7');
+      ie_open('h2');
+      itext('with');
+      ie_close('h2');
+      ie_open('p');
+      itext('Factory function to create instance of R(List).');
+      ie_close('p');
+      $templateAlias2({ code: 'R.with(1).size().debug(); // 1\nR.with(1, 2).size().debug(); // 2\nR.with(1, 2, 3).size().debug(); // 3', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '8');
+      ie_open('h2');
+      itext('withObj');
+      ie_close('h2');
+      ie_open('p');
+      itext('Factory function to create instance of R(Map).');
+      ie_close('p');
+      $templateAlias2({ code: 'R.withObj(\'name\', \'test\').size().debug(); // 1', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param2114 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1395 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'dbjVE.render';
+    $render.soyTemplateName = 'ZLglf.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -193,24 +247,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var dbjVE = function (_Component) {
-  _inherits(dbjVE, _Component);
+var ZLglf = function (_Component) {
+  _inherits(ZLglf, _Component);
 
-  function dbjVE() {
-    _classCallCheck(this, dbjVE);
+  function ZLglf() {
+    _classCallCheck(this, ZLglf);
 
-    return _possibleConstructorReturn(this, (dbjVE.__proto__ || Object.getPrototypeOf(dbjVE)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ZLglf.__proto__ || Object.getPrototypeOf(ZLglf)).apply(this, arguments));
   }
 
-  return dbjVE;
+  return ZLglf;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(dbjVE, templates);
-exports.dbjVE = dbjVE;
+_metalSoy2.default.register(ZLglf, templates);
+exports.ZLglf = ZLglf;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[318]);
+},[290]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([3],{
+webpackJsonppageComponent([19],{
 
 /***/ 316:
 /***/ (function(module, exports, __webpack_require__) {
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _step_6Soy = __webpack_require__(317);
+var _relationSoy = __webpack_require__(317);
 
-var _step_6Soy2 = _interopRequireDefault(_step_6Soy);
+var _relationSoy2 = _interopRequireDefault(_relationSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var BKrdq = function (_Component) {
-  _inherits(BKrdq, _Component);
+var nmKQK = function (_Component) {
+  _inherits(nmKQK, _Component);
 
-  function BKrdq() {
-    _classCallCheck(this, BKrdq);
+  function nmKQK() {
+    _classCallCheck(this, nmKQK);
 
-    return _possibleConstructorReturn(this, (BKrdq.__proto__ || Object.getPrototypeOf(BKrdq)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (nmKQK.__proto__ || Object.getPrototypeOf(nmKQK)).apply(this, arguments));
   }
 
-  return BKrdq;
+  return nmKQK;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(BKrdq, _step_6Soy2.default);
+_metalSoy2.default.register(nmKQK, _relationSoy2.default);
 
-exports.default = BKrdq;
+exports.default = nmKQK;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = BKrdq;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.BKrdq = undefined;
+exports.templates = exports.nmKQK = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from step_6.soy.
+  // This file was automatically generated from relation.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace BKrdq.
+   * @fileoverview Templates in namespace nmKQK.
    * @public
    */
 
-  goog.module('BKrdq.incrementaldom');
+  goog.module('nmKQK.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -139,13 +139,12 @@ goog.loadModule(function (exports) {
 
   var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
 
-  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
 
   /**
    * @param {{
    *    page: (?),
-   *    site: (?),
-   *    elementClasses: (?)
+   *    site: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -153,83 +152,84 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param2093 = function param2093() {
+    var param1191 = function param1191() {
+      ie_open('h6');
+      var dyn38 = opt_data.page.description;
+      if (typeof dyn38 == 'function') dyn38();else if (dyn38 != null) itext(dyn38);
+      ie_close('h6');
+      ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      var dyn50 = opt_data.page.title;
-      if (typeof dyn50 == 'function') dyn50();else if (dyn50 != null) itext(dyn50);
+      itext('equals');
       ie_close('h2');
       ie_open('p');
-      itext('Hopefully you have got some understanding on how to write a custom function by now. But that\'s far not enough. Writing functions by extending Func is still somehow bloate with boilerplates and it is kind of tedious. Better ways ahead.');
+      itext('Check if two values are equal.');
       ie_close('p');
+      $templateAlias2({ code: 'R.equals.run(1, 1)\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '2');
+      ie_open('h2');
+      itext('gt');
+      ie_close('h2');
       ie_open('p');
-      itext('The charm of functional programming lies not only in the fact of function currying and partial application, but also in the ability that they can compose. It is composition and decomposition that helps us to build a large application out of small bits and pieces in a functional world. And we adore the power.');
+      itext('Check for \'greater than\'.');
       ie_close('p');
+      $templateAlias2({ code: 'R.gt.run(3, 2)\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '3');
+      ie_open('h2');
+      itext('gte');
+      ie_close('h2');
       ie_open('p');
-      itext('So it is not hard to understand that functional composition is strongly recommended in R.apex, to write clean and clear codes. Let\'s take a leap to check it out.');
+      itext('Check for \'greater than or equal\'.');
       ie_close('p');
-      $templateAlias2({ code: 'Func f = (Func)R.compose.run(\n    R.add.apply(1),\n    R.multiply.apply(2)\n);\nInteger result = (Integer)f.run(2);\n// 5', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.gte.run(3, 2)\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '4');
+      ie_open('h2');
+      itext('lt');
+      ie_close('h2');
       ie_open('p');
-      itext('Dive into this snippet, and we will make everything clear step by step. First, ');
-      ie_open('code');
-      itext('R.add.apply(1)');
-      ie_close('code');
-      itext(' creates a function ');
-      ie_open('code');
-      itext('f2');
-      ie_close('code');
-      itext(' that takes one number and adds 1 to it. ');
-      ie_open('code');
-      itext('R.multiply.apply(2)');
-      ie_close('code');
-      itext(' creates a function ');
-      ie_open('code');
-      itext('f1');
-      ie_close('code');
-      itext(' that takes one number and multiplies 2 to it. Then ');
-      ie_open('code');
-      itext('compose');
-      ie_close('code');
-      itext(' is the magic. It invokes ');
-      ie_open('code');
-      itext('f1');
-      ie_close('code');
-      itext(' with one argument(i.e, 2) and gets the intermediate result of 4. After that, it invokes ');
-      ie_open('code');
-      itext('f2');
-      ie_close('code');
-      itext(' with the intermediate result(i.e, 4) and gets the final result of 5. We can see that data flows from ');
-      ie_open('code');
-      itext('f1');
-      ie_close('code');
-      itext(' to ');
-      ie_open('code');
-      itext('f2');
-      ie_close('code');
-      itext(', namely, bottom-up, or right-to-left.');
+      itext('Check for \'less than\'.');
       ie_close('p');
+      $templateAlias2({ code: 'R.lt.run(1, 2)\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '5');
+      ie_open('h2');
+      itext('lte');
+      ie_close('h2');
       ie_open('p');
-      itext('And this is simply how functional composition works.');
+      itext('Check for \'less than or equal\'.');
       ie_close('p');
+      $templateAlias2({ code: 'R.lte.run(1, 2)\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '6');
+      ie_open('h2');
+      itext('max');
+      ie_close('h2');
       ie_open('p');
-      itext('If you are not quite comfortable with that, you can also try this:');
+      itext('Check for the max value between the two.');
       ie_close('p');
-      $templateAlias2({ code: 'Func f = (Func)R.pipe.run(\n    R.multiply.apply(2),\n    R.add.apply(1)\n);\nInteger result = (Integer)f.run(2);\n// 5', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.max.run(1, 2)\n// 2', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '7');
+      ie_open('h2');
+      itext('min');
+      ie_close('h2');
       ie_open('p');
-      itext('It is actually the same as the previous one, only different in the composition style, namely, top-bottom, or left-to-right.');
+      itext('Check for the min value between the two.');
       ie_close('p');
-      ie_open('p');
-      itext('Getting familiar with functional composition is the approach to harness the power of functional programming. It takes time to sharpen the skill, and still there are more tools in functional composition in R.apex waiting to be discovered.');
-      ie_close('p');
+      $templateAlias2({ code: 'R.min.run(1, 2)\n// 1', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param2093 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1191 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'BKrdq.render';
+    $render.soyTemplateName = 'nmKQK.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -238,20 +238,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var BKrdq = function (_Component) {
-  _inherits(BKrdq, _Component);
+var nmKQK = function (_Component) {
+  _inherits(nmKQK, _Component);
 
-  function BKrdq() {
-    _classCallCheck(this, BKrdq);
+  function nmKQK() {
+    _classCallCheck(this, nmKQK);
 
-    return _possibleConstructorReturn(this, (BKrdq.__proto__ || Object.getPrototypeOf(BKrdq)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (nmKQK.__proto__ || Object.getPrototypeOf(nmKQK)).apply(this, arguments));
   }
 
-  return BKrdq;
+  return nmKQK;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(BKrdq, templates);
-exports.BKrdq = BKrdq;
+_metalSoy2.default.register(nmKQK, templates);
+exports.nmKQK = nmKQK;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

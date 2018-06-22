@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([25],{
+webpackJsonppageComponent([14],{
 
-/***/ 278:
+/***/ 292:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _databaseSoy = __webpack_require__(279);
+var _indexSoy = __webpack_require__(293);
 
-var _databaseSoy2 = _interopRequireDefault(_databaseSoy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var QlYwW = function (_Component) {
-  _inherits(QlYwW, _Component);
+var evknu = function (_Component) {
+  _inherits(evknu, _Component);
 
-  function QlYwW() {
-    _classCallCheck(this, QlYwW);
+  function evknu() {
+    _classCallCheck(this, evknu);
 
-    return _possibleConstructorReturn(this, (QlYwW.__proto__ || Object.getPrototypeOf(QlYwW)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (evknu.__proto__ || Object.getPrototypeOf(evknu)).apply(this, arguments));
   }
 
-  return QlYwW;
+  return evknu;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(QlYwW, _databaseSoy2.default);
+_metalSoy2.default.register(evknu, _indexSoy2.default);
 
-exports.default = QlYwW;
+exports.default = evknu;
 
 /***/ }),
 
-/***/ 279:
+/***/ 293:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = QlYwW;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.QlYwW = undefined;
+exports.templates = exports.evknu = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from database.soy.
+  // This file was automatically generated from index.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace QlYwW.
+   * @fileoverview Templates in namespace evknu.
    * @public
    */
 
-  goog.module('QlYwW.incrementaldom');
+  goog.module('evknu.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,57 +152,30 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param530 = function param530() {
+    var param1446 = function param1446() {
       ie_open('h6');
-      var dyn32 = opt_data.page.description;
-      if (typeof dyn32 == 'function') dyn32();else if (dyn32 != null) itext(dyn32);
+      var dyn43 = opt_data.page.description;
+      if (typeof dyn43 == 'function') dyn43();else if (dyn43 != null) itext(dyn43);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      itext('dbInsert');
+      itext('R Instance Method Reference');
       ie_close('h2');
       ie_open('p');
-      itext('Insert SObject(s) into database');
+      itext('Here is the reference of the methods from R instance. You can use them in the way below:');
       ie_close('p');
-      $templateAlias2({ code: 'Account acc = ...;\nR.dbInsert.run(acc);', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '2');
-      ie_open('h2');
-      itext('dbUpdate');
-      ie_close('h2');
-      ie_open('p');
-      itext('Update SObject(s) into database');
-      ie_close('p');
-      $templateAlias2({ code: 'Account acc = ...;\nR.dbUpdate.run(acc);', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '3');
-      ie_open('h2');
-      itext('dbDelete');
-      ie_close('h2');
-      ie_open('p');
-      itext('Delete SObject(s) from database');
-      ie_close('p');
-      $templateAlias2({ code: 'Account acc = ...;\nR.dbDelete.run(acc);', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '4');
-      ie_open('h2');
-      itext('dbQuery');
-      ie_close('h2');
-      ie_open('p');
-      itext('Query SObject(s) from database');
-      ie_close('p');
-      $templateAlias2({ code: 'String query = \'...\':\nR.dbQuery.run(query);', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.of(new List<String>{ \'a\', \'b\', \'c\' })\n    .reverse()\n    .join(\'-\')\n    .toString();', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param530 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1446 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'QlYwW.render';
+    $render.soyTemplateName = 'evknu.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -211,24 +184,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var QlYwW = function (_Component) {
-  _inherits(QlYwW, _Component);
+var evknu = function (_Component) {
+  _inherits(evknu, _Component);
 
-  function QlYwW() {
-    _classCallCheck(this, QlYwW);
+  function evknu() {
+    _classCallCheck(this, evknu);
 
-    return _possibleConstructorReturn(this, (QlYwW.__proto__ || Object.getPrototypeOf(QlYwW)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (evknu.__proto__ || Object.getPrototypeOf(evknu)).apply(this, arguments));
   }
 
-  return QlYwW;
+  return evknu;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(QlYwW, templates);
-exports.QlYwW = QlYwW;
+_metalSoy2.default.register(evknu, templates);
+exports.evknu = evknu;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[278]);
+},[292]);

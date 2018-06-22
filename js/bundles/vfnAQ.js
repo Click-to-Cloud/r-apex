@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([19],{
+webpackJsonppageComponent([28],{
 
-/***/ 290:
+/***/ 298:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _relationSoy = __webpack_require__(291);
+var _comparatorSoy = __webpack_require__(299);
 
-var _relationSoy2 = _interopRequireDefault(_relationSoy);
+var _comparatorSoy2 = _interopRequireDefault(_comparatorSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var BRRpP = function (_Component) {
-  _inherits(BRRpP, _Component);
+var vfnAQ = function (_Component) {
+  _inherits(vfnAQ, _Component);
 
-  function BRRpP() {
-    _classCallCheck(this, BRRpP);
+  function vfnAQ() {
+    _classCallCheck(this, vfnAQ);
 
-    return _possibleConstructorReturn(this, (BRRpP.__proto__ || Object.getPrototypeOf(BRRpP)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (vfnAQ.__proto__ || Object.getPrototypeOf(vfnAQ)).apply(this, arguments));
   }
 
-  return BRRpP;
+  return vfnAQ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(BRRpP, _relationSoy2.default);
+_metalSoy2.default.register(vfnAQ, _comparatorSoy2.default);
 
-exports.default = BRRpP;
+exports.default = vfnAQ;
 
 /***/ }),
 
-/***/ 291:
+/***/ 299:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = BRRpP;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.BRRpP = undefined;
+exports.templates = exports.vfnAQ = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from relation.soy.
+  // This file was automatically generated from comparator.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace BRRpP.
+   * @fileoverview Templates in namespace vfnAQ.
    * @public
    */
 
-  goog.module('BRRpP.incrementaldom');
+  goog.module('vfnAQ.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,84 +152,75 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param1191 = function param1191() {
+    var param422 = function param422() {
       ie_open('h6');
-      var dyn38 = opt_data.page.description;
-      if (typeof dyn38 == 'function') dyn38();else if (dyn38 != null) itext(dyn38);
+      var dyn29 = opt_data.page.description;
+      if (typeof dyn29 == 'function') dyn29();else if (dyn29 != null) itext(dyn29);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      itext('equals');
+      itext('ascend');
       ie_close('h2');
       ie_open('p');
-      itext('Check if two values are equal.');
+      itext('Convert a function into an ascending comparator.');
       ie_close('p');
-      $templateAlias2({ code: 'R.equals.run(1, 1)\n// true', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Func f = (Func)R.ascend.run(R.identity);\nSystem.debug(f.run(1, 2));\n// -1', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '2');
       ie_open('h2');
-      itext('gt');
+      itext('cascade');
       ie_close('h2');
       ie_open('p');
-      itext('Check for \'greater than\'.');
+      itext('Combine the comparator functions into one.');
       ie_close('p');
-      $templateAlias2({ code: 'R.gt.run(3, 2)\n// true', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Func f = (Func)R.cascade.run(\n    (Func)R.ascend.run(R.prop.apply(\'FirstName\')),\n    (Func)R.ascend.run(R.prop.apply(\'Description\'))\n);', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '3');
       ie_open('h2');
-      itext('gte');
+      itext('clamp');
       ie_close('h2');
       ie_open('p');
-      itext('Check for \'greater than or equal\'.');
+      itext('Limit the value between the min and the max.');
       ie_close('p');
-      $templateAlias2({ code: 'R.gte.run(3, 2)\n// true', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.clamp.run(1, 3, 5)\n// 3', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '4');
       ie_open('h2');
-      itext('lt');
+      itext('comparator');
       ie_close('h2');
       ie_open('p');
-      itext('Check for \'less than\'.');
+      itext('Convert a Boolean-returning comparator to an Integer-returning comparator.');
       ie_close('p');
-      $templateAlias2({ code: 'R.lt.run(1, 2)\n// true', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Func f = (Func)R.comparator.run(R.lt);\nSystem.debug(f.run(1, 2));\n// -1', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '5');
       ie_open('h2');
-      itext('lte');
+      itext('compare');
       ie_close('h2');
       ie_open('p');
-      itext('Check for \'less than or equal\'.');
+      itext('Compare two objects.');
       ie_close('p');
-      $templateAlias2({ code: 'R.lte.run(1, 2)\n// true', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.compare.run(1, 2)\n// -1', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '6');
       ie_open('h2');
-      itext('max');
+      itext('descend');
       ie_close('h2');
       ie_open('p');
-      itext('Check for the max value between the two.');
+      itext('Convert a function into an descending comparator.');
       ie_close('p');
-      $templateAlias2({ code: 'R.max.run(1, 2)\n// 2', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '7');
-      ie_open('h2');
-      itext('min');
-      ie_close('h2');
-      ie_open('p');
-      itext('Check for the min value between the two.');
-      ie_close('p');
-      $templateAlias2({ code: 'R.min.run(1, 2)\n// 1', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Func f = (Func)R.descend.run(R.identity);\nSystem.debug(f.run(1, 2));\n// 1', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param1191 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param422 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'BRRpP.render';
+    $render.soyTemplateName = 'vfnAQ.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -238,24 +229,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var BRRpP = function (_Component) {
-  _inherits(BRRpP, _Component);
+var vfnAQ = function (_Component) {
+  _inherits(vfnAQ, _Component);
 
-  function BRRpP() {
-    _classCallCheck(this, BRRpP);
+  function vfnAQ() {
+    _classCallCheck(this, vfnAQ);
 
-    return _possibleConstructorReturn(this, (BRRpP.__proto__ || Object.getPrototypeOf(BRRpP)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (vfnAQ.__proto__ || Object.getPrototypeOf(vfnAQ)).apply(this, arguments));
   }
 
-  return BRRpP;
+  return vfnAQ;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(BRRpP, templates);
-exports.BRRpP = BRRpP;
+_metalSoy2.default.register(vfnAQ, templates);
+exports.vfnAQ = vfnAQ;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[290]);
+},[298]);

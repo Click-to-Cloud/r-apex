@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([15],{
+webpackJsonppageComponent([8],{
 
-/***/ 298:
+/***/ 270:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _creationSoy = __webpack_require__(299);
+var _step_1Soy = __webpack_require__(271);
 
-var _creationSoy2 = _interopRequireDefault(_creationSoy);
+var _step_1Soy2 = _interopRequireDefault(_step_1Soy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var kCsPT = function (_Component) {
-  _inherits(kCsPT, _Component);
+var BRcIQ = function (_Component) {
+  _inherits(BRcIQ, _Component);
 
-  function kCsPT() {
-    _classCallCheck(this, kCsPT);
+  function BRcIQ() {
+    _classCallCheck(this, BRcIQ);
 
-    return _possibleConstructorReturn(this, (kCsPT.__proto__ || Object.getPrototypeOf(kCsPT)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (BRcIQ.__proto__ || Object.getPrototypeOf(BRcIQ)).apply(this, arguments));
   }
 
-  return kCsPT;
+  return BRcIQ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(kCsPT, _creationSoy2.default);
+_metalSoy2.default.register(BRcIQ, _step_1Soy2.default);
 
-exports.default = kCsPT;
+exports.default = BRcIQ;
 
 /***/ }),
 
-/***/ 299:
+/***/ 271:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = kCsPT;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.kCsPT = undefined;
+exports.templates = exports.BRcIQ = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from creation.soy.
+  // This file was automatically generated from step_1.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace kCsPT.
+   * @fileoverview Templates in namespace BRcIQ.
    * @public
    */
 
-  goog.module('kCsPT.incrementaldom');
+  goog.module('BRcIQ.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,14 +137,13 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
-  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
-
-  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
 
   /**
    * @param {{
    *    page: (?),
-   *    site: (?)
+   *    site: (?),
+   *    elementClasses: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -152,93 +151,36 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param1395 = function param1395() {
-      ie_open('h6');
-      var dyn42 = opt_data.page.description;
-      if (typeof dyn42 == 'function') dyn42();else if (dyn42 != null) itext(dyn42);
-      ie_close('h6');
-      ie_open('article', null, null, 'id', '1');
+    var param1983 = function param1983() {
       ie_open('h2');
-      itext('emptyList');
+      var dyn45 = opt_data.page.title;
+      if (typeof dyn45 == 'function') dyn45();else if (dyn45 != null) itext(dyn45);
       ie_close('h2');
       ie_open('p');
-      itext('Factory function to create instance of R(empty list).');
+      itext('Include ');
+      ie_open('strong');
+      itext('Func.cls');
+      ie_close('strong');
+      itext(', ');
+      ie_open('strong');
+      itext('R.cls');
+      ie_close('strong');
+      itext(', and ');
+      ie_open('strong');
+      itext('RTest.cls');
+      ie_close('strong');
+      itext('(optional) into your Org, and you are ready to go.');
       ie_close('p');
-      $templateAlias2({ code: 'R.emptyList().size().debug(); // 0', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '2');
-      ie_open('h2');
-      itext('emptyMap');
-      ie_close('h2');
-      ie_open('p');
-      itext('Factory function to create instance of R(empty set).');
-      ie_close('p');
-      $templateAlias2({ code: 'R.emptySet().size().debug(); // 0', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '3');
-      ie_open('h2');
-      itext('emptySet');
-      ie_close('h2');
-      ie_open('p');
-      itext('Factory function to create instance of R(empty set).');
-      ie_close('p');
-      $templateAlias2({ code: 'R.emptySet().size().debug(); // 0', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '4');
-      ie_open('h2');
-      itext('emptyString');
-      ie_close('h2');
-      ie_open('p');
-      itext('Factory function to create instance of R(empty string).');
-      ie_close('p');
-      $templateAlias2({ code: 'R.emptyString().size().debug(); // 0', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '5');
-      ie_open('h2');
-      itext('of');
-      ie_close('h2');
-      ie_open('p');
-      itext('Factory function to create instance of R.');
-      ie_close('p');
-      $templateAlias2({ code: 'R.of(\'message\').size().debug(); // 7', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '6');
-      ie_open('h2');
-      itext('range');
-      ie_close('h2');
-      ie_open('p');
-      itext('Factory function to create instance of R(list of decimals in range).');
-      ie_close('p');
-      $templateAlias2({ code: 'R.range(1, 3).debug(); // (1, 2)', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '7');
-      ie_open('h2');
-      itext('with');
-      ie_close('h2');
-      ie_open('p');
-      itext('Factory function to create instance of R(List).');
-      ie_close('p');
-      $templateAlias2({ code: 'R.with(1).size().debug(); // 1\nR.with(1, 2).size().debug(); // 2\nR.with(1, 2, 3).size().debug(); // 3', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '8');
-      ie_open('h2');
-      itext('withObj');
-      ie_close('h2');
-      ie_open('p');
-      itext('Factory function to create instance of R(Map).');
-      ie_close('p');
-      $templateAlias2({ code: 'R.withObj(\'name\', \'test\').size().debug(); // 1', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param1395 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1983 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'kCsPT.render';
+    $render.soyTemplateName = 'BRcIQ.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -247,24 +189,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var kCsPT = function (_Component) {
-  _inherits(kCsPT, _Component);
+var BRcIQ = function (_Component) {
+  _inherits(BRcIQ, _Component);
 
-  function kCsPT() {
-    _classCallCheck(this, kCsPT);
+  function BRcIQ() {
+    _classCallCheck(this, BRcIQ);
 
-    return _possibleConstructorReturn(this, (kCsPT.__proto__ || Object.getPrototypeOf(kCsPT)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (BRcIQ.__proto__ || Object.getPrototypeOf(BRcIQ)).apply(this, arguments));
   }
 
-  return kCsPT;
+  return BRcIQ;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(kCsPT, templates);
-exports.kCsPT = kCsPT;
+_metalSoy2.default.register(BRcIQ, templates);
+exports.BRcIQ = BRcIQ;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[298]);
+},[270]);

@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([28],{
+webpackJsonppageComponent([5],{
 
-/***/ 272:
+/***/ 276:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _comparatorSoy = __webpack_require__(273);
+var _step_4Soy = __webpack_require__(277);
 
-var _comparatorSoy2 = _interopRequireDefault(_comparatorSoy);
+var _step_4Soy2 = _interopRequireDefault(_step_4Soy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var OnLiu = function (_Component) {
-  _inherits(OnLiu, _Component);
+var AIMHt = function (_Component) {
+  _inherits(AIMHt, _Component);
 
-  function OnLiu() {
-    _classCallCheck(this, OnLiu);
+  function AIMHt() {
+    _classCallCheck(this, AIMHt);
 
-    return _possibleConstructorReturn(this, (OnLiu.__proto__ || Object.getPrototypeOf(OnLiu)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (AIMHt.__proto__ || Object.getPrototypeOf(AIMHt)).apply(this, arguments));
   }
 
-  return OnLiu;
+  return AIMHt;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(OnLiu, _comparatorSoy2.default);
+_metalSoy2.default.register(AIMHt, _step_4Soy2.default);
 
-exports.default = OnLiu;
+exports.default = AIMHt;
 
 /***/ }),
 
-/***/ 273:
+/***/ 277:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = OnLiu;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.OnLiu = undefined;
+exports.templates = exports.AIMHt = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from comparator.soy.
+  // This file was automatically generated from step_4.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace OnLiu.
+   * @fileoverview Templates in namespace AIMHt.
    * @public
    */
 
-  goog.module('OnLiu.incrementaldom');
+  goog.module('AIMHt.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -139,12 +139,13 @@ goog.loadModule(function (exports) {
 
   var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
 
-  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
 
   /**
    * @param {{
    *    page: (?),
-   *    site: (?)
+   *    site: (?),
+   *    elementClasses: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -152,75 +153,43 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param422 = function param422() {
-      ie_open('h6');
-      var dyn29 = opt_data.page.description;
-      if (typeof dyn29 == 'function') dyn29();else if (dyn29 != null) itext(dyn29);
-      ie_close('h6');
-      ie_open('article', null, null, 'id', '1');
+    var param2041 = function param2041() {
       ie_open('h2');
-      itext('ascend');
+      var dyn48 = opt_data.page.title;
+      if (typeof dyn48 == 'function') dyn48();else if (dyn48 != null) itext(dyn48);
       ie_close('h2');
       ie_open('p');
-      itext('Convert a function into an ascending comparator.');
+      itext('So far so good. What if we need to handle functions that take variadic arguments? Let\'s extend our ');
+      ie_open('code');
+      itext('AddFunc');
+      ie_close('code');
+      itext(' to allow adding multiple numbers.');
       ie_close('p');
-      $templateAlias2({ code: 'Func f = (Func)R.ascend.run(R.identity);\nSystem.debug(f.run(1, 2));\n// -1', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '2');
-      ie_open('h2');
-      itext('cascade');
-      ie_close('h2');
+      $templateAlias2({ code: 'public class AddFunc extends Func {\n    public AddFunc() {\n        super(-1);\n    }\n\n    public override Object execN(List<Object> args) {\n        Integer sum = 0;\n        for(Object arg : args) {\n            sum += (Integer)arg;\n        }\n        return sum;\n    }\n}', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Combine the comparator functions into one.');
+      itext('Now this time, we specify the length of the function to be -1, which means that it takes any number of arguments. Also we have our ');
+      ie_open('code');
+      itext('execN(List<Object>)');
+      ie_close('code');
+      itext(' overridden to get the sum of all the numbers.');
       ie_close('p');
-      $templateAlias2({ code: 'Func f = (Func)R.cascade.run(\n    (Func)R.ascend.run(R.prop.apply(\'FirstName\')),\n    (Func)R.ascend.run(R.prop.apply(\'Description\'))\n);', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '3');
-      ie_open('h2');
-      itext('clamp');
-      ie_close('h2');
       ie_open('p');
-      itext('Limit the value between the min and the max.');
+      itext('By the way, the default length is -1, so if we want a variadic function, we don\'t even need to call ');
+      ie_open('code');
+      itext('super(-1)');
+      ie_close('code');
+      itext('. In our case, we can simply omit the constructor.');
       ie_close('p');
-      $templateAlias2({ code: 'R.clamp.run(1, 3, 5)\n// 3', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '4');
-      ie_open('h2');
-      itext('comparator');
-      ie_close('h2');
-      ie_open('p');
-      itext('Convert a Boolean-returning comparator to an Integer-returning comparator.');
-      ie_close('p');
-      $templateAlias2({ code: 'Func f = (Func)R.comparator.run(R.lt);\nSystem.debug(f.run(1, 2));\n// -1', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '5');
-      ie_open('h2');
-      itext('compare');
-      ie_close('h2');
-      ie_open('p');
-      itext('Compare two objects.');
-      ie_close('p');
-      $templateAlias2({ code: 'R.compare.run(1, 2)\n// -1', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '6');
-      ie_open('h2');
-      itext('descend');
-      ie_close('h2');
-      ie_open('p');
-      itext('Convert a function into an descending comparator.');
-      ie_close('p');
-      $templateAlias2({ code: 'Func f = (Func)R.descend.run(R.identity);\nSystem.debug(f.run(1, 2));\n// 1', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param422 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param2041 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'OnLiu.render';
+    $render.soyTemplateName = 'AIMHt.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -229,24 +198,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var OnLiu = function (_Component) {
-  _inherits(OnLiu, _Component);
+var AIMHt = function (_Component) {
+  _inherits(AIMHt, _Component);
 
-  function OnLiu() {
-    _classCallCheck(this, OnLiu);
+  function AIMHt() {
+    _classCallCheck(this, AIMHt);
 
-    return _possibleConstructorReturn(this, (OnLiu.__proto__ || Object.getPrototypeOf(OnLiu)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (AIMHt.__proto__ || Object.getPrototypeOf(AIMHt)).apply(this, arguments));
   }
 
-  return OnLiu;
+  return AIMHt;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(OnLiu, templates);
-exports.OnLiu = OnLiu;
+_metalSoy2.default.register(AIMHt, templates);
+exports.AIMHt = AIMHt;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[272]);
+},[276]);

@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([26],{
 
-/***/ 276:
+/***/ 302:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _conversionSoy = __webpack_require__(277);
+var _conversionSoy = __webpack_require__(303);
 
 var _conversionSoy2 = _interopRequireDefault(_conversionSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var zvvOG = function (_Component) {
-  _inherits(zvvOG, _Component);
+var WzuWW = function (_Component) {
+  _inherits(WzuWW, _Component);
 
-  function zvvOG() {
-    _classCallCheck(this, zvvOG);
+  function WzuWW() {
+    _classCallCheck(this, WzuWW);
 
-    return _possibleConstructorReturn(this, (zvvOG.__proto__ || Object.getPrototypeOf(zvvOG)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (WzuWW.__proto__ || Object.getPrototypeOf(WzuWW)).apply(this, arguments));
   }
 
-  return zvvOG;
+  return WzuWW;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(zvvOG, _conversionSoy2.default);
+_metalSoy2.default.register(WzuWW, _conversionSoy2.default);
 
-exports.default = zvvOG;
+exports.default = WzuWW;
 
 /***/ }),
 
-/***/ 277:
+/***/ 303:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = zvvOG;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.zvvOG = undefined;
+exports.templates = exports.WzuWW = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace zvvOG.
+   * @fileoverview Templates in namespace WzuWW.
    * @public
    */
 
-  goog.module('zvvOG.incrementaldom');
+  goog.module('WzuWW.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -164,7 +164,7 @@ goog.loadModule(function (exports) {
       ie_open('p');
       itext('Convert single values. Examples are like:');
       ie_close('p');
-      $templateAlias2({ code: 'Object a = ...;\nString str = R.toString.run(a);', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Object a = ...;\nString str = (String)R.toString.run(a);', mode: 'javascript' }, null, opt_ijData);
       ie_open('table');
       ie_open('thead');
       ie_open('tr');
@@ -283,7 +283,7 @@ goog.loadModule(function (exports) {
       ie_open('p');
       itext('Convert list values. Examples are like:');
       ie_close('p');
-      $templateAlias2({ code: 'Object a = ...;\nList<String> strList = R.toStringList.run(a);', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Object a = ...;\nList<String> strList = (List<String>)R.toStringList.run(a);', mode: 'javascript' }, null, opt_ijData);
       ie_open('table');
       ie_open('thead');
       ie_open('tr');
@@ -410,7 +410,7 @@ goog.loadModule(function (exports) {
       ie_open('p');
       itext('Convert map values. Examples are like:');
       ie_close('p');
-      $templateAlias2({ code: 'Object a = ...;\nMap<String, String> strMap = R.toStringMap.run(a);', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Object a = ...;\nMap<String, String> strMap = (Map<String, String>)R.toStringMap.run(a);', mode: 'javascript' }, null, opt_ijData);
       ie_open('table');
       ie_open('thead');
       ie_open('tr');
@@ -537,7 +537,7 @@ goog.loadModule(function (exports) {
       ie_open('p');
       itext('Convert set values. Examples are like:');
       ie_close('p');
-      $templateAlias2({ code: 'Object a = ...;\nSet<String> strSet = R.toSet.run(a);\nSet<Id> strSet = R.toIdSet.run(a);', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Object a = ...;\nSet<String> strSet =(Set<String>)R.toSet.run(a);\nSet<Id> strSet = (Set<Id>)R.toIdSet.run(a);', mode: 'javascript' }, null, opt_ijData);
       ie_open('table');
       ie_open('thead');
       ie_open('tr');
@@ -576,7 +576,7 @@ goog.loadModule(function (exports) {
       ie_open('p');
       itext('Check if conversions can be made. Examples are like:');
       ie_close('p');
-      $templateAlias2({ code: 'Object a = ...;\nBoolean b = R.isStringLike.run(a);', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Object a = ...;\nBoolean b = (Boolean)R.isStringLike.run(a);', mode: 'javascript' }, null, opt_ijData);
       ie_open('table');
       ie_open('thead');
       ie_open('tr');
@@ -607,7 +607,7 @@ goog.loadModule(function (exports) {
       ie_close('tr');
       ie_open('tr');
       ie_open('td');
-      itext('List');
+      itext('List<Object>');
       ie_close('td');
       ie_open('td');
       itext('isListLike');
@@ -615,7 +615,7 @@ goog.loadModule(function (exports) {
       ie_close('tr');
       ie_open('tr');
       ie_open('td');
-      itext('Set');
+      itext('Set<String>');
       ie_close('td');
       ie_open('td');
       itext('isSetLike');
@@ -623,7 +623,7 @@ goog.loadModule(function (exports) {
       ie_close('tr');
       ie_open('tr');
       ie_open('td');
-      itext('Map');
+      itext('Map<String, Object>');
       ie_close('td');
       ie_open('td');
       itext('isMapLike');
@@ -657,7 +657,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'zvvOG.render';
+    $render.soyTemplateName = 'WzuWW.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -666,24 +666,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var zvvOG = function (_Component) {
-  _inherits(zvvOG, _Component);
+var WzuWW = function (_Component) {
+  _inherits(WzuWW, _Component);
 
-  function zvvOG() {
-    _classCallCheck(this, zvvOG);
+  function WzuWW() {
+    _classCallCheck(this, WzuWW);
 
-    return _possibleConstructorReturn(this, (zvvOG.__proto__ || Object.getPrototypeOf(zvvOG)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (WzuWW.__proto__ || Object.getPrototypeOf(WzuWW)).apply(this, arguments));
   }
 
-  return zvvOG;
+  return WzuWW;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(zvvOG, templates);
-exports.zvvOG = zvvOG;
+_metalSoy2.default.register(WzuWW, templates);
+exports.WzuWW = WzuWW;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[276]);
+},[302]);

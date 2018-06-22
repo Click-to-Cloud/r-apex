@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([5],{
+webpackJsonppageComponent([3],{
 
-/***/ 312:
+/***/ 280:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _step_4Soy = __webpack_require__(313);
+var _step_6Soy = __webpack_require__(281);
 
-var _step_4Soy2 = _interopRequireDefault(_step_4Soy);
+var _step_6Soy2 = _interopRequireDefault(_step_6Soy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var NgCoC = function (_Component) {
-  _inherits(NgCoC, _Component);
+var JEXZt = function (_Component) {
+  _inherits(JEXZt, _Component);
 
-  function NgCoC() {
-    _classCallCheck(this, NgCoC);
+  function JEXZt() {
+    _classCallCheck(this, JEXZt);
 
-    return _possibleConstructorReturn(this, (NgCoC.__proto__ || Object.getPrototypeOf(NgCoC)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (JEXZt.__proto__ || Object.getPrototypeOf(JEXZt)).apply(this, arguments));
   }
 
-  return NgCoC;
+  return JEXZt;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(NgCoC, _step_4Soy2.default);
+_metalSoy2.default.register(JEXZt, _step_6Soy2.default);
 
-exports.default = NgCoC;
+exports.default = JEXZt;
 
 /***/ }),
 
-/***/ 313:
+/***/ 281:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = NgCoC;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.NgCoC = undefined;
+exports.templates = exports.JEXZt = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from step_4.soy.
+  // This file was automatically generated from step_6.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace NgCoC.
+   * @fileoverview Templates in namespace JEXZt.
    * @public
    */
 
-  goog.module('NgCoC.incrementaldom');
+  goog.module('JEXZt.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -153,43 +153,83 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param2041 = function param2041() {
+    var param2093 = function param2093() {
       ie_open('h2');
-      var dyn48 = opt_data.page.title;
-      if (typeof dyn48 == 'function') dyn48();else if (dyn48 != null) itext(dyn48);
+      var dyn50 = opt_data.page.title;
+      if (typeof dyn50 == 'function') dyn50();else if (dyn50 != null) itext(dyn50);
       ie_close('h2');
       ie_open('p');
-      itext('So far so good. What if we need to handle functions that take variadic arguments? Let\'s extend our ');
-      ie_open('code');
-      itext('AddFunc');
-      ie_close('code');
-      itext(' to allow adding multiple numbers.');
-      ie_close('p');
-      $templateAlias2({ code: 'public class AddFunc extends Func {\n    public AddFunc() {\n        super(-1);\n    }\n\n    public override Object execN(List<Object> args) {\n        Integer sum = 0;\n        for(Object arg : args) {\n            sum += (Integer)arg;\n        }\n        return sum;\n    }\n}', mode: 'javascript' }, null, opt_ijData);
-      ie_open('p');
-      itext('Now this time, we specify the length of the function to be -1, which means that it takes any number of arguments. Also we have our ');
-      ie_open('code');
-      itext('execN(List<Object>)');
-      ie_close('code');
-      itext(' overridden to get the sum of all the numbers.');
+      itext('Hopefully you have got some understanding on how to write a custom function by now. But that\'s far not enough. Writing functions by extending Func is still somehow bloate with boilerplates and it is kind of tedious. Better ways ahead.');
       ie_close('p');
       ie_open('p');
-      itext('By the way, the default length is -1, so if we want a variadic function, we don\'t even need to call ');
+      itext('The charm of functional programming lies not only in the fact of function currying and partial application, but also in the ability that they can compose. It is composition and decomposition that helps us to build a large application out of small bits and pieces in a functional world. And we adore the power.');
+      ie_close('p');
+      ie_open('p');
+      itext('So it is not hard to understand that functional composition is strongly recommended in R.apex, to write clean and clear codes. Let\'s take a leap to check it out.');
+      ie_close('p');
+      $templateAlias2({ code: 'Func f = (Func)R.compose.run(\n    R.add.apply(1),\n    R.multiply.apply(2)\n);\nInteger result = (Integer)f.run(2);\n// 5', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('Dive into this snippet, and we will make everything clear step by step. First, ');
       ie_open('code');
-      itext('super(-1)');
+      itext('R.add.apply(1)');
       ie_close('code');
-      itext('. In our case, we can simply omit the constructor.');
+      itext(' creates a function ');
+      ie_open('code');
+      itext('f2');
+      ie_close('code');
+      itext(' that takes one number and adds 1 to it. ');
+      ie_open('code');
+      itext('R.multiply.apply(2)');
+      ie_close('code');
+      itext(' creates a function ');
+      ie_open('code');
+      itext('f1');
+      ie_close('code');
+      itext(' that takes one number and multiplies 2 to it. Then ');
+      ie_open('code');
+      itext('compose');
+      ie_close('code');
+      itext(' is the magic. It invokes ');
+      ie_open('code');
+      itext('f1');
+      ie_close('code');
+      itext(' with one argument(i.e, 2) and gets the intermediate result of 4. After that, it invokes ');
+      ie_open('code');
+      itext('f2');
+      ie_close('code');
+      itext(' with the intermediate result(i.e, 4) and gets the final result of 5. We can see that data flows from ');
+      ie_open('code');
+      itext('f1');
+      ie_close('code');
+      itext(' to ');
+      ie_open('code');
+      itext('f2');
+      ie_close('code');
+      itext(', namely, bottom-up, or right-to-left.');
+      ie_close('p');
+      ie_open('p');
+      itext('And this is simply how functional composition works.');
+      ie_close('p');
+      ie_open('p');
+      itext('If you are not quite comfortable with that, you can also try this:');
+      ie_close('p');
+      $templateAlias2({ code: 'Func f = (Func)R.pipe.run(\n    R.multiply.apply(2),\n    R.add.apply(1)\n);\nInteger result = (Integer)f.run(2);\n// 5', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('It is actually the same as the previous one, only different in the composition style, namely, top-bottom, or left-to-right.');
+      ie_close('p');
+      ie_open('p');
+      itext('Getting familiar with functional composition is the approach to harness the power of functional programming. It takes time to sharpen the skill, and still there are more tools in functional composition in R.apex waiting to be discovered.');
       ie_close('p');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param2041 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param2093 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'NgCoC.render';
+    $render.soyTemplateName = 'JEXZt.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -198,24 +238,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var NgCoC = function (_Component) {
-  _inherits(NgCoC, _Component);
+var JEXZt = function (_Component) {
+  _inherits(JEXZt, _Component);
 
-  function NgCoC() {
-    _classCallCheck(this, NgCoC);
+  function JEXZt() {
+    _classCallCheck(this, JEXZt);
 
-    return _possibleConstructorReturn(this, (NgCoC.__proto__ || Object.getPrototypeOf(NgCoC)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (JEXZt.__proto__ || Object.getPrototypeOf(JEXZt)).apply(this, arguments));
   }
 
-  return NgCoC;
+  return JEXZt;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(NgCoC, templates);
-exports.NgCoC = NgCoC;
+_metalSoy2.default.register(JEXZt, templates);
+exports.JEXZt = JEXZt;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[312]);
+},[280]);

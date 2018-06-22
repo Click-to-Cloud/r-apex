@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([16],{
 
-/***/ 296:
+/***/ 288:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _conversionSoy = __webpack_require__(297);
+var _conversionSoy = __webpack_require__(289);
 
 var _conversionSoy2 = _interopRequireDefault(_conversionSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var TPDRj = function (_Component) {
-  _inherits(TPDRj, _Component);
+var kniny = function (_Component) {
+  _inherits(kniny, _Component);
 
-  function TPDRj() {
-    _classCallCheck(this, TPDRj);
+  function kniny() {
+    _classCallCheck(this, kniny);
 
-    return _possibleConstructorReturn(this, (TPDRj.__proto__ || Object.getPrototypeOf(TPDRj)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (kniny.__proto__ || Object.getPrototypeOf(kniny)).apply(this, arguments));
   }
 
-  return TPDRj;
+  return kniny;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(TPDRj, _conversionSoy2.default);
+_metalSoy2.default.register(kniny, _conversionSoy2.default);
 
-exports.default = TPDRj;
+exports.default = kniny;
 
 /***/ }),
 
-/***/ 297:
+/***/ 289:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = TPDRj;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.TPDRj = undefined;
+exports.templates = exports.kniny = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace TPDRj.
+   * @fileoverview Templates in namespace kniny.
    * @public
    */
 
-  goog.module('TPDRj.incrementaldom');
+  goog.module('kniny.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -554,7 +554,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'TPDRj.render';
+    $render.soyTemplateName = 'kniny.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -563,24 +563,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var TPDRj = function (_Component) {
-  _inherits(TPDRj, _Component);
+var kniny = function (_Component) {
+  _inherits(kniny, _Component);
 
-  function TPDRj() {
-    _classCallCheck(this, TPDRj);
+  function kniny() {
+    _classCallCheck(this, kniny);
 
-    return _possibleConstructorReturn(this, (TPDRj.__proto__ || Object.getPrototypeOf(TPDRj)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (kniny.__proto__ || Object.getPrototypeOf(kniny)).apply(this, arguments));
   }
 
-  return TPDRj;
+  return kniny;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(TPDRj, templates);
-exports.TPDRj = TPDRj;
+_metalSoy2.default.register(kniny, templates);
+exports.kniny = kniny;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[296]);
+},[288]);
