@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([25],{
+webpackJsonppageComponent([27],{
 
-/***/ 304:
+/***/ 282:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _databaseSoy = __webpack_require__(305);
+var _conditionSoy = __webpack_require__(283);
 
-var _databaseSoy2 = _interopRequireDefault(_databaseSoy);
+var _conditionSoy2 = _interopRequireDefault(_conditionSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tvQeK = function (_Component) {
-  _inherits(tvQeK, _Component);
+var hwkvH = function (_Component) {
+  _inherits(hwkvH, _Component);
 
-  function tvQeK() {
-    _classCallCheck(this, tvQeK);
+  function hwkvH() {
+    _classCallCheck(this, hwkvH);
 
-    return _possibleConstructorReturn(this, (tvQeK.__proto__ || Object.getPrototypeOf(tvQeK)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (hwkvH.__proto__ || Object.getPrototypeOf(hwkvH)).apply(this, arguments));
   }
 
-  return tvQeK;
+  return hwkvH;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(tvQeK, _databaseSoy2.default);
+_metalSoy2.default.register(hwkvH, _conditionSoy2.default);
 
-exports.default = tvQeK;
+exports.default = hwkvH;
 
 /***/ }),
 
-/***/ 305:
+/***/ 283:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = tvQeK;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.tvQeK = undefined;
+exports.templates = exports.hwkvH = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from database.soy.
+  // This file was automatically generated from condition.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace tvQeK.
+   * @fileoverview Templates in namespace hwkvH.
    * @public
    */
 
-  goog.module('tvQeK.incrementaldom');
+  goog.module('hwkvH.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,57 +152,57 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param530 = function param530() {
+    var param1057 = function param1057() {
       ie_open('h6');
-      var dyn32 = opt_data.page.description;
-      if (typeof dyn32 == 'function') dyn32();else if (dyn32 != null) itext(dyn32);
+      var dyn34 = opt_data.page.description;
+      if (typeof dyn34 == 'function') dyn34();else if (dyn34 != null) itext(dyn34);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      itext('dbInsert');
+      itext('cond');
       ie_close('h2');
       ie_open('p');
-      itext('Insert SObject(s) into database');
+      itext('Returns a function, fn, which encapsulates if/else, if/else, logic. It takes a list of functions, alternated by predicate and transformer. All of the arguments to fn are applied to each of the predicates in turn until one returns a "truthy" value, at which point fn returns the result of applying its arguments to the corresponding transformer.');
       ie_close('p');
-      $templateAlias2({ code: 'Account acc = ...;\nR.dbInsert.run(acc);', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Func testF = (Func)R.cond.runN(new List<Object>{\n    R.lt.apply(0), R.always.run(1),\n    R.gt.apply(0), R.always.run(-1),\n    R.equals.apply(0), R.always.run(0)\n});\ntestF.run(3); // 1', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '2');
       ie_open('h2');
-      itext('dbUpdate');
+      itext('doWhen');
       ie_close('h2');
       ie_open('p');
-      itext('Update SObject(s) into database');
+      itext('Tests the final argument by passing it to the given predicate function. If the predicate is satisfied, the function will return the result of calling the whenTrueFn function with the same argument. If the predicate is not satisfied, the argument is returned as a wrapping list.');
       ie_close('p');
-      $templateAlias2({ code: 'Account acc = ...;\nR.dbUpdate.run(acc);', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Func testF = (Func)R.doWhen.run(\n    R.lt.apply(0),\n    R.always.run(1)\n);\ntestF.run(3); // 1', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '3');
       ie_open('h2');
-      itext('dbDelete');
+      itext('ifElse');
       ie_close('h2');
       ie_open('p');
-      itext('Delete SObject(s) from database');
+      itext('Creates a function that will process either the onTrue or the onFalse function depending upon the result of the condition predicate.');
       ie_close('p');
-      $templateAlias2({ code: 'Account acc = ...;\nR.dbDelete.run(acc);', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Func testF = (Func)R.ifElse.run(\n    R.lt.apply(0),\n    R.always.run(1),\n    R.always.run(0)\n);\ntestF.run(3); // 1', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '4');
       ie_open('h2');
-      itext('dbQuery');
+      itext('unless');
       ie_close('h2');
       ie_open('p');
-      itext('Query SObject(s) from database');
+      itext('Tests the final argument by passing it to the given predicate function. If the predicate is not satisfied, the function will return the result of calling the whenFalseFn function with the same argument. If the predicate is satisfied, the argument is returned as a wrapping list.');
       ie_close('p');
-      $templateAlias2({ code: 'String query = \'...\':\nR.dbQuery.run(query);', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Func testF = (Func)R.unless.run(\n    R.lt.apply(0),\n    R.always.run(0)\n);\ntestF.run(-3); // 0', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param530 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1057 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'tvQeK.render';
+    $render.soyTemplateName = 'hwkvH.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -211,24 +211,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var tvQeK = function (_Component) {
-  _inherits(tvQeK, _Component);
+var hwkvH = function (_Component) {
+  _inherits(hwkvH, _Component);
 
-  function tvQeK() {
-    _classCallCheck(this, tvQeK);
+  function hwkvH() {
+    _classCallCheck(this, hwkvH);
 
-    return _possibleConstructorReturn(this, (tvQeK.__proto__ || Object.getPrototypeOf(tvQeK)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (hwkvH.__proto__ || Object.getPrototypeOf(hwkvH)).apply(this, arguments));
   }
 
-  return tvQeK;
+  return hwkvH;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(tvQeK, templates);
-exports.tvQeK = tvQeK;
+_metalSoy2.default.register(hwkvH, templates);
+exports.hwkvH = hwkvH;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[304]);
+},[282]);

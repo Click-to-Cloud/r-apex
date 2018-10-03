@@ -5316,9 +5316,9 @@ goog.loadModule(function (exports) {
         ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/icon-12/icon-12.css');
         ie_close('link');
-        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/senna/senna.css');
-        ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/icon-16/icon-16.css');
+        ie_close('link');
+        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/senna/senna.css');
         ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/codemirror/lib/codemirror.css');
         ie_close('link');
@@ -5724,7 +5724,7 @@ goog.loadModule(function (exports) {
     ie_open('div', null, null, 'class', 'contribute-text');
     ie_open('p');
     itext('Contribute on Github! ');
-    ie_open('a', null, null, 'href', 'https://github.com/' + opt_data.site.githubRepo + '/tree/master/' + opt_data.page.srcFilePath, 'class', 'contribute-link', 'target', '_blank');
+    ie_open('a', null, null, 'href', 'https://github.com/' + opt_data.site.githubRepo + '/tree/master/doc/r-apex/' + opt_data.page.srcFilePath, 'class', 'contribute-link', 'target', '_blank');
     itext('Edit this section');
     ie_close('a');
     itext('.');

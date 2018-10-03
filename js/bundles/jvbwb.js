@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([5],{
+webpackJsonppageComponent([1],{
 
-/***/ 276:
+/***/ 320:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _step_4Soy = __webpack_require__(277);
+var _step_8Soy = __webpack_require__(321);
 
-var _step_4Soy2 = _interopRequireDefault(_step_4Soy);
+var _step_8Soy2 = _interopRequireDefault(_step_8Soy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var AIMHt = function (_Component) {
-  _inherits(AIMHt, _Component);
+var jvbwb = function (_Component) {
+  _inherits(jvbwb, _Component);
 
-  function AIMHt() {
-    _classCallCheck(this, AIMHt);
+  function jvbwb() {
+    _classCallCheck(this, jvbwb);
 
-    return _possibleConstructorReturn(this, (AIMHt.__proto__ || Object.getPrototypeOf(AIMHt)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (jvbwb.__proto__ || Object.getPrototypeOf(jvbwb)).apply(this, arguments));
   }
 
-  return AIMHt;
+  return jvbwb;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(AIMHt, _step_4Soy2.default);
+_metalSoy2.default.register(jvbwb, _step_8Soy2.default);
 
-exports.default = AIMHt;
+exports.default = jvbwb;
 
 /***/ }),
 
-/***/ 277:
+/***/ 321:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = AIMHt;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.AIMHt = undefined;
+exports.templates = exports.jvbwb = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from step_4.soy.
+  // This file was automatically generated from step_8.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace AIMHt.
+   * @fileoverview Templates in namespace jvbwb.
    * @public
    */
 
-  goog.module('AIMHt.incrementaldom');
+  goog.module('jvbwb.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,8 +137,6 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
-  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
-
   var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
 
   /**
@@ -153,43 +151,27 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param2041 = function param2041() {
+    var param2135 = function param2135() {
       ie_open('h2');
-      var dyn48 = opt_data.page.title;
-      if (typeof dyn48 == 'function') dyn48();else if (dyn48 != null) itext(dyn48);
+      var dyn52 = opt_data.page.title;
+      if (typeof dyn52 == 'function') dyn52();else if (dyn52 != null) itext(dyn52);
       ie_close('h2');
       ie_open('p');
-      itext('So far so good. What if we need to handle functions that take variadic arguments? Let\'s extend our ');
-      ie_open('code');
-      itext('AddFunc');
-      ie_close('code');
-      itext(' to allow adding multiple numbers.');
-      ie_close('p');
-      $templateAlias2({ code: 'public class AddFunc extends Func {\n    public AddFunc() {\n        super(-1);\n    }\n\n    public override Object execN(List<Object> args) {\n        Integer sum = 0;\n        for(Object arg : args) {\n            sum += (Integer)arg;\n        }\n        return sum;\n    }\n}', mode: 'javascript' }, null, opt_ijData);
-      ie_open('p');
-      itext('Now this time, we specify the length of the function to be -1, which means that it takes any number of arguments. Also we have our ');
-      ie_open('code');
-      itext('execN(List<Object>)');
-      ie_close('code');
-      itext(' overridden to get the sum of all the numbers.');
+      itext('It is your personal preference to choose between functional composition and function chaining. And the key takeaway is to use whatever is suitable in your case.');
       ie_close('p');
       ie_open('p');
-      itext('By the way, the default length is -1, so if we want a variadic function, we don\'t even need to call ');
-      ie_open('code');
-      itext('super(-1)');
-      ie_close('code');
-      itext('. In our case, we can simply omit the constructor.');
+      itext('It is sad that the discovery of R.apex almost comes to an end. Realizing that the functions provided by R.apex is limited, you have to come up with your functions to tackle all the difficult business logic. The suggestion will be to encapsulate your core business logic in small custom functions and glue them together with the power of R.apex to build your own application. And this is the way you extend R.apex.');
       ie_close('p');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param2041 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param2135 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'AIMHt.render';
+    $render.soyTemplateName = 'jvbwb.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -198,24 +180,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var AIMHt = function (_Component) {
-  _inherits(AIMHt, _Component);
+var jvbwb = function (_Component) {
+  _inherits(jvbwb, _Component);
 
-  function AIMHt() {
-    _classCallCheck(this, AIMHt);
+  function jvbwb() {
+    _classCallCheck(this, jvbwb);
 
-    return _possibleConstructorReturn(this, (AIMHt.__proto__ || Object.getPrototypeOf(AIMHt)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (jvbwb.__proto__ || Object.getPrototypeOf(jvbwb)).apply(this, arguments));
   }
 
-  return AIMHt;
+  return jvbwb;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(AIMHt, templates);
-exports.AIMHt = AIMHt;
+_metalSoy2.default.register(jvbwb, templates);
+exports.jvbwb = jvbwb;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[276]);
+},[320]);

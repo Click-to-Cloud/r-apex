@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([26],{
 
-/***/ 302:
+/***/ 284:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _conversionSoy = __webpack_require__(303);
+var _conversionSoy = __webpack_require__(285);
 
 var _conversionSoy2 = _interopRequireDefault(_conversionSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var WzuWW = function (_Component) {
-  _inherits(WzuWW, _Component);
+var tmwsx = function (_Component) {
+  _inherits(tmwsx, _Component);
 
-  function WzuWW() {
-    _classCallCheck(this, WzuWW);
+  function tmwsx() {
+    _classCallCheck(this, tmwsx);
 
-    return _possibleConstructorReturn(this, (WzuWW.__proto__ || Object.getPrototypeOf(WzuWW)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (tmwsx.__proto__ || Object.getPrototypeOf(tmwsx)).apply(this, arguments));
   }
 
-  return WzuWW;
+  return tmwsx;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(WzuWW, _conversionSoy2.default);
+_metalSoy2.default.register(tmwsx, _conversionSoy2.default);
 
-exports.default = WzuWW;
+exports.default = tmwsx;
 
 /***/ }),
 
-/***/ 303:
+/***/ 285:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = WzuWW;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.WzuWW = undefined;
+exports.templates = exports.tmwsx = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace WzuWW.
+   * @fileoverview Templates in namespace tmwsx.
    * @public
    */
 
-  goog.module('WzuWW.incrementaldom');
+  goog.module('tmwsx.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,10 +152,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param494 = function param494() {
+    var param1088 = function param1088() {
       ie_open('h6');
-      var dyn31 = opt_data.page.description;
-      if (typeof dyn31 == 'function') dyn31();else if (dyn31 != null) itext(dyn31);
+      var dyn35 = opt_data.page.description;
+      if (typeof dyn35 == 'function') dyn35();else if (dyn35 != null) itext(dyn35);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
@@ -653,11 +653,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param494 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1088 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'WzuWW.render';
+    $render.soyTemplateName = 'tmwsx.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -666,24 +666,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var WzuWW = function (_Component) {
-  _inherits(WzuWW, _Component);
+var tmwsx = function (_Component) {
+  _inherits(tmwsx, _Component);
 
-  function WzuWW() {
-    _classCallCheck(this, WzuWW);
+  function tmwsx() {
+    _classCallCheck(this, tmwsx);
 
-    return _possibleConstructorReturn(this, (WzuWW.__proto__ || Object.getPrototypeOf(WzuWW)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (tmwsx.__proto__ || Object.getPrototypeOf(tmwsx)).apply(this, arguments));
   }
 
-  return WzuWW;
+  return tmwsx;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(WzuWW, templates);
-exports.WzuWW = WzuWW;
+_metalSoy2.default.register(tmwsx, templates);
+exports.tmwsx = tmwsx;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[302]);
+},[284]);

@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([28],{
 
-/***/ 298:
+/***/ 280:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _comparatorSoy = __webpack_require__(299);
+var _comparatorSoy = __webpack_require__(281);
 
 var _comparatorSoy2 = _interopRequireDefault(_comparatorSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var vfnAQ = function (_Component) {
-  _inherits(vfnAQ, _Component);
+var ykeDu = function (_Component) {
+  _inherits(ykeDu, _Component);
 
-  function vfnAQ() {
-    _classCallCheck(this, vfnAQ);
+  function ykeDu() {
+    _classCallCheck(this, ykeDu);
 
-    return _possibleConstructorReturn(this, (vfnAQ.__proto__ || Object.getPrototypeOf(vfnAQ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ykeDu.__proto__ || Object.getPrototypeOf(ykeDu)).apply(this, arguments));
   }
 
-  return vfnAQ;
+  return ykeDu;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(vfnAQ, _comparatorSoy2.default);
+_metalSoy2.default.register(ykeDu, _comparatorSoy2.default);
 
-exports.default = vfnAQ;
+exports.default = ykeDu;
 
 /***/ }),
 
-/***/ 299:
+/***/ 281:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = vfnAQ;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.vfnAQ = undefined;
+exports.templates = exports.ykeDu = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace vfnAQ.
+   * @fileoverview Templates in namespace ykeDu.
    * @public
    */
 
-  goog.module('vfnAQ.incrementaldom');
+  goog.module('ykeDu.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,10 +152,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param422 = function param422() {
+    var param1016 = function param1016() {
       ie_open('h6');
-      var dyn29 = opt_data.page.description;
-      if (typeof dyn29 == 'function') dyn29();else if (dyn29 != null) itext(dyn29);
+      var dyn33 = opt_data.page.description;
+      if (typeof dyn33 == 'function') dyn33();else if (dyn33 != null) itext(dyn33);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
@@ -216,11 +216,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param422 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1016 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'vfnAQ.render';
+    $render.soyTemplateName = 'ykeDu.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -229,24 +229,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var vfnAQ = function (_Component) {
-  _inherits(vfnAQ, _Component);
+var ykeDu = function (_Component) {
+  _inherits(ykeDu, _Component);
 
-  function vfnAQ() {
-    _classCallCheck(this, vfnAQ);
+  function ykeDu() {
+    _classCallCheck(this, ykeDu);
 
-    return _possibleConstructorReturn(this, (vfnAQ.__proto__ || Object.getPrototypeOf(vfnAQ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ykeDu.__proto__ || Object.getPrototypeOf(ykeDu)).apply(this, arguments));
   }
 
-  return vfnAQ;
+  return ykeDu;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(vfnAQ, templates);
-exports.vfnAQ = vfnAQ;
+_metalSoy2.default.register(ykeDu, templates);
+exports.ykeDu = ykeDu;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[298]);
+},[280]);

@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([3],{
+webpackJsonppageComponent([4],{
 
-/***/ 280:
+/***/ 314:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _step_6Soy = __webpack_require__(281);
+var _step_5Soy = __webpack_require__(315);
 
-var _step_6Soy2 = _interopRequireDefault(_step_6Soy);
+var _step_5Soy2 = _interopRequireDefault(_step_5Soy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var JEXZt = function (_Component) {
-  _inherits(JEXZt, _Component);
+var bHITo = function (_Component) {
+  _inherits(bHITo, _Component);
 
-  function JEXZt() {
-    _classCallCheck(this, JEXZt);
+  function bHITo() {
+    _classCallCheck(this, bHITo);
 
-    return _possibleConstructorReturn(this, (JEXZt.__proto__ || Object.getPrototypeOf(JEXZt)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (bHITo.__proto__ || Object.getPrototypeOf(bHITo)).apply(this, arguments));
   }
 
-  return JEXZt;
+  return bHITo;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(JEXZt, _step_6Soy2.default);
+_metalSoy2.default.register(bHITo, _step_5Soy2.default);
 
-exports.default = JEXZt;
+exports.default = bHITo;
 
 /***/ }),
 
-/***/ 281:
+/***/ 315:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = JEXZt;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.JEXZt = undefined;
+exports.templates = exports.bHITo = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from step_6.soy.
+  // This file was automatically generated from step_5.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace JEXZt.
+   * @fileoverview Templates in namespace bHITo.
    * @public
    */
 
-  goog.module('JEXZt.incrementaldom');
+  goog.module('bHITo.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -153,83 +153,75 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param2093 = function param2093() {
+    var param2057 = function param2057() {
       ie_open('h2');
-      var dyn50 = opt_data.page.title;
-      if (typeof dyn50 == 'function') dyn50();else if (dyn50 != null) itext(dyn50);
+      var dyn49 = opt_data.page.title;
+      if (typeof dyn49 == 'function') dyn49();else if (dyn49 != null) itext(dyn49);
       ie_close('h2');
       ie_open('p');
-      itext('Hopefully you have got some understanding on how to write a custom function by now. But that\'s far not enough. Writing functions by extending Func is still somehow bloate with boilerplates and it is kind of tedious. Better ways ahead.');
+      itext('Well, all is good until we find something is missing. In functional programming, we can easily partially apply a function with arguments.');
       ie_close('p');
       ie_open('p');
-      itext('The charm of functional programming lies not only in the fact of function currying and partial application, but also in the ability that they can compose. It is composition and decomposition that helps us to build a large application out of small bits and pieces in a functional world. And we adore the power.');
+      itext('Say, we have a function, ');
+      ie_open('code');
+      itext('f: (a, b, c) => a + b + c');
+      ie_close('code');
+      itext(', and we should fairly easily find out that:');
       ie_close('p');
+      $templateAlias2({ code: 'var newFa = f(a);\nvar newFb = newFa(b);\nvar newFc = newFb(c);', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('So it is not hard to understand that functional composition is strongly recommended in R.apex, to write clean and clear codes. Let\'s take a leap to check it out.');
+      itext('Every time function ');
+      ie_open('code');
+      itext('f');
+      ie_close('code');
+      itext(' is applied part of the arguments it expects, it will save them and return a new function. This is great, as it guarrantees us the following:');
       ie_close('p');
-      $templateAlias2({ code: 'Func f = (Func)R.compose.run(\n    R.add.apply(1),\n    R.multiply.apply(2)\n);\nInteger result = (Integer)f.run(2);\n// 5', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'f(a, b, c) ===\nf(a, b)(c) ===\nf(a)(b, c) ===\nf(a)(b)(c)', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Dive into this snippet, and we will make everything clear step by step. First, ');
-      ie_open('code');
-      itext('R.add.apply(1)');
-      ie_close('code');
-      itext(' creates a function ');
-      ie_open('code');
-      itext('f2');
-      ie_close('code');
-      itext(' that takes one number and adds 1 to it. ');
-      ie_open('code');
-      itext('R.multiply.apply(2)');
-      ie_close('code');
-      itext(' creates a function ');
-      ie_open('code');
-      itext('f1');
-      ie_close('code');
-      itext(' that takes one number and multiplies 2 to it. Then ');
-      ie_open('code');
-      itext('compose');
-      ie_close('code');
-      itext(' is the magic. It invokes ');
-      ie_open('code');
-      itext('f1');
-      ie_close('code');
-      itext(' with one argument(i.e, 2) and gets the intermediate result of 4. After that, it invokes ');
-      ie_open('code');
-      itext('f2');
-      ie_close('code');
-      itext(' with the intermediate result(i.e, 4) and gets the final result of 5. We can see that data flows from ');
-      ie_open('code');
-      itext('f1');
-      ie_close('code');
-      itext(' to ');
-      ie_open('code');
-      itext('f2');
-      ie_close('code');
-      itext(', namely, bottom-up, or right-to-left.');
+      itext('Beautiful, yeah? We do hope that we can grant this magic to our function. Fortunately, R.apex has always been built with this idea in mind and implementing this is nothing but a piece of cake. See this:');
       ie_close('p');
+      $templateAlias2({ code: 'Func f1 = add.apply(1);\nFunc f2 = f1.apply(2);\nInteger result = (Integer)f2.run();', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('And this is simply how functional composition works.');
+      itext('Here, we have formally introduced ');
+      ie_open('code');
+      itext('apply');
+      ie_close('code');
+      itext(', as a builtin method of Func. And also notice the biggest caveat in R.apex. ');
+      ie_open('code');
+      itext('Apply');
+      ie_close('code');
+      itext(' does ');
+      ie_open('strong');
+      itext('not');
+      ie_close('strong');
+      itext(' trigger function invocation, while ');
+      ie_open('code');
+      itext('run');
+      ie_close('code');
+      itext(' does. Even if the function has received enough arguments, it will not run until ');
+      ie_open('code');
+      itext('run');
+      ie_close('code');
+      itext(' is explicitly called. Naturally, we have partial application available here.');
       ie_close('p');
+      $templateAlias2({ code: 'f.run(a, b, c) ===\nf.apply(a, b, c).run() ===\nf.apply(a, b).apply(c).run() ===\nf.apply(a).apply(b, c).run() ===\nf.apply(a).apply(b).apply(c).run()', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('If you are not quite comfortable with that, you can also try this:');
+      itext('Another thing to notice is that in functional programming, we tend to put the data we are manipulating in the last position in the argument list. For example,');
       ie_close('p');
-      $templateAlias2({ code: 'Func f = (Func)R.pipe.run(\n    R.multiply.apply(2),\n    R.add.apply(1)\n);\nInteger result = (Integer)f.run(2);\n// 5', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.filter.run(R.isNotNull, myList);\n// NOT\n// R.filter.run(myList, R.isNotNull);', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('It is actually the same as the previous one, only different in the composition style, namely, top-bottom, or left-to-right.');
-      ie_close('p');
-      ie_open('p');
-      itext('Getting familiar with functional composition is the approach to harness the power of functional programming. It takes time to sharpen the skill, and still there are more tools in functional composition in R.apex waiting to be discovered.');
+      itext('This is for the convenience of functional composition, which we will cover in the next section.');
       ie_close('p');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param2093 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param2057 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'JEXZt.render';
+    $render.soyTemplateName = 'bHITo.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -238,24 +230,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var JEXZt = function (_Component) {
-  _inherits(JEXZt, _Component);
+var bHITo = function (_Component) {
+  _inherits(bHITo, _Component);
 
-  function JEXZt() {
-    _classCallCheck(this, JEXZt);
+  function bHITo() {
+    _classCallCheck(this, bHITo);
 
-    return _possibleConstructorReturn(this, (JEXZt.__proto__ || Object.getPrototypeOf(JEXZt)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (bHITo.__proto__ || Object.getPrototypeOf(bHITo)).apply(this, arguments));
   }
 
-  return JEXZt;
+  return bHITo;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(JEXZt, templates);
-exports.JEXZt = JEXZt;
+_metalSoy2.default.register(bHITo, templates);
+exports.bHITo = bHITo;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[280]);
+},[314]);

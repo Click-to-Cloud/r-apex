@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([30],{
 
-/***/ 286:
+/***/ 268:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _indexSoy = __webpack_require__(287);
+var _indexSoy = __webpack_require__(269);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var uFlUs = function (_Component) {
-  _inherits(uFlUs, _Component);
+var KckAY = function (_Component) {
+  _inherits(KckAY, _Component);
 
-  function uFlUs() {
-    _classCallCheck(this, uFlUs);
+  function KckAY() {
+    _classCallCheck(this, KckAY);
 
-    return _possibleConstructorReturn(this, (uFlUs.__proto__ || Object.getPrototypeOf(uFlUs)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (KckAY.__proto__ || Object.getPrototypeOf(KckAY)).apply(this, arguments));
   }
 
-  return uFlUs;
+  return KckAY;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(uFlUs, _indexSoy2.default);
+_metalSoy2.default.register(KckAY, _indexSoy2.default);
 
-exports.default = uFlUs;
+exports.default = KckAY;
 
 /***/ }),
 
-/***/ 287:
+/***/ 269:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = uFlUs;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.uFlUs = undefined;
+exports.templates = exports.KckAY = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace uFlUs.
+   * @fileoverview Templates in namespace KckAY.
    * @public
    */
 
-  goog.module('uFlUs.incrementaldom');
+  goog.module('KckAY.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,10 +152,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param315 = function param315() {
+    var param909 = function param909() {
       ie_open('h6');
-      var dyn27 = opt_data.page.description;
-      if (typeof dyn27 == 'function') dyn27();else if (dyn27 != null) itext(dyn27);
+      var dyn31 = opt_data.page.description;
+      if (typeof dyn31 == 'function') dyn31();else if (dyn31 != null) itext(dyn31);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
@@ -342,11 +342,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param315 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param909 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'uFlUs.render';
+    $render.soyTemplateName = 'KckAY.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -355,24 +355,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var uFlUs = function (_Component) {
-  _inherits(uFlUs, _Component);
+var KckAY = function (_Component) {
+  _inherits(KckAY, _Component);
 
-  function uFlUs() {
-    _classCallCheck(this, uFlUs);
+  function KckAY() {
+    _classCallCheck(this, KckAY);
 
-    return _possibleConstructorReturn(this, (uFlUs.__proto__ || Object.getPrototypeOf(uFlUs)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (KckAY.__proto__ || Object.getPrototypeOf(KckAY)).apply(this, arguments));
   }
 
-  return uFlUs;
+  return KckAY;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(uFlUs, templates);
-exports.uFlUs = uFlUs;
+_metalSoy2.default.register(KckAY, templates);
+exports.KckAY = KckAY;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[286]);
+},[268]);

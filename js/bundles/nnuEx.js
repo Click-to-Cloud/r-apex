@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([21],{
+webpackJsonppageComponent([19],{
 
-/***/ 312:
+/***/ 298:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _logicSoy = __webpack_require__(313);
+var _relationSoy = __webpack_require__(299);
 
-var _logicSoy2 = _interopRequireDefault(_logicSoy);
+var _relationSoy2 = _interopRequireDefault(_relationSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var iOCls = function (_Component) {
-  _inherits(iOCls, _Component);
+var nnuEx = function (_Component) {
+  _inherits(nnuEx, _Component);
 
-  function iOCls() {
-    _classCallCheck(this, iOCls);
+  function nnuEx() {
+    _classCallCheck(this, nnuEx);
 
-    return _possibleConstructorReturn(this, (iOCls.__proto__ || Object.getPrototypeOf(iOCls)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (nnuEx.__proto__ || Object.getPrototypeOf(nnuEx)).apply(this, arguments));
   }
 
-  return iOCls;
+  return nnuEx;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(iOCls, _logicSoy2.default);
+_metalSoy2.default.register(nnuEx, _relationSoy2.default);
 
-exports.default = iOCls;
+exports.default = nnuEx;
 
 /***/ }),
 
-/***/ 313:
+/***/ 299:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = iOCls;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.iOCls = undefined;
+exports.templates = exports.nnuEx = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from logic.soy.
+  // This file was automatically generated from relation.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace iOCls.
+   * @fileoverview Templates in namespace nnuEx.
    * @public
    */
 
-  goog.module('iOCls.incrementaldom');
+  goog.module('nnuEx.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,75 +152,84 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param1064 = function param1064() {
+    var param1785 = function param1785() {
       ie_open('h6');
-      var dyn36 = opt_data.page.description;
-      if (typeof dyn36 == 'function') dyn36();else if (dyn36 != null) itext(dyn36);
+      var dyn42 = opt_data.page.description;
+      if (typeof dyn42 == 'function') dyn42();else if (dyn42 != null) itext(dyn42);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      itext('allPass');
+      itext('equals');
       ie_close('h2');
       ie_open('p');
-      itext('Create a function that combines all predicates with \'and\'.');
+      itext('Check if two values are equal.');
       ie_close('p');
-      $templateAlias2({ code: 'Func f = (Func)R.allPass.run(\n    R.startsWith.apply(\'c\'),\n    R.endsWith.apply(\'t\')\n);\nsystem.debug(f.run(\'cat\'));\n// true', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.equals.run(1, 1)\n// true', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '2');
       ie_open('h2');
-      itext('anyPass');
+      itext('gt');
       ie_close('h2');
       ie_open('p');
-      itext('Create a function that combines all predicates with \'or\'.');
+      itext('Check for \'greater than\'.');
       ie_close('p');
-      $templateAlias2({ code: 'Func f = (Func)R.anyPass.run(\n    R.startsWith.apply(\'c\'),\n    R.endsWith.apply(\'t\')\n);\nsystem.debug(f.run(\'cc\'));\n// true', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.gt.run(3, 2)\n// true', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '3');
       ie_open('h2');
-      itext('complement');
+      itext('gte');
       ie_close('h2');
       ie_open('p');
-      itext('Create a function that negate the predicate.');
+      itext('Check for \'greater than or equal\'.');
       ie_close('p');
-      $templateAlias2({ code: 'Func f = (Func)R.complement.run(R.equals.apply(\'cat\'));\nsystem.debug(f.run(\'cat\'));\n// false', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.gte.run(3, 2)\n// true', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '4');
       ie_open('h2');
-      itext('doAnd');
+      itext('lt');
       ie_close('h2');
       ie_open('p');
-      itext('Test logic \'and\'.');
+      itext('Check for \'less than\'.');
       ie_close('p');
-      $templateAlias2({ code: 'R.doAnd.run(true, false)\n// false', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.lt.run(1, 2)\n// true', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '5');
       ie_open('h2');
-      itext('doNot');
+      itext('lte');
       ie_close('h2');
       ie_open('p');
-      itext('Test logic \'not\'.');
+      itext('Check for \'less than or equal\'.');
       ie_close('p');
-      $templateAlias2({ code: 'R.doNot.run(false)\n// true', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.lte.run(1, 2)\n// true', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '6');
       ie_open('h2');
-      itext('doOr');
+      itext('max');
       ie_close('h2');
       ie_open('p');
-      itext('Test logic \'or\'.');
+      itext('Check for the max value between the two.');
       ie_close('p');
-      $templateAlias2({ code: 'R.doOr.run(true, false)\n// true', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.max.run(1, 2)\n// 2', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '7');
+      ie_open('h2');
+      itext('min');
+      ie_close('h2');
+      ie_open('p');
+      itext('Check for the min value between the two.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.min.run(1, 2)\n// 1', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param1064 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1785 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'iOCls.render';
+    $render.soyTemplateName = 'nnuEx.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -229,24 +238,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var iOCls = function (_Component) {
-  _inherits(iOCls, _Component);
+var nnuEx = function (_Component) {
+  _inherits(nnuEx, _Component);
 
-  function iOCls() {
-    _classCallCheck(this, iOCls);
+  function nnuEx() {
+    _classCallCheck(this, nnuEx);
 
-    return _possibleConstructorReturn(this, (iOCls.__proto__ || Object.getPrototypeOf(iOCls)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (nnuEx.__proto__ || Object.getPrototypeOf(nnuEx)).apply(this, arguments));
   }
 
-  return iOCls;
+  return nnuEx;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(iOCls, templates);
-exports.iOCls = iOCls;
+_metalSoy2.default.register(nnuEx, templates);
+exports.nnuEx = nnuEx;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[312]);
+},[298]);

@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([1],{
+webpackJsonppageComponent([6],{
 
-/***/ 284:
+/***/ 310:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _step_8Soy = __webpack_require__(285);
+var _step_3Soy = __webpack_require__(311);
 
-var _step_8Soy2 = _interopRequireDefault(_step_8Soy);
+var _step_3Soy2 = _interopRequireDefault(_step_3Soy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var PIiPj = function (_Component) {
-  _inherits(PIiPj, _Component);
+var AlZgJ = function (_Component) {
+  _inherits(AlZgJ, _Component);
 
-  function PIiPj() {
-    _classCallCheck(this, PIiPj);
+  function AlZgJ() {
+    _classCallCheck(this, AlZgJ);
 
-    return _possibleConstructorReturn(this, (PIiPj.__proto__ || Object.getPrototypeOf(PIiPj)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (AlZgJ.__proto__ || Object.getPrototypeOf(AlZgJ)).apply(this, arguments));
   }
 
-  return PIiPj;
+  return AlZgJ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(PIiPj, _step_8Soy2.default);
+_metalSoy2.default.register(AlZgJ, _step_3Soy2.default);
 
-exports.default = PIiPj;
+exports.default = AlZgJ;
 
 /***/ }),
 
-/***/ 285:
+/***/ 311:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = PIiPj;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.PIiPj = undefined;
+exports.templates = exports.AlZgJ = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from step_8.soy.
+  // This file was automatically generated from step_3.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace PIiPj.
+   * @fileoverview Templates in namespace AlZgJ.
    * @public
    */
 
-  goog.module('PIiPj.incrementaldom');
+  goog.module('AlZgJ.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,6 +137,8 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
+  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
+
   var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
 
   /**
@@ -151,27 +153,67 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param2135 = function param2135() {
+    var param2020 = function param2020() {
       ie_open('h2');
-      var dyn52 = opt_data.page.title;
-      if (typeof dyn52 == 'function') dyn52();else if (dyn52 != null) itext(dyn52);
+      var dyn47 = opt_data.page.title;
+      if (typeof dyn47 == 'function') dyn47();else if (dyn47 != null) itext(dyn47);
       ie_close('h2');
       ie_open('p');
-      itext('It is your personal preference to choose between functional composition and function chaining. And the key takeaway is to use whatever is suitable in your case.');
+      ie_open('code');
+      itext('HelloWorldFunc');
+      ie_close('code');
+      itext(' does not make much sense, though it does a good illustration. Normally we want functions that accept arguments to do complex business logic. Here comes the ');
+      ie_open('code');
+      itext('AddFunc');
+      ie_close('code');
+      itext('.');
+      ie_close('p');
+      $templateAlias2({ code: 'public class AddFunc extends Func {\n    public AddFunc() {\n        super(2);\n    }\n\n    public override Object exec(Object arg1, Object arg2) {\n        Integer a = (Integer)arg1;\n        Integer b = (Integer)arg2;\n        return a + b;\n    }\n}', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('Quite simple, right? In the constructor, we denote that this AddFunc takes two arguments(the length of the function), and correspondingly we override the exec(Object, Object) method from Func to have our custom implementation.');
       ie_close('p');
       ie_open('p');
-      itext('It is sad that the discovery of R.apex almost comes to an end. Realizing that the functions provided by R.apex is limited, you have to come up with your functions to tackle all the difficult business logic. The suggestion will be to encapsulate your core business logic in small custom functions and glue them together with the power of R.apex to build your own application. And this is the way you extend R.apex.');
+      itext('Try it.');
+      ie_close('p');
+      $templateAlias2({ code: 'Func add = new AddFunc();\nInteger result = (Integer)add.run(1, 2);\n// 3', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('To conclude, we set the length of the function in its constructor, and override ');
+      ie_open('code');
+      itext('exec(...)');
+      ie_close('code');
+      itext(' method with correct arguments.');
+      ie_close('p');
+      ie_open('p');
+      itext('For example, if the length of the function is 3, we have ');
+      ie_open('code');
+      itext('exec(Object, Object, Object)');
+      ie_close('code');
+      itext('. Easy, yeah?');
+      ie_close('p');
+      ie_open('p');
+      itext('What about a function with a length of 4? ');
+      ie_open('code');
+      itext('exec(Object, Object, Object, Object)');
+      ie_close('code');
+      itext('?');
+      ie_close('p');
+      ie_open('p');
+      itext('Nay, when the length goes over 3, we have ');
+      ie_open('code');
+      itext('execMore(List<Object>)');
+      ie_close('code');
+      itext(' to override.');
       ie_close('p');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param2135 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param2020 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'PIiPj.render';
+    $render.soyTemplateName = 'AlZgJ.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -180,24 +222,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var PIiPj = function (_Component) {
-  _inherits(PIiPj, _Component);
+var AlZgJ = function (_Component) {
+  _inherits(AlZgJ, _Component);
 
-  function PIiPj() {
-    _classCallCheck(this, PIiPj);
+  function AlZgJ() {
+    _classCallCheck(this, AlZgJ);
 
-    return _possibleConstructorReturn(this, (PIiPj.__proto__ || Object.getPrototypeOf(PIiPj)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (AlZgJ.__proto__ || Object.getPrototypeOf(AlZgJ)).apply(this, arguments));
   }
 
-  return PIiPj;
+  return AlZgJ;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(PIiPj, templates);
-exports.PIiPj = PIiPj;
+_metalSoy2.default.register(AlZgJ, templates);
+exports.AlZgJ = AlZgJ;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[284]);
+},[310]);
