@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([17],{
+webpackJsonppageComponent([29],{
 
-/***/ 320:
+/***/ 278:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _utilitySoy = __webpack_require__(321);
+var _arithmeticSoy = __webpack_require__(279);
 
-var _utilitySoy2 = _interopRequireDefault(_utilitySoy);
+var _arithmeticSoy2 = _interopRequireDefault(_arithmeticSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var wnRLh = function (_Component) {
-  _inherits(wnRLh, _Component);
+var ZeMkb = function (_Component) {
+  _inherits(ZeMkb, _Component);
 
-  function wnRLh() {
-    _classCallCheck(this, wnRLh);
+  function ZeMkb() {
+    _classCallCheck(this, ZeMkb);
 
-    return _possibleConstructorReturn(this, (wnRLh.__proto__ || Object.getPrototypeOf(wnRLh)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ZeMkb.__proto__ || Object.getPrototypeOf(ZeMkb)).apply(this, arguments));
   }
 
-  return wnRLh;
+  return ZeMkb;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(wnRLh, _utilitySoy2.default);
+_metalSoy2.default.register(ZeMkb, _arithmeticSoy2.default);
 
-exports.default = wnRLh;
+exports.default = ZeMkb;
 
 /***/ }),
 
-/***/ 321:
+/***/ 279:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = wnRLh;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.wnRLh = undefined;
+exports.templates = exports.ZeMkb = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from utility.soy.
+  // This file was automatically generated from arithmetic.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace wnRLh.
+   * @fileoverview Templates in namespace ZeMkb.
    * @public
    */
 
-  goog.module('wnRLh.incrementaldom');
+  goog.module('ZeMkb.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,162 +152,102 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param1308 = function param1308() {
+    var param960 = function param960() {
       ie_open('h6');
-      var dyn40 = opt_data.page.description;
-      if (typeof dyn40 == 'function') dyn40();else if (dyn40 != null) itext(dyn40);
+      var dyn32 = opt_data.page.description;
+      if (typeof dyn32 == 'function') dyn32();else if (dyn32 != null) itext(dyn32);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      itext('F');
+      itext('add');
       ie_close('h2');
       ie_open('p');
-      itext('A function that always returns false.');
+      itext('Add two numbers.');
       ie_close('p');
-      $templateAlias2({ code: 'R.F.run()\n// false', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.add.run(1, 2)\n// 3', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '2');
       ie_open('h2');
-      itext('T');
+      itext('dec');
       ie_close('h2');
       ie_open('p');
-      itext('A function that always returns true.');
+      itext('Decrement the number.');
       ie_close('p');
-      $templateAlias2({ code: 'R.T.run()\n// true', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.dec.run(1)\n// 0', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '3');
       ie_open('h2');
-      itext('compact');
+      itext('divide');
       ie_close('h2');
       ie_open('p');
-      itext('Remove any null value from the elements.');
+      itext('Divide two numbers.');
       ie_close('p');
-      $templateAlias2({ code: 'R.compact.run(R.with(1, null, 2))\n// (1, 2)', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.divide.run(1, 2)\n// 0.5', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '4');
       ie_open('h2');
-      itext('debug');
+      itext('inc');
       ie_close('h2');
       ie_open('p');
-      itext('Print the debug log.');
+      itext('Increment the number.');
       ie_close('p');
-      $templateAlias2({ code: 'R.debug.run(1)\n// 1', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.inc.run(1)\n// 2', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '5');
       ie_open('h2');
-      itext('defaultTo');
+      itext('mod');
       ie_close('h2');
       ie_open('p');
-      itext('Default to a value.');
+      itext('Calculate the modulo.');
       ie_close('p');
-      $templateAlias2({ code: 'R.defaultTo.run(5, null)\n// 5', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.mod.run(1, 2)\n// 1', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '6');
       ie_open('h2');
-      itext('doClone');
+      itext('multiply');
       ie_close('h2');
       ie_open('p');
-      itext('Get the clone.');
+      itext('Multiply two numbers.');
       ie_close('p');
-      $templateAlias2({ code: 'R.doClone.run(new Account())\n// Account:{}', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.multiply.run(1, 2)\n// 2', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '7');
       ie_open('h2');
-      itext('isNil');
+      itext('negate');
       ie_close('h2');
       ie_open('p');
-      itext('Check if it is null.');
+      itext('Negate the number.');
       ie_close('p');
-      $templateAlias2({ code: 'R.isNil.run(null)\n// true', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.negate.run(1)\n// -1', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '8');
       ie_open('h2');
-      itext('isNotNil');
+      itext('product');
       ie_close('h2');
       ie_open('p');
-      itext('Check if it is not null.');
+      itext('Multiply all the numbers.');
       ie_close('p');
-      $templateAlias2({ code: 'R.isNotNil.run(null)\n// false', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.product.run(1, 2, 3)\n// 6', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '9');
       ie_open('h2');
-      itext('isNotNull');
+      itext('subtract');
       ie_close('h2');
       ie_open('p');
-      itext('Same as ');
-      ie_open('code');
-      itext('isNotNil');
-      ie_close('code');
-      itext('.');
+      itext('Subtract one number from another.');
       ie_close('p');
-      ie_close('article');
-      ie_open('article', null, null, 'id', '10');
-      ie_open('h2');
-      itext('isNull');
-      ie_close('h2');
-      ie_open('p');
-      itext('Same as ');
-      ie_open('code');
-      itext('isNil');
-      ie_close('code');
-      itext('.');
-      ie_close('p');
-      ie_close('article');
-      ie_open('article', null, null, 'id', '11');
-      ie_open('h2');
-      itext('isNumber');
-      ie_close('h2');
-      ie_open('p');
-      itext('Check if it is number.');
-      ie_close('p');
-      $templateAlias2({ code: 'R.isNumber.run(1)\n// true', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '12');
-      ie_open('h2');
-      itext('noop');
-      ie_close('h2');
-      ie_open('p');
-      itext('No op function.');
-      ie_close('p');
-      $templateAlias2({ code: 'R.noop.run()\n// null', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '13');
-      ie_open('h2');
-      itext('assert');
-      ie_close('h2');
-      ie_open('p');
-      itext('Do System assert');
-      ie_close('p');
-      $templateAlias2({ code: 'R.assert.run(1 == 1, \'should equal\');', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '14');
-      ie_open('h2');
-      itext('assertEquals');
-      ie_close('h2');
-      ie_open('p');
-      itext('Do System assertEquals');
-      ie_close('p');
-      $templateAlias2({ code: 'R.assertEquals.run(1, 1, \'should equal\');', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '15');
-      ie_open('h2');
-      itext('assertNotEquals');
-      ie_close('h2');
-      ie_open('p');
-      itext('Do System assertNotEquals');
-      ie_close('p');
-      $templateAlias2({ code: 'R.assertNotEquals.run(1, 2, \'should not equal\');', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.subtract.run(1, 2)\n// -1', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param1308 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param960 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'wnRLh.render';
+    $render.soyTemplateName = 'ZeMkb.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -316,24 +256,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var wnRLh = function (_Component) {
-  _inherits(wnRLh, _Component);
+var ZeMkb = function (_Component) {
+  _inherits(ZeMkb, _Component);
 
-  function wnRLh() {
-    _classCallCheck(this, wnRLh);
+  function ZeMkb() {
+    _classCallCheck(this, ZeMkb);
 
-    return _possibleConstructorReturn(this, (wnRLh.__proto__ || Object.getPrototypeOf(wnRLh)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ZeMkb.__proto__ || Object.getPrototypeOf(ZeMkb)).apply(this, arguments));
   }
 
-  return wnRLh;
+  return ZeMkb;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(wnRLh, templates);
-exports.wnRLh = wnRLh;
+_metalSoy2.default.register(ZeMkb, templates);
+exports.ZeMkb = ZeMkb;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[320]);
+},[278]);

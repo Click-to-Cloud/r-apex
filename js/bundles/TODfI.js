@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([16],{
 
-/***/ 288:
+/***/ 270:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _conversionSoy = __webpack_require__(289);
+var _conversionSoy = __webpack_require__(271);
 
 var _conversionSoy2 = _interopRequireDefault(_conversionSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var kniny = function (_Component) {
-  _inherits(kniny, _Component);
+var TODfI = function (_Component) {
+  _inherits(TODfI, _Component);
 
-  function kniny() {
-    _classCallCheck(this, kniny);
+  function TODfI() {
+    _classCallCheck(this, TODfI);
 
-    return _possibleConstructorReturn(this, (kniny.__proto__ || Object.getPrototypeOf(kniny)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (TODfI.__proto__ || Object.getPrototypeOf(TODfI)).apply(this, arguments));
   }
 
-  return kniny;
+  return TODfI;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(kniny, _conversionSoy2.default);
+_metalSoy2.default.register(TODfI, _conversionSoy2.default);
 
-exports.default = kniny;
+exports.default = TODfI;
 
 /***/ }),
 
-/***/ 289:
+/***/ 271:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = kniny;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.kniny = undefined;
+exports.templates = exports.TODfI = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace kniny.
+   * @fileoverview Templates in namespace TODfI.
    * @public
    */
 
-  goog.module('kniny.incrementaldom');
+  goog.module('TODfI.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -150,10 +150,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param1384 = function param1384() {
+    var param315 = function param315() {
       ie_open('h6');
-      var dyn41 = opt_data.page.description;
-      if (typeof dyn41 == 'function') dyn41();else if (dyn41 != null) itext(dyn41);
+      var dyn27 = opt_data.page.description;
+      if (typeof dyn27 == 'function') dyn27();else if (dyn27 != null) itext(dyn27);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
@@ -550,11 +550,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param1384 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param315 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'kniny.render';
+    $render.soyTemplateName = 'TODfI.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -563,24 +563,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var kniny = function (_Component) {
-  _inherits(kniny, _Component);
+var TODfI = function (_Component) {
+  _inherits(TODfI, _Component);
 
-  function kniny() {
-    _classCallCheck(this, kniny);
+  function TODfI() {
+    _classCallCheck(this, TODfI);
 
-    return _possibleConstructorReturn(this, (kniny.__proto__ || Object.getPrototypeOf(kniny)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (TODfI.__proto__ || Object.getPrototypeOf(TODfI)).apply(this, arguments));
   }
 
-  return kniny;
+  return TODfI;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(kniny, templates);
-exports.kniny = kniny;
+_metalSoy2.default.register(TODfI, templates);
+exports.TODfI = TODfI;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[288]);
+},[270]);

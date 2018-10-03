@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([7],{
+webpackJsonppageComponent([23],{
 
-/***/ 272:
+/***/ 290:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _step_2Soy = __webpack_require__(273);
+var _indexSoy = __webpack_require__(291);
 
-var _step_2Soy2 = _interopRequireDefault(_step_2Soy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var dEXll = function (_Component) {
-  _inherits(dEXll, _Component);
+var WmMzI = function (_Component) {
+  _inherits(WmMzI, _Component);
 
-  function dEXll() {
-    _classCallCheck(this, dEXll);
+  function WmMzI() {
+    _classCallCheck(this, WmMzI);
 
-    return _possibleConstructorReturn(this, (dEXll.__proto__ || Object.getPrototypeOf(dEXll)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (WmMzI.__proto__ || Object.getPrototypeOf(WmMzI)).apply(this, arguments));
   }
 
-  return dEXll;
+  return WmMzI;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(dEXll, _step_2Soy2.default);
+_metalSoy2.default.register(WmMzI, _indexSoy2.default);
 
-exports.default = dEXll;
+exports.default = WmMzI;
 
 /***/ }),
 
-/***/ 273:
+/***/ 291:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = dEXll;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.dEXll = undefined;
+exports.templates = exports.WmMzI = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from step_2.soy.
+  // This file was automatically generated from index.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace dEXll.
+   * @fileoverview Templates in namespace WmMzI.
    * @public
    */
 
-  goog.module('dEXll.incrementaldom');
+  goog.module('WmMzI.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -139,13 +139,12 @@ goog.loadModule(function (exports) {
 
   var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
 
-  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
 
   /**
    * @param {{
    *    page: (?),
-   *    site: (?),
-   *    elementClasses: (?)
+   *    site: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -153,43 +152,34 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param1994 = function param1994() {
+    var param1251 = function param1251() {
+      ie_open('h6');
+      var dyn38 = opt_data.page.description;
+      if (typeof dyn38 == 'function') dyn38();else if (dyn38 != null) itext(dyn38);
+      ie_close('h6');
+      ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      var dyn46 = opt_data.page.title;
-      if (typeof dyn46 == 'function') dyn46();else if (dyn46 != null) itext(dyn46);
+      itext('R.Funcs Reference');
       ie_close('h2');
       ie_open('p');
-      itext('Apex does not support first class functions, and we have NO WAY to get around it. However, we can create an invocable object camouflaged as a function, and it is referred to as a Func. Or more precisely, it is an instance of class Func. In R.apex, we roughly refer to instances of Func when we mention functions, to make things clear.');
+      itext('Here is the reference of the Funcs from R. You can use these Funcs in the way below:');
       ie_close('p');
+      $templateAlias2({ code: 'Object val = R.add.run(1, 2);', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Here is how we create a function that returns ');
-      ie_open('code');
-      itext('Hello World');
-      ie_close('code');
-      itext('.');
+      itext('Or');
       ie_close('p');
-      $templateAlias2({ code: 'public class HelloWorldFunc extends Func {\n    public HelloWorldFunc() {\n        super(0);\n    }\n\n    public override Object exec() {\n        return \'Hello World\';\n    }\n}', mode: 'javascript' }, null, opt_ijData);
-      ie_open('p');
-      itext('And then we get a function!');
-      ie_close('p');
-      $templateAlias2({ code: 'Func helloworld = new HelloWorldFunc();', mode: 'javascript' }, null, opt_ijData);
-      ie_open('p');
-      itext('Let\'s invoke this function.');
-      ie_close('p');
-      $templateAlias2({ code: 'String message = (String)helloworld.run();\nSystem.debug(message);\n// Hello World', mode: 'javascript' }, null, opt_ijData);
-      ie_open('p');
-      itext('That\'s how easy it is to create a function in R.apex.');
-      ie_close('p');
+      $templateAlias2({ code: 'Func f = R.add.apply(1);\nObject val = f.run(2);', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param1994 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1251 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'dEXll.render';
+    $render.soyTemplateName = 'WmMzI.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -198,24 +188,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var dEXll = function (_Component) {
-  _inherits(dEXll, _Component);
+var WmMzI = function (_Component) {
+  _inherits(WmMzI, _Component);
 
-  function dEXll() {
-    _classCallCheck(this, dEXll);
+  function WmMzI() {
+    _classCallCheck(this, WmMzI);
 
-    return _possibleConstructorReturn(this, (dEXll.__proto__ || Object.getPrototypeOf(dEXll)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (WmMzI.__proto__ || Object.getPrototypeOf(WmMzI)).apply(this, arguments));
   }
 
-  return dEXll;
+  return WmMzI;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(dEXll, templates);
-exports.dEXll = dEXll;
+_metalSoy2.default.register(WmMzI, templates);
+exports.WmMzI = WmMzI;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[272]);
+},[290]);

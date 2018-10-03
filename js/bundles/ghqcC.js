@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([23],{
+webpackJsonppageComponent([21],{
 
-/***/ 308:
+/***/ 294:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _indexSoy = __webpack_require__(309);
+var _logicSoy = __webpack_require__(295);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _logicSoy2 = _interopRequireDefault(_logicSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ktiyN = function (_Component) {
-  _inherits(ktiyN, _Component);
+var ghqcC = function (_Component) {
+  _inherits(ghqcC, _Component);
 
-  function ktiyN() {
-    _classCallCheck(this, ktiyN);
+  function ghqcC() {
+    _classCallCheck(this, ghqcC);
 
-    return _possibleConstructorReturn(this, (ktiyN.__proto__ || Object.getPrototypeOf(ktiyN)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ghqcC.__proto__ || Object.getPrototypeOf(ghqcC)).apply(this, arguments));
   }
 
-  return ktiyN;
+  return ghqcC;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(ktiyN, _indexSoy2.default);
+_metalSoy2.default.register(ghqcC, _logicSoy2.default);
 
-exports.default = ktiyN;
+exports.default = ghqcC;
 
 /***/ }),
 
-/***/ 309:
+/***/ 295:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = ktiyN;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.ktiyN = undefined;
+exports.templates = exports.ghqcC = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from index.soy.
+  // This file was automatically generated from logic.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace ktiyN.
+   * @fileoverview Templates in namespace ghqcC.
    * @public
    */
 
-  goog.module('ktiyN.incrementaldom');
+  goog.module('ghqcC.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,34 +152,75 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param657 = function param657() {
+    var param1658 = function param1658() {
       ie_open('h6');
-      var dyn34 = opt_data.page.description;
-      if (typeof dyn34 == 'function') dyn34();else if (dyn34 != null) itext(dyn34);
+      var dyn40 = opt_data.page.description;
+      if (typeof dyn40 == 'function') dyn40();else if (dyn40 != null) itext(dyn40);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      itext('R.Funcs Reference');
+      itext('allPass');
       ie_close('h2');
       ie_open('p');
-      itext('Here is the reference of the Funcs from R. You can use these Funcs in the way below:');
+      itext('Create a function that combines all predicates with \'and\'.');
       ie_close('p');
-      $templateAlias2({ code: 'Object val = R.add.run(1, 2);', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Func f = (Func)R.allPass.run(\n    R.startsWith.apply(\'c\'),\n    R.endsWith.apply(\'t\')\n);\nsystem.debug(f.run(\'cat\'));\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '2');
+      ie_open('h2');
+      itext('anyPass');
+      ie_close('h2');
       ie_open('p');
-      itext('Or');
+      itext('Create a function that combines all predicates with \'or\'.');
       ie_close('p');
-      $templateAlias2({ code: 'Func f = R.add.apply(1);\nObject val = f.run(2);', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Func f = (Func)R.anyPass.run(\n    R.startsWith.apply(\'c\'),\n    R.endsWith.apply(\'t\')\n);\nsystem.debug(f.run(\'cc\'));\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '3');
+      ie_open('h2');
+      itext('complement');
+      ie_close('h2');
+      ie_open('p');
+      itext('Create a function that negate the predicate.');
+      ie_close('p');
+      $templateAlias2({ code: 'Func f = (Func)R.complement.run(R.equals.apply(\'cat\'));\nsystem.debug(f.run(\'cat\'));\n// false', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '4');
+      ie_open('h2');
+      itext('doAnd');
+      ie_close('h2');
+      ie_open('p');
+      itext('Test logic \'and\'.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.doAnd.run(true, false)\n// false', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '5');
+      ie_open('h2');
+      itext('doNot');
+      ie_close('h2');
+      ie_open('p');
+      itext('Test logic \'not\'.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.doNot.run(false)\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '6');
+      ie_open('h2');
+      itext('doOr');
+      ie_close('h2');
+      ie_open('p');
+      itext('Test logic \'or\'.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.doOr.run(true, false)\n// true', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param657 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1658 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'ktiyN.render';
+    $render.soyTemplateName = 'ghqcC.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -188,24 +229,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var ktiyN = function (_Component) {
-  _inherits(ktiyN, _Component);
+var ghqcC = function (_Component) {
+  _inherits(ghqcC, _Component);
 
-  function ktiyN() {
-    _classCallCheck(this, ktiyN);
+  function ghqcC() {
+    _classCallCheck(this, ghqcC);
 
-    return _possibleConstructorReturn(this, (ktiyN.__proto__ || Object.getPrototypeOf(ktiyN)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ghqcC.__proto__ || Object.getPrototypeOf(ghqcC)).apply(this, arguments));
   }
 
-  return ktiyN;
+  return ghqcC;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(ktiyN, templates);
-exports.ktiyN = ktiyN;
+_metalSoy2.default.register(ghqcC, templates);
+exports.ghqcC = ghqcC;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[308]);
+},[294]);

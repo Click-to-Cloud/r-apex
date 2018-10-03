@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([14],{
+webpackJsonppageComponent([15],{
 
-/***/ 292:
+/***/ 272:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _indexSoy = __webpack_require__(293);
+var _creationSoy = __webpack_require__(273);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _creationSoy2 = _interopRequireDefault(_creationSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var evknu = function (_Component) {
-  _inherits(evknu, _Component);
+var iVPwE = function (_Component) {
+  _inherits(iVPwE, _Component);
 
-  function evknu() {
-    _classCallCheck(this, evknu);
+  function iVPwE() {
+    _classCallCheck(this, iVPwE);
 
-    return _possibleConstructorReturn(this, (evknu.__proto__ || Object.getPrototypeOf(evknu)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (iVPwE.__proto__ || Object.getPrototypeOf(iVPwE)).apply(this, arguments));
   }
 
-  return evknu;
+  return iVPwE;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(evknu, _indexSoy2.default);
+_metalSoy2.default.register(iVPwE, _creationSoy2.default);
 
-exports.default = evknu;
+exports.default = iVPwE;
 
 /***/ }),
 
-/***/ 293:
+/***/ 273:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = evknu;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.evknu = undefined;
+exports.templates = exports.iVPwE = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from index.soy.
+  // This file was automatically generated from creation.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace evknu.
+   * @fileoverview Templates in namespace iVPwE.
    * @public
    */
 
-  goog.module('evknu.incrementaldom');
+  goog.module('iVPwE.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,30 +152,93 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param1446 = function param1446() {
+    var param326 = function param326() {
       ie_open('h6');
-      var dyn43 = opt_data.page.description;
-      if (typeof dyn43 == 'function') dyn43();else if (dyn43 != null) itext(dyn43);
+      var dyn28 = opt_data.page.description;
+      if (typeof dyn28 == 'function') dyn28();else if (dyn28 != null) itext(dyn28);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      itext('R Instance Method Reference');
+      itext('emptyList');
       ie_close('h2');
       ie_open('p');
-      itext('Here is the reference of the methods from R instance. You can use them in the way below:');
+      itext('Factory function to create instance of R(empty list).');
       ie_close('p');
-      $templateAlias2({ code: 'R.of(new List<String>{ \'a\', \'b\', \'c\' })\n    .reverse()\n    .join(\'-\')\n    .toString();', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.emptyList().size().debug(); // 0', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '2');
+      ie_open('h2');
+      itext('emptyMap');
+      ie_close('h2');
+      ie_open('p');
+      itext('Factory function to create instance of R(empty set).');
+      ie_close('p');
+      $templateAlias2({ code: 'R.emptySet().size().debug(); // 0', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '3');
+      ie_open('h2');
+      itext('emptySet');
+      ie_close('h2');
+      ie_open('p');
+      itext('Factory function to create instance of R(empty set).');
+      ie_close('p');
+      $templateAlias2({ code: 'R.emptySet().size().debug(); // 0', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '4');
+      ie_open('h2');
+      itext('emptyString');
+      ie_close('h2');
+      ie_open('p');
+      itext('Factory function to create instance of R(empty string).');
+      ie_close('p');
+      $templateAlias2({ code: 'R.emptyString().size().debug(); // 0', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '5');
+      ie_open('h2');
+      itext('of');
+      ie_close('h2');
+      ie_open('p');
+      itext('Factory function to create instance of R.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.of(\'message\').size().debug(); // 7', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '6');
+      ie_open('h2');
+      itext('range');
+      ie_close('h2');
+      ie_open('p');
+      itext('Factory function to create instance of R(list of decimals in range).');
+      ie_close('p');
+      $templateAlias2({ code: 'R.range(1, 3).debug(); // (1, 2)', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '7');
+      ie_open('h2');
+      itext('with');
+      ie_close('h2');
+      ie_open('p');
+      itext('Factory function to create instance of R(List).');
+      ie_close('p');
+      $templateAlias2({ code: 'R.with(1).size().debug(); // 1\nR.with(1, 2).size().debug(); // 2\nR.with(1, 2, 3).size().debug(); // 3', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '8');
+      ie_open('h2');
+      itext('withObj');
+      ie_close('h2');
+      ie_open('p');
+      itext('Factory function to create instance of R(Map).');
+      ie_close('p');
+      $templateAlias2({ code: 'R.withObj(\'name\', \'test\').size().debug(); // 1', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param1446 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param326 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'evknu.render';
+    $render.soyTemplateName = 'iVPwE.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -184,24 +247,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var evknu = function (_Component) {
-  _inherits(evknu, _Component);
+var iVPwE = function (_Component) {
+  _inherits(iVPwE, _Component);
 
-  function evknu() {
-    _classCallCheck(this, evknu);
+  function iVPwE() {
+    _classCallCheck(this, iVPwE);
 
-    return _possibleConstructorReturn(this, (evknu.__proto__ || Object.getPrototypeOf(evknu)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (iVPwE.__proto__ || Object.getPrototypeOf(iVPwE)).apply(this, arguments));
   }
 
-  return evknu;
+  return iVPwE;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(evknu, templates);
-exports.evknu = evknu;
+_metalSoy2.default.register(iVPwE, templates);
+exports.iVPwE = iVPwE;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[292]);
+},[272]);

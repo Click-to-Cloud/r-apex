@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([18],{
 
-/***/ 318:
+/***/ 300:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _stringSoy = __webpack_require__(319);
+var _stringSoy = __webpack_require__(301);
 
 var _stringSoy2 = _interopRequireDefault(_stringSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var iWqvo = function (_Component) {
-  _inherits(iWqvo, _Component);
+var FJjdH = function (_Component) {
+  _inherits(FJjdH, _Component);
 
-  function iWqvo() {
-    _classCallCheck(this, iWqvo);
+  function FJjdH() {
+    _classCallCheck(this, FJjdH);
 
-    return _possibleConstructorReturn(this, (iWqvo.__proto__ || Object.getPrototypeOf(iWqvo)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (FJjdH.__proto__ || Object.getPrototypeOf(FJjdH)).apply(this, arguments));
   }
 
-  return iWqvo;
+  return FJjdH;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(iWqvo, _stringSoy2.default);
+_metalSoy2.default.register(FJjdH, _stringSoy2.default);
 
-exports.default = iWqvo;
+exports.default = FJjdH;
 
 /***/ }),
 
-/***/ 319:
+/***/ 301:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = iWqvo;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.iWqvo = undefined;
+exports.templates = exports.FJjdH = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace iWqvo.
+   * @fileoverview Templates in namespace FJjdH.
    * @public
    */
 
-  goog.module('iWqvo.incrementaldom');
+  goog.module('FJjdH.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,10 +152,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param1237 = function param1237() {
+    var param1831 = function param1831() {
       ie_open('h6');
-      var dyn39 = opt_data.page.description;
-      if (typeof dyn39 == 'function') dyn39();else if (dyn39 != null) itext(dyn39);
+      var dyn43 = opt_data.page.description;
+      if (typeof dyn43 == 'function') dyn43();else if (dyn43 != null) itext(dyn43);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
@@ -270,11 +270,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param1237 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1831 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'iWqvo.render';
+    $render.soyTemplateName = 'FJjdH.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -283,24 +283,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var iWqvo = function (_Component) {
-  _inherits(iWqvo, _Component);
+var FJjdH = function (_Component) {
+  _inherits(FJjdH, _Component);
 
-  function iWqvo() {
-    _classCallCheck(this, iWqvo);
+  function FJjdH() {
+    _classCallCheck(this, FJjdH);
 
-    return _possibleConstructorReturn(this, (iWqvo.__proto__ || Object.getPrototypeOf(iWqvo)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (FJjdH.__proto__ || Object.getPrototypeOf(FJjdH)).apply(this, arguments));
   }
 
-  return iWqvo;
+  return FJjdH;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(iWqvo, templates);
-exports.iWqvo = iWqvo;
+_metalSoy2.default.register(FJjdH, templates);
+exports.FJjdH = FJjdH;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[318]);
+},[300]);

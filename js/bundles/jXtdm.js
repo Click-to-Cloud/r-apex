@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([13],{
 
-/***/ 294:
+/***/ 276:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _methodsSoy = __webpack_require__(295);
+var _methodsSoy = __webpack_require__(277);
 
 var _methodsSoy2 = _interopRequireDefault(_methodsSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var zbHkV = function (_Component) {
-  _inherits(zbHkV, _Component);
+var jXtdm = function (_Component) {
+  _inherits(jXtdm, _Component);
 
-  function zbHkV() {
-    _classCallCheck(this, zbHkV);
+  function jXtdm() {
+    _classCallCheck(this, jXtdm);
 
-    return _possibleConstructorReturn(this, (zbHkV.__proto__ || Object.getPrototypeOf(zbHkV)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (jXtdm.__proto__ || Object.getPrototypeOf(jXtdm)).apply(this, arguments));
   }
 
-  return zbHkV;
+  return jXtdm;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(zbHkV, _methodsSoy2.default);
+_metalSoy2.default.register(jXtdm, _methodsSoy2.default);
 
-exports.default = zbHkV;
+exports.default = jXtdm;
 
 /***/ }),
 
-/***/ 295:
+/***/ 277:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = zbHkV;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.zbHkV = undefined;
+exports.templates = exports.jXtdm = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace zbHkV.
+   * @fileoverview Templates in namespace jXtdm.
    * @public
    */
 
-  goog.module('zbHkV.incrementaldom');
+  goog.module('jXtdm.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,10 +152,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param1462 = function param1462() {
+    var param393 = function param393() {
       ie_open('h6');
-      var dyn44 = opt_data.page.description;
-      if (typeof dyn44 == 'function') dyn44();else if (dyn44 != null) itext(dyn44);
+      var dyn30 = opt_data.page.description;
+      if (typeof dyn30 == 'function') dyn30();else if (dyn30 != null) itext(dyn30);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
@@ -1075,11 +1075,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param1462 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param393 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'zbHkV.render';
+    $render.soyTemplateName = 'jXtdm.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -1088,24 +1088,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var zbHkV = function (_Component) {
-  _inherits(zbHkV, _Component);
+var jXtdm = function (_Component) {
+  _inherits(jXtdm, _Component);
 
-  function zbHkV() {
-    _classCallCheck(this, zbHkV);
+  function jXtdm() {
+    _classCallCheck(this, jXtdm);
 
-    return _possibleConstructorReturn(this, (zbHkV.__proto__ || Object.getPrototypeOf(zbHkV)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (jXtdm.__proto__ || Object.getPrototypeOf(jXtdm)).apply(this, arguments));
   }
 
-  return zbHkV;
+  return jXtdm;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(zbHkV, templates);
-exports.zbHkV = zbHkV;
+_metalSoy2.default.register(jXtdm, templates);
+exports.jXtdm = jXtdm;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[294]);
+},[276]);

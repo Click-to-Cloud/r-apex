@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([6],{
+webpackJsonppageComponent([2],{
 
-/***/ 274:
+/***/ 318:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _step_3Soy = __webpack_require__(275);
+var _step_7Soy = __webpack_require__(319);
 
-var _step_3Soy2 = _interopRequireDefault(_step_3Soy);
+var _step_7Soy2 = _interopRequireDefault(_step_7Soy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var guRKi = function (_Component) {
-  _inherits(guRKi, _Component);
+var EqGBD = function (_Component) {
+  _inherits(EqGBD, _Component);
 
-  function guRKi() {
-    _classCallCheck(this, guRKi);
+  function EqGBD() {
+    _classCallCheck(this, EqGBD);
 
-    return _possibleConstructorReturn(this, (guRKi.__proto__ || Object.getPrototypeOf(guRKi)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (EqGBD.__proto__ || Object.getPrototypeOf(EqGBD)).apply(this, arguments));
   }
 
-  return guRKi;
+  return EqGBD;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(guRKi, _step_3Soy2.default);
+_metalSoy2.default.register(EqGBD, _step_7Soy2.default);
 
-exports.default = guRKi;
+exports.default = EqGBD;
 
 /***/ }),
 
-/***/ 275:
+/***/ 319:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = guRKi;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.guRKi = undefined;
+exports.templates = exports.EqGBD = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from step_3.soy.
+  // This file was automatically generated from step_7.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace guRKi.
+   * @fileoverview Templates in namespace EqGBD.
    * @public
    */
 
-  goog.module('guRKi.incrementaldom');
+  goog.module('EqGBD.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -153,67 +153,38 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param2020 = function param2020() {
+    var param2114 = function param2114() {
       ie_open('h2');
-      var dyn47 = opt_data.page.title;
-      if (typeof dyn47 == 'function') dyn47();else if (dyn47 != null) itext(dyn47);
+      var dyn51 = opt_data.page.title;
+      if (typeof dyn51 == 'function') dyn51();else if (dyn51 != null) itext(dyn51);
       ie_close('h2');
       ie_open('p');
-      ie_open('code');
-      itext('HelloWorldFunc');
-      ie_close('code');
-      itext(' does not make much sense, though it does a good illustration. Normally we want functions that accept arguments to do complex business logic. Here comes the ');
-      ie_open('code');
-      itext('AddFunc');
-      ie_close('code');
-      itext('.');
-      ie_close('p');
-      $templateAlias2({ code: 'public class AddFunc extends Func {\n    public AddFunc() {\n        super(2);\n    }\n\n    public override Object exec(Object arg1, Object arg2) {\n        Integer a = (Integer)arg1;\n        Integer b = (Integer)arg2;\n        return a + b;\n    }\n}', mode: 'javascript' }, null, opt_ijData);
-      ie_open('p');
-      itext('Quite simple, right? In the constructor, we denote that this AddFunc takes two arguments(the length of the function), and correspondingly we override the exec(Object, Object) method from Func to have our custom implementation.');
+      itext('It is totally okay if you feel the last section a little too strange, not quite like the code we usually write. We have the alternate option for you: the easy way of function composition through chaining.');
       ie_close('p');
       ie_open('p');
-      itext('Try it.');
-      ie_close('p');
-      $templateAlias2({ code: 'Func add = new AddFunc();\nInteger result = (Integer)add.run(1, 2);\n// 3', mode: 'javascript' }, null, opt_ijData);
-      ie_open('p');
-      itext('To conclude, we set the length of the function in its constructor, and override ');
-      ie_open('code');
-      itext('exec(...)');
-      ie_close('code');
-      itext(' method with correct arguments.');
+      itext('R.apex adopts the similar chaining style as that of jQuery, Lodash or Promise. If you have experiences of any of these libraries, you will easily pick up R.apex.');
       ie_close('p');
       ie_open('p');
-      itext('For example, if the length of the function is 3, we have ');
-      ie_open('code');
-      itext('exec(Object, Object, Object)');
-      ie_close('code');
-      itext('. Easy, yeah?');
+      itext('Here is what function chaining looks like:');
       ie_close('p');
+      $templateAlias2({ code: 'Integer sum = R.with(1, 2, 3)\n    .doMap(R.inc)\n    .sum()\n    .toInteger();', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('What about a function with a length of 4? ');
-      ie_open('code');
-      itext('exec(Object, Object, Object, Object)');
-      ie_close('code');
-      itext('?');
+      itext('Pretty familiar, right? In fact, most functions in R.apex are designed to be avaiable both in function composition and function chaining. Check this example:');
       ie_close('p');
+      $templateAlias2({ code: 'Func sum = (Func)R.pipe.run(\n    R.doMap.apply(R.inc),\n    R.sum,\n    R.toInteger\n);\nInteger result = (Integer)sum.run(R.with(1, 2, 3));', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Nay, when the length goes over 3, we have ');
-      ie_open('code');
-      itext('execMore(List<Object>)');
-      ie_close('code');
-      itext(' to override.');
+      itext('This example is a rewrite of the previous example in functional composition style, and they are equivalent.');
       ie_close('p');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param2020 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param2114 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'guRKi.render';
+    $render.soyTemplateName = 'EqGBD.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -222,24 +193,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var guRKi = function (_Component) {
-  _inherits(guRKi, _Component);
+var EqGBD = function (_Component) {
+  _inherits(EqGBD, _Component);
 
-  function guRKi() {
-    _classCallCheck(this, guRKi);
+  function EqGBD() {
+    _classCallCheck(this, EqGBD);
 
-    return _possibleConstructorReturn(this, (guRKi.__proto__ || Object.getPrototypeOf(guRKi)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (EqGBD.__proto__ || Object.getPrototypeOf(EqGBD)).apply(this, arguments));
   }
 
-  return guRKi;
+  return EqGBD;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(guRKi, templates);
-exports.guRKi = guRKi;
+_metalSoy2.default.register(EqGBD, templates);
+exports.EqGBD = EqGBD;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[274]);
+},[318]);

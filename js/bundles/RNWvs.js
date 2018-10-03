@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([24],{
 
-/***/ 306:
+/***/ 288:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _functionSoy = __webpack_require__(307);
+var _functionSoy = __webpack_require__(289);
 
 var _functionSoy2 = _interopRequireDefault(_functionSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var RKAaq = function (_Component) {
-  _inherits(RKAaq, _Component);
+var RNWvs = function (_Component) {
+  _inherits(RNWvs, _Component);
 
-  function RKAaq() {
-    _classCallCheck(this, RKAaq);
+  function RNWvs() {
+    _classCallCheck(this, RNWvs);
 
-    return _possibleConstructorReturn(this, (RKAaq.__proto__ || Object.getPrototypeOf(RKAaq)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (RNWvs.__proto__ || Object.getPrototypeOf(RNWvs)).apply(this, arguments));
   }
 
-  return RKAaq;
+  return RNWvs;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(RKAaq, _functionSoy2.default);
+_metalSoy2.default.register(RNWvs, _functionSoy2.default);
 
-exports.default = RKAaq;
+exports.default = RNWvs;
 
 /***/ }),
 
-/***/ 307:
+/***/ 289:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = RKAaq;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.RKAaq = undefined;
+exports.templates = exports.RNWvs = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace RKAaq.
+   * @fileoverview Templates in namespace RNWvs.
    * @public
    */
 
-  goog.module('RKAaq.incrementaldom');
+  goog.module('RNWvs.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,10 +152,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param561 = function param561() {
+    var param1155 = function param1155() {
       ie_open('h6');
-      var dyn33 = opt_data.page.description;
-      if (typeof dyn33 == 'function') dyn33();else if (dyn33 != null) itext(dyn33);
+      var dyn37 = opt_data.page.description;
+      if (typeof dyn37 == 'function') dyn37();else if (dyn37 != null) itext(dyn37);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
@@ -339,11 +339,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param561 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1155 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'RKAaq.render';
+    $render.soyTemplateName = 'RNWvs.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -352,24 +352,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var RKAaq = function (_Component) {
-  _inherits(RKAaq, _Component);
+var RNWvs = function (_Component) {
+  _inherits(RNWvs, _Component);
 
-  function RKAaq() {
-    _classCallCheck(this, RKAaq);
+  function RNWvs() {
+    _classCallCheck(this, RNWvs);
 
-    return _possibleConstructorReturn(this, (RKAaq.__proto__ || Object.getPrototypeOf(RKAaq)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (RNWvs.__proto__ || Object.getPrototypeOf(RNWvs)).apply(this, arguments));
   }
 
-  return RKAaq;
+  return RNWvs;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(RKAaq, templates);
-exports.RKAaq = RKAaq;
+_metalSoy2.default.register(RNWvs, templates);
+exports.RNWvs = RNWvs;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[306]);
+},[288]);

@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([27],{
+webpackJsonppageComponent([8],{
 
-/***/ 300:
+/***/ 306:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _conditionSoy = __webpack_require__(301);
+var _step_1Soy = __webpack_require__(307);
 
-var _conditionSoy2 = _interopRequireDefault(_conditionSoy);
+var _step_1Soy2 = _interopRequireDefault(_step_1Soy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ivpED = function (_Component) {
-  _inherits(ivpED, _Component);
+var bAtnx = function (_Component) {
+  _inherits(bAtnx, _Component);
 
-  function ivpED() {
-    _classCallCheck(this, ivpED);
+  function bAtnx() {
+    _classCallCheck(this, bAtnx);
 
-    return _possibleConstructorReturn(this, (ivpED.__proto__ || Object.getPrototypeOf(ivpED)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (bAtnx.__proto__ || Object.getPrototypeOf(bAtnx)).apply(this, arguments));
   }
 
-  return ivpED;
+  return bAtnx;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(ivpED, _conditionSoy2.default);
+_metalSoy2.default.register(bAtnx, _step_1Soy2.default);
 
-exports.default = ivpED;
+exports.default = bAtnx;
 
 /***/ }),
 
-/***/ 301:
+/***/ 307:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = ivpED;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.ivpED = undefined;
+exports.templates = exports.bAtnx = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from condition.soy.
+  // This file was automatically generated from step_1.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace ivpED.
+   * @fileoverview Templates in namespace bAtnx.
    * @public
    */
 
-  goog.module('ivpED.incrementaldom');
+  goog.module('bAtnx.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,14 +137,13 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
-  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
-
-  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
 
   /**
    * @param {{
    *    page: (?),
-   *    site: (?)
+   *    site: (?),
+   *    elementClasses: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -152,57 +151,36 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param463 = function param463() {
-      ie_open('h6');
-      var dyn30 = opt_data.page.description;
-      if (typeof dyn30 == 'function') dyn30();else if (dyn30 != null) itext(dyn30);
-      ie_close('h6');
-      ie_open('article', null, null, 'id', '1');
+    var param1983 = function param1983() {
       ie_open('h2');
-      itext('cond');
+      var dyn45 = opt_data.page.title;
+      if (typeof dyn45 == 'function') dyn45();else if (dyn45 != null) itext(dyn45);
       ie_close('h2');
       ie_open('p');
-      itext('Returns a function, fn, which encapsulates if/else, if/else, logic. It takes a list of functions, alternated by predicate and transformer. All of the arguments to fn are applied to each of the predicates in turn until one returns a "truthy" value, at which point fn returns the result of applying its arguments to the corresponding transformer.');
+      itext('Include ');
+      ie_open('strong');
+      itext('Func.cls');
+      ie_close('strong');
+      itext(', ');
+      ie_open('strong');
+      itext('R.cls');
+      ie_close('strong');
+      itext(', and ');
+      ie_open('strong');
+      itext('RTest.cls');
+      ie_close('strong');
+      itext('(optional) into your Org, and you are ready to go.');
       ie_close('p');
-      $templateAlias2({ code: 'Func testF = (Func)R.cond.runN(new List<Object>{\n    R.lt.apply(0), R.always.run(1),\n    R.gt.apply(0), R.always.run(-1),\n    R.equals.apply(0), R.always.run(0)\n});\ntestF.run(3); // 1', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '2');
-      ie_open('h2');
-      itext('doWhen');
-      ie_close('h2');
-      ie_open('p');
-      itext('Tests the final argument by passing it to the given predicate function. If the predicate is satisfied, the function will return the result of calling the whenTrueFn function with the same argument. If the predicate is not satisfied, the argument is returned as a wrapping list.');
-      ie_close('p');
-      $templateAlias2({ code: 'Func testF = (Func)R.doWhen.run(\n    R.lt.apply(0),\n    R.always.run(1)\n);\ntestF.run(3); // 1', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '3');
-      ie_open('h2');
-      itext('ifElse');
-      ie_close('h2');
-      ie_open('p');
-      itext('Creates a function that will process either the onTrue or the onFalse function depending upon the result of the condition predicate.');
-      ie_close('p');
-      $templateAlias2({ code: 'Func testF = (Func)R.ifElse.run(\n    R.lt.apply(0),\n    R.always.run(1),\n    R.always.run(0)\n);\ntestF.run(3); // 1', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '4');
-      ie_open('h2');
-      itext('unless');
-      ie_close('h2');
-      ie_open('p');
-      itext('Tests the final argument by passing it to the given predicate function. If the predicate is not satisfied, the function will return the result of calling the whenFalseFn function with the same argument. If the predicate is satisfied, the argument is returned as a wrapping list.');
-      ie_close('p');
-      $templateAlias2({ code: 'Func testF = (Func)R.unless.run(\n    R.lt.apply(0),\n    R.always.run(0)\n);\ntestF.run(-3); // 0', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param463 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1983 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'ivpED.render';
+    $render.soyTemplateName = 'bAtnx.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -211,24 +189,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var ivpED = function (_Component) {
-  _inherits(ivpED, _Component);
+var bAtnx = function (_Component) {
+  _inherits(bAtnx, _Component);
 
-  function ivpED() {
-    _classCallCheck(this, ivpED);
+  function bAtnx() {
+    _classCallCheck(this, bAtnx);
 
-    return _possibleConstructorReturn(this, (ivpED.__proto__ || Object.getPrototypeOf(ivpED)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (bAtnx.__proto__ || Object.getPrototypeOf(bAtnx)).apply(this, arguments));
   }
 
-  return ivpED;
+  return bAtnx;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(ivpED, templates);
-exports.ivpED = ivpED;
+_metalSoy2.default.register(bAtnx, templates);
+exports.bAtnx = bAtnx;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[300]);
+},[306]);
