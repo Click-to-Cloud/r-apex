@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ZPYgI = function (_Component) {
-  _inherits(ZPYgI, _Component);
+var QXzYS = function (_Component) {
+  _inherits(QXzYS, _Component);
 
-  function ZPYgI() {
-    _classCallCheck(this, ZPYgI);
+  function QXzYS() {
+    _classCallCheck(this, QXzYS);
 
-    return _possibleConstructorReturn(this, (ZPYgI.__proto__ || Object.getPrototypeOf(ZPYgI)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (QXzYS.__proto__ || Object.getPrototypeOf(QXzYS)).apply(this, arguments));
   }
 
-  return ZPYgI;
+  return QXzYS;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(ZPYgI, _mapSoy2.default);
+_metalSoy2.default.register(QXzYS, _mapSoy2.default);
 
-exports.default = ZPYgI;
+exports.default = QXzYS;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = ZPYgI;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.ZPYgI = undefined;
+exports.templates = exports.QXzYS = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace ZPYgI.
+   * @fileoverview Templates in namespace QXzYS.
    * @public
    */
 
-  goog.module('ZPYgI.incrementaldom');
+  goog.module('QXzYS.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -317,7 +317,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'ZPYgI.render';
+    $render.soyTemplateName = 'QXzYS.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -326,20 +326,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var ZPYgI = function (_Component) {
-  _inherits(ZPYgI, _Component);
+var QXzYS = function (_Component) {
+  _inherits(QXzYS, _Component);
 
-  function ZPYgI() {
-    _classCallCheck(this, ZPYgI);
+  function QXzYS() {
+    _classCallCheck(this, QXzYS);
 
-    return _possibleConstructorReturn(this, (ZPYgI.__proto__ || Object.getPrototypeOf(ZPYgI)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (QXzYS.__proto__ || Object.getPrototypeOf(QXzYS)).apply(this, arguments));
   }
 
-  return ZPYgI;
+  return QXzYS;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(ZPYgI, templates);
-exports.ZPYgI = ZPYgI;
+_metalSoy2.default.register(QXzYS, templates);
+exports.QXzYS = QXzYS;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

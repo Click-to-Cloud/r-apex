@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ISrQI = function (_Component) {
-  _inherits(ISrQI, _Component);
+var ajkCN = function (_Component) {
+  _inherits(ajkCN, _Component);
 
-  function ISrQI() {
-    _classCallCheck(this, ISrQI);
+  function ajkCN() {
+    _classCallCheck(this, ajkCN);
 
-    return _possibleConstructorReturn(this, (ISrQI.__proto__ || Object.getPrototypeOf(ISrQI)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ajkCN.__proto__ || Object.getPrototypeOf(ajkCN)).apply(this, arguments));
   }
 
-  return ISrQI;
+  return ajkCN;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(ISrQI, _listSoy2.default);
+_metalSoy2.default.register(ajkCN, _listSoy2.default);
 
-exports.default = ISrQI;
+exports.default = ajkCN;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = ISrQI;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.ISrQI = undefined;
+exports.templates = exports.ajkCN = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace ISrQI.
+   * @fileoverview Templates in namespace ajkCN.
    * @public
    */
 
-  goog.module('ISrQI.incrementaldom');
+  goog.module('ajkCN.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -405,7 +405,7 @@ goog.loadModule(function (exports) {
       ie_close('article');
       ie_open('article', null, null, 'id', '28');
       ie_open('h2');
-      itext('findlastIndex');
+      itext('findLastIndex');
       ie_close('h2');
       ie_open('p');
       itext('Find the index of the first element from last that matches the predicate.');
@@ -889,7 +889,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'ISrQI.render';
+    $render.soyTemplateName = 'ajkCN.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -898,20 +898,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var ISrQI = function (_Component) {
-  _inherits(ISrQI, _Component);
+var ajkCN = function (_Component) {
+  _inherits(ajkCN, _Component);
 
-  function ISrQI() {
-    _classCallCheck(this, ISrQI);
+  function ajkCN() {
+    _classCallCheck(this, ajkCN);
 
-    return _possibleConstructorReturn(this, (ISrQI.__proto__ || Object.getPrototypeOf(ISrQI)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ajkCN.__proto__ || Object.getPrototypeOf(ajkCN)).apply(this, arguments));
   }
 
-  return ISrQI;
+  return ajkCN;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(ISrQI, templates);
-exports.ISrQI = ISrQI;
+_metalSoy2.default.register(ajkCN, templates);
+exports.ajkCN = ajkCN;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

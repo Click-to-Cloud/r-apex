@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([25],{
+webpackJsonppageComponent([18],{
 
-/***/ 286:
+/***/ 300:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _databaseSoy = __webpack_require__(287);
+var _stringSoy = __webpack_require__(301);
 
-var _databaseSoy2 = _interopRequireDefault(_databaseSoy);
+var _stringSoy2 = _interopRequireDefault(_stringSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var UfWhv = function (_Component) {
-  _inherits(UfWhv, _Component);
+var GQEqE = function (_Component) {
+  _inherits(GQEqE, _Component);
 
-  function UfWhv() {
-    _classCallCheck(this, UfWhv);
+  function GQEqE() {
+    _classCallCheck(this, GQEqE);
 
-    return _possibleConstructorReturn(this, (UfWhv.__proto__ || Object.getPrototypeOf(UfWhv)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (GQEqE.__proto__ || Object.getPrototypeOf(GQEqE)).apply(this, arguments));
   }
 
-  return UfWhv;
+  return GQEqE;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(UfWhv, _databaseSoy2.default);
+_metalSoy2.default.register(GQEqE, _stringSoy2.default);
 
-exports.default = UfWhv;
+exports.default = GQEqE;
 
 /***/ }),
 
-/***/ 287:
+/***/ 301:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = UfWhv;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.UfWhv = undefined;
+exports.templates = exports.GQEqE = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from database.soy.
+  // This file was automatically generated from string.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace UfWhv.
+   * @fileoverview Templates in namespace GQEqE.
    * @public
    */
 
-  goog.module('UfWhv.incrementaldom');
+  goog.module('GQEqE.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,57 +152,129 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param1124 = function param1124() {
+    var param1831 = function param1831() {
       ie_open('h6');
-      var dyn36 = opt_data.page.description;
-      if (typeof dyn36 == 'function') dyn36();else if (dyn36 != null) itext(dyn36);
+      var dyn43 = opt_data.page.description;
+      if (typeof dyn43 == 'function') dyn43();else if (dyn43 != null) itext(dyn43);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      itext('dbInsert');
+      itext('capitalize');
       ie_close('h2');
       ie_open('p');
-      itext('Insert SObject(s) into database');
+      itext('Capitalize the string.');
       ie_close('p');
-      $templateAlias2({ code: 'Account acc = ...;\nR.dbInsert.run(acc);', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.capitalize.run(\'cat\')\n// Cat', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '2');
       ie_open('h2');
-      itext('dbUpdate');
+      itext('match');
       ie_close('h2');
       ie_open('p');
-      itext('Update SObject(s) into database');
+      itext('Check regex match.');
       ie_close('p');
-      $templateAlias2({ code: 'Account acc = ...;\nR.dbUpdate.run(acc);', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.match.run(\'.*(a).*\', \'cat\')\n// (cat, a)', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '3');
       ie_open('h2');
-      itext('dbDelete');
+      itext('pad');
       ie_close('h2');
       ie_open('p');
-      itext('Delete SObject(s) from database');
+      itext('Pad the string to the length, with given padding.');
       ie_close('p');
-      $templateAlias2({ code: 'Account acc = ...;\nR.dbDelete.run(acc);', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.pad.run(5, \'*\', \'cat\')\n// *cat*', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '4');
       ie_open('h2');
-      itext('dbQuery');
+      itext('padLeft');
       ie_close('h2');
       ie_open('p');
-      itext('Query SObject(s) from database');
+      itext('Pad the string to the left to the length, with given padding.');
       ie_close('p');
-      $templateAlias2({ code: 'String query = \'...\':\nR.dbQuery.run(query);', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.pad.run(5, \'*\', \'cat\')\n// **cat', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '5');
+      ie_open('h2');
+      itext('padRight');
+      ie_close('h2');
+      ie_open('p');
+      itext('Pad the string to the right to the length, with given padding.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.pad.run(5, \'*\', \'cat\')\n// cat**', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '6');
+      ie_open('h2');
+      itext('replace');
+      ie_close('h2');
+      ie_open('p');
+      itext('Replace the string with replacement, only for the first occurrence of the matching.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.replace.run(\'cat\', \'dog\', \'I love cats\')\n// I love dogs', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '7');
+      ie_open('h2');
+      itext('replaceAll');
+      ie_close('h2');
+      ie_open('p');
+      itext('Replace the string with replacement, for all occurrences of the matching.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.replaceAll.run(\'cat\', \'dog\', \'I love cats\')\n// I love dogs', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '8');
+      ie_open('h2');
+      itext('split');
+      ie_close('h2');
+      ie_open('p');
+      itext('Split the string into a list.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.split.run(\' \', \'a b c\')\n// (a, b, c)', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '9');
+      ie_open('h2');
+      itext('test');
+      ie_close('h2');
+      ie_open('p');
+      itext('Test for the string matching.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.test.run(\'.*a.*\', \'cat\')\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '10');
+      ie_open('h2');
+      itext('toLower');
+      ie_close('h2');
+      ie_open('p');
+      itext('Convert the string into lowercase.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.toLower.run(\'ABC\')\n// abc', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '11');
+      ie_open('h2');
+      itext('toUpper');
+      ie_close('h2');
+      ie_open('p');
+      itext('Convert the string into uppercase.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.toUpper.run(\'abc\')\n// ABC', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '12');
+      ie_open('h2');
+      itext('trim');
+      ie_close('h2');
+      ie_open('p');
+      itext('Trim the string.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.trim.run(\' abc \')\n// abc', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param1124 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1831 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'UfWhv.render';
+    $render.soyTemplateName = 'GQEqE.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -211,24 +283,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var UfWhv = function (_Component) {
-  _inherits(UfWhv, _Component);
+var GQEqE = function (_Component) {
+  _inherits(GQEqE, _Component);
 
-  function UfWhv() {
-    _classCallCheck(this, UfWhv);
+  function GQEqE() {
+    _classCallCheck(this, GQEqE);
 
-    return _possibleConstructorReturn(this, (UfWhv.__proto__ || Object.getPrototypeOf(UfWhv)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (GQEqE.__proto__ || Object.getPrototypeOf(GQEqE)).apply(this, arguments));
   }
 
-  return UfWhv;
+  return GQEqE;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(UfWhv, templates);
-exports.UfWhv = UfWhv;
+_metalSoy2.default.register(GQEqE, templates);
+exports.GQEqE = GQEqE;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[286]);
+},[300]);

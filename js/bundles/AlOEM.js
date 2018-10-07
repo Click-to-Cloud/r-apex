@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var WmMzI = function (_Component) {
-  _inherits(WmMzI, _Component);
+var AlOEM = function (_Component) {
+  _inherits(AlOEM, _Component);
 
-  function WmMzI() {
-    _classCallCheck(this, WmMzI);
+  function AlOEM() {
+    _classCallCheck(this, AlOEM);
 
-    return _possibleConstructorReturn(this, (WmMzI.__proto__ || Object.getPrototypeOf(WmMzI)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (AlOEM.__proto__ || Object.getPrototypeOf(AlOEM)).apply(this, arguments));
   }
 
-  return WmMzI;
+  return AlOEM;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(WmMzI, _indexSoy2.default);
+_metalSoy2.default.register(AlOEM, _indexSoy2.default);
 
-exports.default = WmMzI;
+exports.default = AlOEM;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = WmMzI;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.WmMzI = undefined;
+exports.templates = exports.AlOEM = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace WmMzI.
+   * @fileoverview Templates in namespace AlOEM.
    * @public
    */
 
-  goog.module('WmMzI.incrementaldom');
+  goog.module('AlOEM.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -179,7 +179,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'WmMzI.render';
+    $render.soyTemplateName = 'AlOEM.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -188,20 +188,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var WmMzI = function (_Component) {
-  _inherits(WmMzI, _Component);
+var AlOEM = function (_Component) {
+  _inherits(AlOEM, _Component);
 
-  function WmMzI() {
-    _classCallCheck(this, WmMzI);
+  function AlOEM() {
+    _classCallCheck(this, AlOEM);
 
-    return _possibleConstructorReturn(this, (WmMzI.__proto__ || Object.getPrototypeOf(WmMzI)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (AlOEM.__proto__ || Object.getPrototypeOf(AlOEM)).apply(this, arguments));
   }
 
-  return WmMzI;
+  return AlOEM;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(WmMzI, templates);
-exports.WmMzI = WmMzI;
+_metalSoy2.default.register(AlOEM, templates);
+exports.AlOEM = AlOEM;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

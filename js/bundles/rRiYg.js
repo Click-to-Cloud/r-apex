@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([21],{
+webpackJsonppageComponent([2],{
 
-/***/ 294:
+/***/ 318:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _logicSoy = __webpack_require__(295);
+var _step_7Soy = __webpack_require__(319);
 
-var _logicSoy2 = _interopRequireDefault(_logicSoy);
+var _step_7Soy2 = _interopRequireDefault(_step_7Soy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ghqcC = function (_Component) {
-  _inherits(ghqcC, _Component);
+var rRiYg = function (_Component) {
+  _inherits(rRiYg, _Component);
 
-  function ghqcC() {
-    _classCallCheck(this, ghqcC);
+  function rRiYg() {
+    _classCallCheck(this, rRiYg);
 
-    return _possibleConstructorReturn(this, (ghqcC.__proto__ || Object.getPrototypeOf(ghqcC)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (rRiYg.__proto__ || Object.getPrototypeOf(rRiYg)).apply(this, arguments));
   }
 
-  return ghqcC;
+  return rRiYg;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(ghqcC, _logicSoy2.default);
+_metalSoy2.default.register(rRiYg, _step_7Soy2.default);
 
-exports.default = ghqcC;
+exports.default = rRiYg;
 
 /***/ }),
 
-/***/ 295:
+/***/ 319:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = ghqcC;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.ghqcC = undefined;
+exports.templates = exports.rRiYg = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from logic.soy.
+  // This file was automatically generated from step_7.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace ghqcC.
+   * @fileoverview Templates in namespace rRiYg.
    * @public
    */
 
-  goog.module('ghqcC.incrementaldom');
+  goog.module('rRiYg.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -139,12 +139,13 @@ goog.loadModule(function (exports) {
 
   var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
 
-  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
 
   /**
    * @param {{
    *    page: (?),
-   *    site: (?)
+   *    site: (?),
+   *    elementClasses: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -152,75 +153,38 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param1658 = function param1658() {
-      ie_open('h6');
-      var dyn40 = opt_data.page.description;
-      if (typeof dyn40 == 'function') dyn40();else if (dyn40 != null) itext(dyn40);
-      ie_close('h6');
-      ie_open('article', null, null, 'id', '1');
+    var param2114 = function param2114() {
       ie_open('h2');
-      itext('allPass');
+      var dyn51 = opt_data.page.title;
+      if (typeof dyn51 == 'function') dyn51();else if (dyn51 != null) itext(dyn51);
       ie_close('h2');
       ie_open('p');
-      itext('Create a function that combines all predicates with \'and\'.');
+      itext('It is totally okay if you feel the last section a little too strange, not quite like the code we usually write. We have the alternate option for you: the easy way of function composition through chaining.');
       ie_close('p');
-      $templateAlias2({ code: 'Func f = (Func)R.allPass.run(\n    R.startsWith.apply(\'c\'),\n    R.endsWith.apply(\'t\')\n);\nsystem.debug(f.run(\'cat\'));\n// true', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '2');
-      ie_open('h2');
-      itext('anyPass');
-      ie_close('h2');
       ie_open('p');
-      itext('Create a function that combines all predicates with \'or\'.');
+      itext('R.apex adopts the similar chaining style as that of jQuery, Lodash or Promise. If you have experiences of any of these libraries, you will easily pick up R.apex.');
       ie_close('p');
-      $templateAlias2({ code: 'Func f = (Func)R.anyPass.run(\n    R.startsWith.apply(\'c\'),\n    R.endsWith.apply(\'t\')\n);\nsystem.debug(f.run(\'cc\'));\n// true', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '3');
-      ie_open('h2');
-      itext('complement');
-      ie_close('h2');
       ie_open('p');
-      itext('Create a function that negate the predicate.');
+      itext('Here is what function chaining looks like:');
       ie_close('p');
-      $templateAlias2({ code: 'Func f = (Func)R.complement.run(R.equals.apply(\'cat\'));\nsystem.debug(f.run(\'cat\'));\n// false', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '4');
-      ie_open('h2');
-      itext('doAnd');
-      ie_close('h2');
+      $templateAlias2({ code: 'Integer sum = R.with(1, 2, 3)\n    .doMap(R.inc)\n    .sum()\n    .toInteger();', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Test logic \'and\'.');
+      itext('Pretty familiar, right? In fact, most functions in R.apex are designed to be avaiable both in function composition and function chaining. Check this example:');
       ie_close('p');
-      $templateAlias2({ code: 'R.doAnd.run(true, false)\n// false', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '5');
-      ie_open('h2');
-      itext('doNot');
-      ie_close('h2');
+      $templateAlias2({ code: 'Func sum = (Func)R.pipe.run(\n    R.doMap.apply(R.inc),\n    R.sum,\n    R.toInteger\n);\nInteger result = (Integer)sum.run(R.with(1, 2, 3));', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Test logic \'not\'.');
+      itext('This example is a rewrite of the previous example in functional composition style, and they are equivalent.');
       ie_close('p');
-      $templateAlias2({ code: 'R.doNot.run(false)\n// true', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '6');
-      ie_open('h2');
-      itext('doOr');
-      ie_close('h2');
-      ie_open('p');
-      itext('Test logic \'or\'.');
-      ie_close('p');
-      $templateAlias2({ code: 'R.doOr.run(true, false)\n// true', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param1658 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param2114 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'ghqcC.render';
+    $render.soyTemplateName = 'rRiYg.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -229,24 +193,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var ghqcC = function (_Component) {
-  _inherits(ghqcC, _Component);
+var rRiYg = function (_Component) {
+  _inherits(rRiYg, _Component);
 
-  function ghqcC() {
-    _classCallCheck(this, ghqcC);
+  function rRiYg() {
+    _classCallCheck(this, rRiYg);
 
-    return _possibleConstructorReturn(this, (ghqcC.__proto__ || Object.getPrototypeOf(ghqcC)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (rRiYg.__proto__ || Object.getPrototypeOf(rRiYg)).apply(this, arguments));
   }
 
-  return ghqcC;
+  return rRiYg;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(ghqcC, templates);
-exports.ghqcC = ghqcC;
+_metalSoy2.default.register(rRiYg, templates);
+exports.rRiYg = rRiYg;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[294]);
+},[318]);

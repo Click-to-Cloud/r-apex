@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([4],{
+webpackJsonppageComponent([8],{
 
-/***/ 314:
+/***/ 306:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _step_5Soy = __webpack_require__(315);
+var _step_1Soy = __webpack_require__(307);
 
-var _step_5Soy2 = _interopRequireDefault(_step_5Soy);
+var _step_1Soy2 = _interopRequireDefault(_step_1Soy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var bHITo = function (_Component) {
-  _inherits(bHITo, _Component);
+var mYQIU = function (_Component) {
+  _inherits(mYQIU, _Component);
 
-  function bHITo() {
-    _classCallCheck(this, bHITo);
+  function mYQIU() {
+    _classCallCheck(this, mYQIU);
 
-    return _possibleConstructorReturn(this, (bHITo.__proto__ || Object.getPrototypeOf(bHITo)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (mYQIU.__proto__ || Object.getPrototypeOf(mYQIU)).apply(this, arguments));
   }
 
-  return bHITo;
+  return mYQIU;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(bHITo, _step_5Soy2.default);
+_metalSoy2.default.register(mYQIU, _step_1Soy2.default);
 
-exports.default = bHITo;
+exports.default = mYQIU;
 
 /***/ }),
 
-/***/ 315:
+/***/ 307:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = bHITo;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.bHITo = undefined;
+exports.templates = exports.mYQIU = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from step_5.soy.
+  // This file was automatically generated from step_1.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace bHITo.
+   * @fileoverview Templates in namespace mYQIU.
    * @public
    */
 
-  goog.module('bHITo.incrementaldom');
+  goog.module('mYQIU.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,8 +137,6 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
-  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
-
   var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
 
   /**
@@ -153,75 +151,36 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param2057 = function param2057() {
+    var param1983 = function param1983() {
       ie_open('h2');
-      var dyn49 = opt_data.page.title;
-      if (typeof dyn49 == 'function') dyn49();else if (dyn49 != null) itext(dyn49);
+      var dyn45 = opt_data.page.title;
+      if (typeof dyn45 == 'function') dyn45();else if (dyn45 != null) itext(dyn45);
       ie_close('h2');
       ie_open('p');
-      itext('Well, all is good until we find something is missing. In functional programming, we can easily partially apply a function with arguments.');
-      ie_close('p');
-      ie_open('p');
-      itext('Say, we have a function, ');
-      ie_open('code');
-      itext('f: (a, b, c) => a + b + c');
-      ie_close('code');
-      itext(', and we should fairly easily find out that:');
-      ie_close('p');
-      $templateAlias2({ code: 'var newFa = f(a);\nvar newFb = newFa(b);\nvar newFc = newFb(c);', mode: 'javascript' }, null, opt_ijData);
-      ie_open('p');
-      itext('Every time function ');
-      ie_open('code');
-      itext('f');
-      ie_close('code');
-      itext(' is applied part of the arguments it expects, it will save them and return a new function. This is great, as it guarrantees us the following:');
-      ie_close('p');
-      $templateAlias2({ code: 'f(a, b, c) ===\nf(a, b)(c) ===\nf(a)(b, c) ===\nf(a)(b)(c)', mode: 'javascript' }, null, opt_ijData);
-      ie_open('p');
-      itext('Beautiful, yeah? We do hope that we can grant this magic to our function. Fortunately, R.apex has always been built with this idea in mind and implementing this is nothing but a piece of cake. See this:');
-      ie_close('p');
-      $templateAlias2({ code: 'Func f1 = add.apply(1);\nFunc f2 = f1.apply(2);\nInteger result = (Integer)f2.run();', mode: 'javascript' }, null, opt_ijData);
-      ie_open('p');
-      itext('Here, we have formally introduced ');
-      ie_open('code');
-      itext('apply');
-      ie_close('code');
-      itext(', as a builtin method of Func. And also notice the biggest caveat in R.apex. ');
-      ie_open('code');
-      itext('Apply');
-      ie_close('code');
-      itext(' does ');
+      itext('Include ');
       ie_open('strong');
-      itext('not');
+      itext('Func.cls');
       ie_close('strong');
-      itext(' trigger function invocation, while ');
-      ie_open('code');
-      itext('run');
-      ie_close('code');
-      itext(' does. Even if the function has received enough arguments, it will not run until ');
-      ie_open('code');
-      itext('run');
-      ie_close('code');
-      itext(' is explicitly called. Naturally, we have partial application available here.');
-      ie_close('p');
-      $templateAlias2({ code: 'f.run(a, b, c) ===\nf.apply(a, b, c).run() ===\nf.apply(a, b).apply(c).run() ===\nf.apply(a).apply(b, c).run() ===\nf.apply(a).apply(b).apply(c).run()', mode: 'javascript' }, null, opt_ijData);
-      ie_open('p');
-      itext('Another thing to notice is that in functional programming, we tend to put the data we are manipulating in the last position in the argument list. For example,');
-      ie_close('p');
-      $templateAlias2({ code: 'R.filter.run(R.isNotNull, myList);\n// NOT\n// R.filter.run(myList, R.isNotNull);', mode: 'javascript' }, null, opt_ijData);
-      ie_open('p');
-      itext('This is for the convenience of functional composition, which we will cover in the next section.');
+      itext(', ');
+      ie_open('strong');
+      itext('R.cls');
+      ie_close('strong');
+      itext(', and ');
+      ie_open('strong');
+      itext('RTest.cls');
+      ie_close('strong');
+      itext('(optional) into your Org, and you are ready to go.');
       ie_close('p');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param2057 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1983 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'bHITo.render';
+    $render.soyTemplateName = 'mYQIU.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -230,24 +189,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var bHITo = function (_Component) {
-  _inherits(bHITo, _Component);
+var mYQIU = function (_Component) {
+  _inherits(mYQIU, _Component);
 
-  function bHITo() {
-    _classCallCheck(this, bHITo);
+  function mYQIU() {
+    _classCallCheck(this, mYQIU);
 
-    return _possibleConstructorReturn(this, (bHITo.__proto__ || Object.getPrototypeOf(bHITo)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (mYQIU.__proto__ || Object.getPrototypeOf(mYQIU)).apply(this, arguments));
   }
 
-  return bHITo;
+  return mYQIU;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(bHITo, templates);
-exports.bHITo = bHITo;
+_metalSoy2.default.register(mYQIU, templates);
+exports.mYQIU = mYQIU;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[314]);
+},[306]);

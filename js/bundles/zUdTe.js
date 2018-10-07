@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([7],{
+webpackJsonppageComponent([5],{
 
-/***/ 308:
+/***/ 312:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _step_2Soy = __webpack_require__(309);
+var _step_4Soy = __webpack_require__(313);
 
-var _step_2Soy2 = _interopRequireDefault(_step_2Soy);
+var _step_4Soy2 = _interopRequireDefault(_step_4Soy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var HNdje = function (_Component) {
-  _inherits(HNdje, _Component);
+var zUdTe = function (_Component) {
+  _inherits(zUdTe, _Component);
 
-  function HNdje() {
-    _classCallCheck(this, HNdje);
+  function zUdTe() {
+    _classCallCheck(this, zUdTe);
 
-    return _possibleConstructorReturn(this, (HNdje.__proto__ || Object.getPrototypeOf(HNdje)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (zUdTe.__proto__ || Object.getPrototypeOf(zUdTe)).apply(this, arguments));
   }
 
-  return HNdje;
+  return zUdTe;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(HNdje, _step_2Soy2.default);
+_metalSoy2.default.register(zUdTe, _step_4Soy2.default);
 
-exports.default = HNdje;
+exports.default = zUdTe;
 
 /***/ }),
 
-/***/ 309:
+/***/ 313:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = HNdje;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.HNdje = undefined;
+exports.templates = exports.zUdTe = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from step_2.soy.
+  // This file was automatically generated from step_4.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace HNdje.
+   * @fileoverview Templates in namespace zUdTe.
    * @public
    */
 
-  goog.module('HNdje.incrementaldom');
+  goog.module('zUdTe.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -153,43 +153,43 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param1994 = function param1994() {
+    var param2041 = function param2041() {
       ie_open('h2');
-      var dyn46 = opt_data.page.title;
-      if (typeof dyn46 == 'function') dyn46();else if (dyn46 != null) itext(dyn46);
+      var dyn48 = opt_data.page.title;
+      if (typeof dyn48 == 'function') dyn48();else if (dyn48 != null) itext(dyn48);
       ie_close('h2');
       ie_open('p');
-      itext('Apex does not support first class functions, and we have NO WAY to get around it. However, we can create an invocable object camouflaged as a function, and it is referred to as a Func. Or more precisely, it is an instance of class Func. In R.apex, we roughly refer to instances of Func when we mention functions, to make things clear.');
-      ie_close('p');
-      ie_open('p');
-      itext('Here is how we create a function that returns ');
+      itext('So far so good. What if we need to handle functions that take variadic arguments? Let\'s extend our ');
       ie_open('code');
-      itext('Hello World');
+      itext('AddFunc');
       ie_close('code');
-      itext('.');
+      itext(' to allow adding multiple numbers.');
       ie_close('p');
-      $templateAlias2({ code: 'public class HelloWorldFunc extends Func {\n    public HelloWorldFunc() {\n        super(0);\n    }\n\n    public override Object exec() {\n        return \'Hello World\';\n    }\n}', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'public class AddFunc extends Func {\n    public AddFunc() {\n        super(-1);\n    }\n\n    public override Object execN(List<Object> args) {\n        Integer sum = 0;\n        for(Object arg : args) {\n            sum += (Integer)arg;\n        }\n        return sum;\n    }\n}', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('And then we get a function!');
+      itext('Now this time, we specify the length of the function to be -1, which means that it takes any number of arguments. Also we have our ');
+      ie_open('code');
+      itext('execN(List<Object>)');
+      ie_close('code');
+      itext(' overridden to get the sum of all the numbers.');
       ie_close('p');
-      $templateAlias2({ code: 'Func helloworld = new HelloWorldFunc();', mode: 'javascript' }, null, opt_ijData);
       ie_open('p');
-      itext('Let\'s invoke this function.');
-      ie_close('p');
-      $templateAlias2({ code: 'String message = (String)helloworld.run();\nSystem.debug(message);\n// Hello World', mode: 'javascript' }, null, opt_ijData);
-      ie_open('p');
-      itext('That\'s how easy it is to create a function in R.apex.');
+      itext('By the way, the default length is -1, so if we want a variadic function, we don\'t even need to call ');
+      ie_open('code');
+      itext('super(-1)');
+      ie_close('code');
+      itext('. In our case, we can simply omit the constructor.');
       ie_close('p');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param1994 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param2041 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'HNdje.render';
+    $render.soyTemplateName = 'zUdTe.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -198,24 +198,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var HNdje = function (_Component) {
-  _inherits(HNdje, _Component);
+var zUdTe = function (_Component) {
+  _inherits(zUdTe, _Component);
 
-  function HNdje() {
-    _classCallCheck(this, HNdje);
+  function zUdTe() {
+    _classCallCheck(this, zUdTe);
 
-    return _possibleConstructorReturn(this, (HNdje.__proto__ || Object.getPrototypeOf(HNdje)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (zUdTe.__proto__ || Object.getPrototypeOf(zUdTe)).apply(this, arguments));
   }
 
-  return HNdje;
+  return zUdTe;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(HNdje, templates);
-exports.HNdje = HNdje;
+_metalSoy2.default.register(zUdTe, templates);
+exports.zUdTe = zUdTe;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[308]);
+},[312]);

@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([16],{
 
-/***/ 270:
+/***/ 268:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _conversionSoy = __webpack_require__(271);
+var _conversionSoy = __webpack_require__(269);
 
 var _conversionSoy2 = _interopRequireDefault(_conversionSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var TODfI = function (_Component) {
-  _inherits(TODfI, _Component);
+var pICDj = function (_Component) {
+  _inherits(pICDj, _Component);
 
-  function TODfI() {
-    _classCallCheck(this, TODfI);
+  function pICDj() {
+    _classCallCheck(this, pICDj);
 
-    return _possibleConstructorReturn(this, (TODfI.__proto__ || Object.getPrototypeOf(TODfI)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (pICDj.__proto__ || Object.getPrototypeOf(pICDj)).apply(this, arguments));
   }
 
-  return TODfI;
+  return pICDj;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(TODfI, _conversionSoy2.default);
+_metalSoy2.default.register(pICDj, _conversionSoy2.default);
 
-exports.default = TODfI;
+exports.default = pICDj;
 
 /***/ }),
 
-/***/ 271:
+/***/ 269:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = TODfI;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.TODfI = undefined;
+exports.templates = exports.pICDj = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace TODfI.
+   * @fileoverview Templates in namespace pICDj.
    * @public
    */
 
-  goog.module('TODfI.incrementaldom');
+  goog.module('pICDj.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -150,10 +150,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param315 = function param315() {
+    var param366 = function param366() {
       ie_open('h6');
-      var dyn27 = opt_data.page.description;
-      if (typeof dyn27 == 'function') dyn27();else if (dyn27 != null) itext(dyn27);
+      var dyn28 = opt_data.page.description;
+      if (typeof dyn28 == 'function') dyn28();else if (dyn28 != null) itext(dyn28);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
@@ -550,11 +550,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param315 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param366 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'TODfI.render';
+    $render.soyTemplateName = 'pICDj.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -563,24 +563,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var TODfI = function (_Component) {
-  _inherits(TODfI, _Component);
+var pICDj = function (_Component) {
+  _inherits(pICDj, _Component);
 
-  function TODfI() {
-    _classCallCheck(this, TODfI);
+  function pICDj() {
+    _classCallCheck(this, pICDj);
 
-    return _possibleConstructorReturn(this, (TODfI.__proto__ || Object.getPrototypeOf(TODfI)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (pICDj.__proto__ || Object.getPrototypeOf(pICDj)).apply(this, arguments));
   }
 
-  return TODfI;
+  return pICDj;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(TODfI, templates);
-exports.TODfI = TODfI;
+_metalSoy2.default.register(pICDj, templates);
+exports.pICDj = pICDj;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[270]);
+},[268]);

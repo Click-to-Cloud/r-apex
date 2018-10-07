@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([3],{
+webpackJsonppageComponent([29],{
 
-/***/ 316:
+/***/ 278:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _step_6Soy = __webpack_require__(317);
+var _arithmeticSoy = __webpack_require__(279);
 
-var _step_6Soy2 = _interopRequireDefault(_step_6Soy);
+var _arithmeticSoy2 = _interopRequireDefault(_arithmeticSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var VuUTG = function (_Component) {
-  _inherits(VuUTG, _Component);
+var DzOrR = function (_Component) {
+  _inherits(DzOrR, _Component);
 
-  function VuUTG() {
-    _classCallCheck(this, VuUTG);
+  function DzOrR() {
+    _classCallCheck(this, DzOrR);
 
-    return _possibleConstructorReturn(this, (VuUTG.__proto__ || Object.getPrototypeOf(VuUTG)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (DzOrR.__proto__ || Object.getPrototypeOf(DzOrR)).apply(this, arguments));
   }
 
-  return VuUTG;
+  return DzOrR;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(VuUTG, _step_6Soy2.default);
+_metalSoy2.default.register(DzOrR, _arithmeticSoy2.default);
 
-exports.default = VuUTG;
+exports.default = DzOrR;
 
 /***/ }),
 
-/***/ 317:
+/***/ 279:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = VuUTG;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.VuUTG = undefined;
+exports.templates = exports.DzOrR = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from step_6.soy.
+  // This file was automatically generated from arithmetic.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace VuUTG.
+   * @fileoverview Templates in namespace DzOrR.
    * @public
    */
 
-  goog.module('VuUTG.incrementaldom');
+  goog.module('DzOrR.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -139,13 +139,12 @@ goog.loadModule(function (exports) {
 
   var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
 
-  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
 
   /**
    * @param {{
    *    page: (?),
-   *    site: (?),
-   *    elementClasses: (?)
+   *    site: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -153,83 +152,102 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param2093 = function param2093() {
+    var param960 = function param960() {
+      ie_open('h6');
+      var dyn32 = opt_data.page.description;
+      if (typeof dyn32 == 'function') dyn32();else if (dyn32 != null) itext(dyn32);
+      ie_close('h6');
+      ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      var dyn50 = opt_data.page.title;
-      if (typeof dyn50 == 'function') dyn50();else if (dyn50 != null) itext(dyn50);
+      itext('add');
       ie_close('h2');
       ie_open('p');
-      itext('Hopefully you have got some understanding on how to write a custom function by now. But that\'s far not enough. Writing functions by extending Func is still somehow bloate with boilerplates and it is kind of tedious. Better ways ahead.');
+      itext('Add two numbers.');
       ie_close('p');
+      $templateAlias2({ code: 'R.add.run(1, 2)\n// 3', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '2');
+      ie_open('h2');
+      itext('dec');
+      ie_close('h2');
       ie_open('p');
-      itext('The charm of functional programming lies not only in the fact of function currying and partial application, but also in the ability that they can compose. It is composition and decomposition that helps us to build a large application out of small bits and pieces in a functional world. And we adore the power.');
+      itext('Decrement the number.');
       ie_close('p');
+      $templateAlias2({ code: 'R.dec.run(1)\n// 0', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '3');
+      ie_open('h2');
+      itext('divide');
+      ie_close('h2');
       ie_open('p');
-      itext('So it is not hard to understand that functional composition is strongly recommended in R.apex, to write clean and clear codes. Let\'s take a leap to check it out.');
+      itext('Divide two numbers.');
       ie_close('p');
-      $templateAlias2({ code: 'Func f = (Func)R.compose.run(\n    R.add.apply(1),\n    R.multiply.apply(2)\n);\nInteger result = (Integer)f.run(2);\n// 5', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.divide.run(1, 2)\n// 0.5', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '4');
+      ie_open('h2');
+      itext('inc');
+      ie_close('h2');
       ie_open('p');
-      itext('Dive into this snippet, and we will make everything clear step by step. First, ');
-      ie_open('code');
-      itext('R.add.apply(1)');
-      ie_close('code');
-      itext(' creates a function ');
-      ie_open('code');
-      itext('f2');
-      ie_close('code');
-      itext(' that takes one number and adds 1 to it. ');
-      ie_open('code');
-      itext('R.multiply.apply(2)');
-      ie_close('code');
-      itext(' creates a function ');
-      ie_open('code');
-      itext('f1');
-      ie_close('code');
-      itext(' that takes one number and multiplies 2 to it. Then ');
-      ie_open('code');
-      itext('compose');
-      ie_close('code');
-      itext(' is the magic. It invokes ');
-      ie_open('code');
-      itext('f1');
-      ie_close('code');
-      itext(' with one argument(i.e, 2) and gets the intermediate result of 4. After that, it invokes ');
-      ie_open('code');
-      itext('f2');
-      ie_close('code');
-      itext(' with the intermediate result(i.e, 4) and gets the final result of 5. We can see that data flows from ');
-      ie_open('code');
-      itext('f1');
-      ie_close('code');
-      itext(' to ');
-      ie_open('code');
-      itext('f2');
-      ie_close('code');
-      itext(', namely, bottom-up, or right-to-left.');
+      itext('Increment the number.');
       ie_close('p');
+      $templateAlias2({ code: 'R.inc.run(1)\n// 2', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '5');
+      ie_open('h2');
+      itext('mod');
+      ie_close('h2');
       ie_open('p');
-      itext('And this is simply how functional composition works.');
+      itext('Calculate the modulo.');
       ie_close('p');
+      $templateAlias2({ code: 'R.mod.run(1, 2)\n// 1', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '6');
+      ie_open('h2');
+      itext('multiply');
+      ie_close('h2');
       ie_open('p');
-      itext('If you are not quite comfortable with that, you can also try this:');
+      itext('Multiply two numbers.');
       ie_close('p');
-      $templateAlias2({ code: 'Func f = (Func)R.pipe.run(\n    R.multiply.apply(2),\n    R.add.apply(1)\n);\nInteger result = (Integer)f.run(2);\n// 5', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.multiply.run(1, 2)\n// 2', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '7');
+      ie_open('h2');
+      itext('negate');
+      ie_close('h2');
       ie_open('p');
-      itext('It is actually the same as the previous one, only different in the composition style, namely, top-bottom, or left-to-right.');
+      itext('Negate the number.');
       ie_close('p');
+      $templateAlias2({ code: 'R.negate.run(1)\n// -1', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '8');
+      ie_open('h2');
+      itext('product');
+      ie_close('h2');
       ie_open('p');
-      itext('Getting familiar with functional composition is the approach to harness the power of functional programming. It takes time to sharpen the skill, and still there are more tools in functional composition in R.apex waiting to be discovered.');
+      itext('Multiply all the numbers.');
       ie_close('p');
+      $templateAlias2({ code: 'R.product.run(1, 2, 3)\n// 6', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '9');
+      ie_open('h2');
+      itext('subtract');
+      ie_close('h2');
+      ie_open('p');
+      itext('Subtract one number from another.');
+      ie_close('p');
+      $templateAlias2({ code: 'R.subtract.run(1, 2)\n// -1', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param2093 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param960 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'VuUTG.render';
+    $render.soyTemplateName = 'DzOrR.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -238,24 +256,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var VuUTG = function (_Component) {
-  _inherits(VuUTG, _Component);
+var DzOrR = function (_Component) {
+  _inherits(DzOrR, _Component);
 
-  function VuUTG() {
-    _classCallCheck(this, VuUTG);
+  function DzOrR() {
+    _classCallCheck(this, DzOrR);
 
-    return _possibleConstructorReturn(this, (VuUTG.__proto__ || Object.getPrototypeOf(VuUTG)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (DzOrR.__proto__ || Object.getPrototypeOf(DzOrR)).apply(this, arguments));
   }
 
-  return VuUTG;
+  return DzOrR;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(VuUTG, templates);
-exports.VuUTG = VuUTG;
+_metalSoy2.default.register(DzOrR, templates);
+exports.DzOrR = DzOrR;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[316]);
+},[278]);

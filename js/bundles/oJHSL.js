@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tmwsx = function (_Component) {
-  _inherits(tmwsx, _Component);
+var oJHSL = function (_Component) {
+  _inherits(oJHSL, _Component);
 
-  function tmwsx() {
-    _classCallCheck(this, tmwsx);
+  function oJHSL() {
+    _classCallCheck(this, oJHSL);
 
-    return _possibleConstructorReturn(this, (tmwsx.__proto__ || Object.getPrototypeOf(tmwsx)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (oJHSL.__proto__ || Object.getPrototypeOf(oJHSL)).apply(this, arguments));
   }
 
-  return tmwsx;
+  return oJHSL;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(tmwsx, _conversionSoy2.default);
+_metalSoy2.default.register(oJHSL, _conversionSoy2.default);
 
-exports.default = tmwsx;
+exports.default = oJHSL;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = tmwsx;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.tmwsx = undefined;
+exports.templates = exports.oJHSL = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace tmwsx.
+   * @fileoverview Templates in namespace oJHSL.
    * @public
    */
 
-  goog.module('tmwsx.incrementaldom');
+  goog.module('oJHSL.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -657,7 +657,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'tmwsx.render';
+    $render.soyTemplateName = 'oJHSL.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -666,20 +666,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var tmwsx = function (_Component) {
-  _inherits(tmwsx, _Component);
+var oJHSL = function (_Component) {
+  _inherits(oJHSL, _Component);
 
-  function tmwsx() {
-    _classCallCheck(this, tmwsx);
+  function oJHSL() {
+    _classCallCheck(this, oJHSL);
 
-    return _possibleConstructorReturn(this, (tmwsx.__proto__ || Object.getPrototypeOf(tmwsx)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (oJHSL.__proto__ || Object.getPrototypeOf(oJHSL)).apply(this, arguments));
   }
 
-  return tmwsx;
+  return oJHSL;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(tmwsx, templates);
-exports.tmwsx = tmwsx;
+_metalSoy2.default.register(oJHSL, templates);
+exports.oJHSL = oJHSL;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([29],{
+webpackJsonppageComponent([1],{
 
-/***/ 278:
+/***/ 320:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _arithmeticSoy = __webpack_require__(279);
+var _step_8Soy = __webpack_require__(321);
 
-var _arithmeticSoy2 = _interopRequireDefault(_arithmeticSoy);
+var _step_8Soy2 = _interopRequireDefault(_step_8Soy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ZeMkb = function (_Component) {
-  _inherits(ZeMkb, _Component);
+var moJeD = function (_Component) {
+  _inherits(moJeD, _Component);
 
-  function ZeMkb() {
-    _classCallCheck(this, ZeMkb);
+  function moJeD() {
+    _classCallCheck(this, moJeD);
 
-    return _possibleConstructorReturn(this, (ZeMkb.__proto__ || Object.getPrototypeOf(ZeMkb)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (moJeD.__proto__ || Object.getPrototypeOf(moJeD)).apply(this, arguments));
   }
 
-  return ZeMkb;
+  return moJeD;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(ZeMkb, _arithmeticSoy2.default);
+_metalSoy2.default.register(moJeD, _step_8Soy2.default);
 
-exports.default = ZeMkb;
+exports.default = moJeD;
 
 /***/ }),
 
-/***/ 279:
+/***/ 321:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = ZeMkb;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.ZeMkb = undefined;
+exports.templates = exports.moJeD = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from arithmetic.soy.
+  // This file was automatically generated from step_8.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace ZeMkb.
+   * @fileoverview Templates in namespace moJeD.
    * @public
    */
 
-  goog.module('ZeMkb.incrementaldom');
+  goog.module('moJeD.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,14 +137,13 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
-  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
-
-  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
 
   /**
    * @param {{
    *    page: (?),
-   *    site: (?)
+   *    site: (?),
+   *    elementClasses: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -152,102 +151,27 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param960 = function param960() {
-      ie_open('h6');
-      var dyn32 = opt_data.page.description;
-      if (typeof dyn32 == 'function') dyn32();else if (dyn32 != null) itext(dyn32);
-      ie_close('h6');
-      ie_open('article', null, null, 'id', '1');
+    var param2135 = function param2135() {
       ie_open('h2');
-      itext('add');
+      var dyn52 = opt_data.page.title;
+      if (typeof dyn52 == 'function') dyn52();else if (dyn52 != null) itext(dyn52);
       ie_close('h2');
       ie_open('p');
-      itext('Add two numbers.');
+      itext('It is your personal preference to choose between functional composition and function chaining. And the key takeaway is to use whatever is suitable in your case.');
       ie_close('p');
-      $templateAlias2({ code: 'R.add.run(1, 2)\n// 3', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '2');
-      ie_open('h2');
-      itext('dec');
-      ie_close('h2');
       ie_open('p');
-      itext('Decrement the number.');
+      itext('It is sad that the discovery of R.apex almost comes to an end. Realizing that the functions provided by R.apex is limited, you have to come up with your functions to tackle all the difficult business logic. The suggestion will be to encapsulate your core business logic in small custom functions and glue them together with the power of R.apex to build your own application. And this is the way you extend R.apex.');
       ie_close('p');
-      $templateAlias2({ code: 'R.dec.run(1)\n// 0', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '3');
-      ie_open('h2');
-      itext('divide');
-      ie_close('h2');
-      ie_open('p');
-      itext('Divide two numbers.');
-      ie_close('p');
-      $templateAlias2({ code: 'R.divide.run(1, 2)\n// 0.5', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '4');
-      ie_open('h2');
-      itext('inc');
-      ie_close('h2');
-      ie_open('p');
-      itext('Increment the number.');
-      ie_close('p');
-      $templateAlias2({ code: 'R.inc.run(1)\n// 2', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '5');
-      ie_open('h2');
-      itext('mod');
-      ie_close('h2');
-      ie_open('p');
-      itext('Calculate the modulo.');
-      ie_close('p');
-      $templateAlias2({ code: 'R.mod.run(1, 2)\n// 1', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '6');
-      ie_open('h2');
-      itext('multiply');
-      ie_close('h2');
-      ie_open('p');
-      itext('Multiply two numbers.');
-      ie_close('p');
-      $templateAlias2({ code: 'R.multiply.run(1, 2)\n// 2', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '7');
-      ie_open('h2');
-      itext('negate');
-      ie_close('h2');
-      ie_open('p');
-      itext('Negate the number.');
-      ie_close('p');
-      $templateAlias2({ code: 'R.negate.run(1)\n// -1', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '8');
-      ie_open('h2');
-      itext('product');
-      ie_close('h2');
-      ie_open('p');
-      itext('Multiply all the numbers.');
-      ie_close('p');
-      $templateAlias2({ code: 'R.product.run(1, 2, 3)\n// 6', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '9');
-      ie_open('h2');
-      itext('subtract');
-      ie_close('h2');
-      ie_open('p');
-      itext('Subtract one number from another.');
-      ie_close('p');
-      $templateAlias2({ code: 'R.subtract.run(1, 2)\n// -1', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param960 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param2135 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'ZeMkb.render';
+    $render.soyTemplateName = 'moJeD.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -256,24 +180,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var ZeMkb = function (_Component) {
-  _inherits(ZeMkb, _Component);
+var moJeD = function (_Component) {
+  _inherits(moJeD, _Component);
 
-  function ZeMkb() {
-    _classCallCheck(this, ZeMkb);
+  function moJeD() {
+    _classCallCheck(this, moJeD);
 
-    return _possibleConstructorReturn(this, (ZeMkb.__proto__ || Object.getPrototypeOf(ZeMkb)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (moJeD.__proto__ || Object.getPrototypeOf(moJeD)).apply(this, arguments));
   }
 
-  return ZeMkb;
+  return moJeD;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(ZeMkb, templates);
-exports.ZeMkb = ZeMkb;
+_metalSoy2.default.register(moJeD, templates);
+exports.moJeD = moJeD;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[278]);
+},[320]);

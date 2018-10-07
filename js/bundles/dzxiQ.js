@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var RNWvs = function (_Component) {
-  _inherits(RNWvs, _Component);
+var dzxiQ = function (_Component) {
+  _inherits(dzxiQ, _Component);
 
-  function RNWvs() {
-    _classCallCheck(this, RNWvs);
+  function dzxiQ() {
+    _classCallCheck(this, dzxiQ);
 
-    return _possibleConstructorReturn(this, (RNWvs.__proto__ || Object.getPrototypeOf(RNWvs)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (dzxiQ.__proto__ || Object.getPrototypeOf(dzxiQ)).apply(this, arguments));
   }
 
-  return RNWvs;
+  return dzxiQ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(RNWvs, _functionSoy2.default);
+_metalSoy2.default.register(dzxiQ, _functionSoy2.default);
 
-exports.default = RNWvs;
+exports.default = dzxiQ;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = RNWvs;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.RNWvs = undefined;
+exports.templates = exports.dzxiQ = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace RNWvs.
+   * @fileoverview Templates in namespace dzxiQ.
    * @public
    */
 
-  goog.module('RNWvs.incrementaldom');
+  goog.module('dzxiQ.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -207,7 +207,7 @@ goog.loadModule(function (exports) {
       ie_close('article');
       ie_open('article', null, null, 'id', '6');
       ie_open('h2');
-      itext('evlove');
+      itext('evolve');
       ie_close('h2');
       ie_open('p');
       itext('Creates a new object by recursively evolving a copy of object, according to the transformation functions.');
@@ -343,7 +343,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'RNWvs.render';
+    $render.soyTemplateName = 'dzxiQ.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -352,20 +352,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var RNWvs = function (_Component) {
-  _inherits(RNWvs, _Component);
+var dzxiQ = function (_Component) {
+  _inherits(dzxiQ, _Component);
 
-  function RNWvs() {
-    _classCallCheck(this, RNWvs);
+  function dzxiQ() {
+    _classCallCheck(this, dzxiQ);
 
-    return _possibleConstructorReturn(this, (RNWvs.__proto__ || Object.getPrototypeOf(RNWvs)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (dzxiQ.__proto__ || Object.getPrototypeOf(dzxiQ)).apply(this, arguments));
   }
 
-  return RNWvs;
+  return dzxiQ;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(RNWvs, templates);
-exports.RNWvs = RNWvs;
+_metalSoy2.default.register(dzxiQ, templates);
+exports.dzxiQ = dzxiQ;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

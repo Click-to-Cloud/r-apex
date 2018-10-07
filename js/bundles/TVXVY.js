@@ -55,23 +55,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var nnuEx = function (_Component) {
-  _inherits(nnuEx, _Component);
+var TVXVY = function (_Component) {
+  _inherits(TVXVY, _Component);
 
-  function nnuEx() {
-    _classCallCheck(this, nnuEx);
+  function TVXVY() {
+    _classCallCheck(this, TVXVY);
 
-    return _possibleConstructorReturn(this, (nnuEx.__proto__ || Object.getPrototypeOf(nnuEx)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (TVXVY.__proto__ || Object.getPrototypeOf(TVXVY)).apply(this, arguments));
   }
 
-  return nnuEx;
+  return TVXVY;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(nnuEx, _relationSoy2.default);
+_metalSoy2.default.register(TVXVY, _relationSoy2.default);
 
-exports.default = nnuEx;
+exports.default = TVXVY;
 
 /***/ }),
 
@@ -84,7 +84,7 @@ exports.default = nnuEx;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.nnuEx = undefined;
+exports.templates = exports.TVXVY = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace nnuEx.
+   * @fileoverview Templates in namespace TVXVY.
    * @public
    */
 
-  goog.module('nnuEx.incrementaldom');
+  goog.module('TVXVY.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -229,7 +229,7 @@ goog.loadModule(function (exports) {
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'nnuEx.render';
+    $render.soyTemplateName = 'TVXVY.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -238,20 +238,20 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var nnuEx = function (_Component) {
-  _inherits(nnuEx, _Component);
+var TVXVY = function (_Component) {
+  _inherits(TVXVY, _Component);
 
-  function nnuEx() {
-    _classCallCheck(this, nnuEx);
+  function TVXVY() {
+    _classCallCheck(this, TVXVY);
 
-    return _possibleConstructorReturn(this, (nnuEx.__proto__ || Object.getPrototypeOf(nnuEx)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (TVXVY.__proto__ || Object.getPrototypeOf(TVXVY)).apply(this, arguments));
   }
 
-  return nnuEx;
+  return TVXVY;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(nnuEx, templates);
-exports.nnuEx = nnuEx;
+_metalSoy2.default.register(TVXVY, templates);
+exports.TVXVY = TVXVY;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */

@@ -5314,9 +5314,9 @@ goog.loadModule(function (exports) {
         ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/galano/galano.css');
         ie_close('link');
-        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/icon-12/icon-12.css');
-        ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/icon-16/icon-16.css');
+        ie_close('link');
+        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/icon-12/icon-12.css');
         ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/r-apex/vendor/senna/senna.css');
         ie_close('link');

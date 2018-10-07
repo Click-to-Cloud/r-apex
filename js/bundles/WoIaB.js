@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([1],{
+webpackJsonppageComponent([27],{
 
-/***/ 320:
+/***/ 282:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _step_8Soy = __webpack_require__(321);
+var _conditionSoy = __webpack_require__(283);
 
-var _step_8Soy2 = _interopRequireDefault(_step_8Soy);
+var _conditionSoy2 = _interopRequireDefault(_conditionSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var jvbwb = function (_Component) {
-  _inherits(jvbwb, _Component);
+var WoIaB = function (_Component) {
+  _inherits(WoIaB, _Component);
 
-  function jvbwb() {
-    _classCallCheck(this, jvbwb);
+  function WoIaB() {
+    _classCallCheck(this, WoIaB);
 
-    return _possibleConstructorReturn(this, (jvbwb.__proto__ || Object.getPrototypeOf(jvbwb)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (WoIaB.__proto__ || Object.getPrototypeOf(WoIaB)).apply(this, arguments));
   }
 
-  return jvbwb;
+  return WoIaB;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(jvbwb, _step_8Soy2.default);
+_metalSoy2.default.register(WoIaB, _conditionSoy2.default);
 
-exports.default = jvbwb;
+exports.default = WoIaB;
 
 /***/ }),
 
-/***/ 321:
+/***/ 283:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = jvbwb;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.jvbwb = undefined;
+exports.templates = exports.WoIaB = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from step_8.soy.
+  // This file was automatically generated from condition.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace jvbwb.
+   * @fileoverview Templates in namespace WoIaB.
    * @public
    */
 
-  goog.module('jvbwb.incrementaldom');
+  goog.module('WoIaB.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,13 +137,14 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
-  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
+  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
+
+  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
 
   /**
    * @param {{
    *    page: (?),
-   *    site: (?),
-   *    elementClasses: (?)
+   *    site: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -151,27 +152,57 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param2135 = function param2135() {
+    var param1057 = function param1057() {
+      ie_open('h6');
+      var dyn34 = opt_data.page.description;
+      if (typeof dyn34 == 'function') dyn34();else if (dyn34 != null) itext(dyn34);
+      ie_close('h6');
+      ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      var dyn52 = opt_data.page.title;
-      if (typeof dyn52 == 'function') dyn52();else if (dyn52 != null) itext(dyn52);
+      itext('cond');
       ie_close('h2');
       ie_open('p');
-      itext('It is your personal preference to choose between functional composition and function chaining. And the key takeaway is to use whatever is suitable in your case.');
+      itext('Returns a function, fn, which encapsulates if/else, if/else, logic. It takes a list of functions, alternated by predicate and transformer. All of the arguments to fn are applied to each of the predicates in turn until one returns a "truthy" value, at which point fn returns the result of applying its arguments to the corresponding transformer.');
       ie_close('p');
+      $templateAlias2({ code: 'Func testF = (Func)R.cond.runN(new List<Object>{\n    R.lt.apply(0), R.always.run(1),\n    R.gt.apply(0), R.always.run(-1),\n    R.equals.apply(0), R.always.run(0)\n});\ntestF.run(3); // 1', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '2');
+      ie_open('h2');
+      itext('doWhen');
+      ie_close('h2');
       ie_open('p');
-      itext('It is sad that the discovery of R.apex almost comes to an end. Realizing that the functions provided by R.apex is limited, you have to come up with your functions to tackle all the difficult business logic. The suggestion will be to encapsulate your core business logic in small custom functions and glue them together with the power of R.apex to build your own application. And this is the way you extend R.apex.');
+      itext('Tests the final argument by passing it to the given predicate function. If the predicate is satisfied, the function will return the result of calling the whenTrueFn function with the same argument. If the predicate is not satisfied, the argument is returned as a wrapping list.');
       ie_close('p');
+      $templateAlias2({ code: 'Func testF = (Func)R.doWhen.run(\n    R.lt.apply(0),\n    R.always.run(1)\n);\ntestF.run(3); // 1', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '3');
+      ie_open('h2');
+      itext('ifElse');
+      ie_close('h2');
+      ie_open('p');
+      itext('Creates a function that will process either the onTrue or the onFalse function depending upon the result of the condition predicate.');
+      ie_close('p');
+      $templateAlias2({ code: 'Func testF = (Func)R.ifElse.run(\n    R.lt.apply(0),\n    R.always.run(1),\n    R.always.run(0)\n);\ntestF.run(3); // 1', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '4');
+      ie_open('h2');
+      itext('unless');
+      ie_close('h2');
+      ie_open('p');
+      itext('Tests the final argument by passing it to the given predicate function. If the predicate is not satisfied, the function will return the result of calling the whenFalseFn function with the same argument. If the predicate is satisfied, the argument is returned as a wrapping list.');
+      ie_close('p');
+      $templateAlias2({ code: 'Func testF = (Func)R.unless.run(\n    R.lt.apply(0),\n    R.always.run(0)\n);\ntestF.run(-3); // 0', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param2135 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1057 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'jvbwb.render';
+    $render.soyTemplateName = 'WoIaB.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -180,24 +211,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var jvbwb = function (_Component) {
-  _inherits(jvbwb, _Component);
+var WoIaB = function (_Component) {
+  _inherits(WoIaB, _Component);
 
-  function jvbwb() {
-    _classCallCheck(this, jvbwb);
+  function WoIaB() {
+    _classCallCheck(this, WoIaB);
 
-    return _possibleConstructorReturn(this, (jvbwb.__proto__ || Object.getPrototypeOf(jvbwb)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (WoIaB.__proto__ || Object.getPrototypeOf(WoIaB)).apply(this, arguments));
   }
 
-  return jvbwb;
+  return WoIaB;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(jvbwb, templates);
-exports.jvbwb = jvbwb;
+_metalSoy2.default.register(WoIaB, templates);
+exports.WoIaB = WoIaB;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[320]);
+},[282]);

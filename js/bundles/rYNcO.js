@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([13],{
 
-/***/ 276:
+/***/ 274:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _methodsSoy = __webpack_require__(277);
+var _methodsSoy = __webpack_require__(275);
 
 var _methodsSoy2 = _interopRequireDefault(_methodsSoy);
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var jXtdm = function (_Component) {
-  _inherits(jXtdm, _Component);
+var rYNcO = function (_Component) {
+  _inherits(rYNcO, _Component);
 
-  function jXtdm() {
-    _classCallCheck(this, jXtdm);
+  function rYNcO() {
+    _classCallCheck(this, rYNcO);
 
-    return _possibleConstructorReturn(this, (jXtdm.__proto__ || Object.getPrototypeOf(jXtdm)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (rYNcO.__proto__ || Object.getPrototypeOf(rYNcO)).apply(this, arguments));
   }
 
-  return jXtdm;
+  return rYNcO;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(jXtdm, _methodsSoy2.default);
+_metalSoy2.default.register(rYNcO, _methodsSoy2.default);
 
-exports.default = jXtdm;
+exports.default = rYNcO;
 
 /***/ }),
 
-/***/ 277:
+/***/ 275:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = jXtdm;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.jXtdm = undefined;
+exports.templates = exports.rYNcO = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -110,11 +110,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace jXtdm.
+   * @fileoverview Templates in namespace rYNcO.
    * @public
    */
 
-  goog.module('jXtdm.incrementaldom');
+  goog.module('rYNcO.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,10 +152,10 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param393 = function param393() {
+    var param444 = function param444() {
       ie_open('h6');
-      var dyn30 = opt_data.page.description;
-      if (typeof dyn30 == 'function') dyn30();else if (dyn30 != null) itext(dyn30);
+      var dyn31 = opt_data.page.description;
+      if (typeof dyn31 == 'function') dyn31();else if (dyn31 != null) itext(dyn31);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
@@ -1075,11 +1075,11 @@ goog.loadModule(function (exports) {
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param393 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param444 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'jXtdm.render';
+    $render.soyTemplateName = 'rYNcO.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -1088,24 +1088,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var jXtdm = function (_Component) {
-  _inherits(jXtdm, _Component);
+var rYNcO = function (_Component) {
+  _inherits(rYNcO, _Component);
 
-  function jXtdm() {
-    _classCallCheck(this, jXtdm);
+  function rYNcO() {
+    _classCallCheck(this, rYNcO);
 
-    return _possibleConstructorReturn(this, (jXtdm.__proto__ || Object.getPrototypeOf(jXtdm)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (rYNcO.__proto__ || Object.getPrototypeOf(rYNcO)).apply(this, arguments));
   }
 
-  return jXtdm;
+  return rYNcO;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(jXtdm, templates);
-exports.jXtdm = jXtdm;
+_metalSoy2.default.register(rYNcO, templates);
+exports.rYNcO = rYNcO;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[276]);
+},[274]);

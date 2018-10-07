@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([6],{
+webpackJsonppageComponent([21],{
 
-/***/ 310:
+/***/ 294:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _step_3Soy = __webpack_require__(311);
+var _logicSoy = __webpack_require__(295);
 
-var _step_3Soy2 = _interopRequireDefault(_step_3Soy);
+var _logicSoy2 = _interopRequireDefault(_logicSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var AlZgJ = function (_Component) {
-  _inherits(AlZgJ, _Component);
+var bRuTH = function (_Component) {
+  _inherits(bRuTH, _Component);
 
-  function AlZgJ() {
-    _classCallCheck(this, AlZgJ);
+  function bRuTH() {
+    _classCallCheck(this, bRuTH);
 
-    return _possibleConstructorReturn(this, (AlZgJ.__proto__ || Object.getPrototypeOf(AlZgJ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (bRuTH.__proto__ || Object.getPrototypeOf(bRuTH)).apply(this, arguments));
   }
 
-  return AlZgJ;
+  return bRuTH;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(AlZgJ, _step_3Soy2.default);
+_metalSoy2.default.register(bRuTH, _logicSoy2.default);
 
-exports.default = AlZgJ;
+exports.default = bRuTH;
 
 /***/ }),
 
-/***/ 311:
+/***/ 295:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = AlZgJ;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.AlZgJ = undefined;
+exports.templates = exports.bRuTH = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from step_3.soy.
+  // This file was automatically generated from logic.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace AlZgJ.
+   * @fileoverview Templates in namespace bRuTH.
    * @public
    */
 
-  goog.module('AlZgJ.incrementaldom');
+  goog.module('bRuTH.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -139,13 +139,12 @@ goog.loadModule(function (exports) {
 
   var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
 
-  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
 
   /**
    * @param {{
    *    page: (?),
-   *    site: (?),
-   *    elementClasses: (?)
+   *    site: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -153,67 +152,75 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param2020 = function param2020() {
+    var param1658 = function param1658() {
+      ie_open('h6');
+      var dyn40 = opt_data.page.description;
+      if (typeof dyn40 == 'function') dyn40();else if (dyn40 != null) itext(dyn40);
+      ie_close('h6');
+      ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      var dyn47 = opt_data.page.title;
-      if (typeof dyn47 == 'function') dyn47();else if (dyn47 != null) itext(dyn47);
+      itext('allPass');
       ie_close('h2');
       ie_open('p');
-      ie_open('code');
-      itext('HelloWorldFunc');
-      ie_close('code');
-      itext(' does not make much sense, though it does a good illustration. Normally we want functions that accept arguments to do complex business logic. Here comes the ');
-      ie_open('code');
-      itext('AddFunc');
-      ie_close('code');
-      itext('.');
+      itext('Create a function that combines all predicates with \'and\'.');
       ie_close('p');
-      $templateAlias2({ code: 'public class AddFunc extends Func {\n    public AddFunc() {\n        super(2);\n    }\n\n    public override Object exec(Object arg1, Object arg2) {\n        Integer a = (Integer)arg1;\n        Integer b = (Integer)arg2;\n        return a + b;\n    }\n}', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Func f = (Func)R.allPass.run(\n    R.startsWith.apply(\'c\'),\n    R.endsWith.apply(\'t\')\n);\nsystem.debug(f.run(\'cat\'));\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '2');
+      ie_open('h2');
+      itext('anyPass');
+      ie_close('h2');
       ie_open('p');
-      itext('Quite simple, right? In the constructor, we denote that this AddFunc takes two arguments(the length of the function), and correspondingly we override the exec(Object, Object) method from Func to have our custom implementation.');
+      itext('Create a function that combines all predicates with \'or\'.');
       ie_close('p');
+      $templateAlias2({ code: 'Func f = (Func)R.anyPass.run(\n    R.startsWith.apply(\'c\'),\n    R.endsWith.apply(\'t\')\n);\nsystem.debug(f.run(\'cc\'));\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '3');
+      ie_open('h2');
+      itext('complement');
+      ie_close('h2');
       ie_open('p');
-      itext('Try it.');
+      itext('Create a function that negate the predicate.');
       ie_close('p');
-      $templateAlias2({ code: 'Func add = new AddFunc();\nInteger result = (Integer)add.run(1, 2);\n// 3', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Func f = (Func)R.complement.run(R.equals.apply(\'cat\'));\nsystem.debug(f.run(\'cat\'));\n// false', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '4');
+      ie_open('h2');
+      itext('doAnd');
+      ie_close('h2');
       ie_open('p');
-      itext('To conclude, we set the length of the function in its constructor, and override ');
-      ie_open('code');
-      itext('exec(...)');
-      ie_close('code');
-      itext(' method with correct arguments.');
+      itext('Test logic \'and\'.');
       ie_close('p');
+      $templateAlias2({ code: 'R.doAnd.run(true, false)\n// false', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '5');
+      ie_open('h2');
+      itext('doNot');
+      ie_close('h2');
       ie_open('p');
-      itext('For example, if the length of the function is 3, we have ');
-      ie_open('code');
-      itext('exec(Object, Object, Object)');
-      ie_close('code');
-      itext('. Easy, yeah?');
+      itext('Test logic \'not\'.');
       ie_close('p');
+      $templateAlias2({ code: 'R.doNot.run(false)\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '6');
+      ie_open('h2');
+      itext('doOr');
+      ie_close('h2');
       ie_open('p');
-      itext('What about a function with a length of 4? ');
-      ie_open('code');
-      itext('exec(Object, Object, Object, Object)');
-      ie_close('code');
-      itext('?');
+      itext('Test logic \'or\'.');
       ie_close('p');
-      ie_open('p');
-      itext('Nay, when the length goes over 3, we have ');
-      ie_open('code');
-      itext('execMore(List<Object>)');
-      ie_close('code');
-      itext(' to override.');
-      ie_close('p');
+      $templateAlias2({ code: 'R.doOr.run(true, false)\n// true', mode: 'javascript' }, null, opt_ijData);
+      ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param2020 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1658 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'AlZgJ.render';
+    $render.soyTemplateName = 'bRuTH.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -222,24 +229,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var AlZgJ = function (_Component) {
-  _inherits(AlZgJ, _Component);
+var bRuTH = function (_Component) {
+  _inherits(bRuTH, _Component);
 
-  function AlZgJ() {
-    _classCallCheck(this, AlZgJ);
+  function bRuTH() {
+    _classCallCheck(this, bRuTH);
 
-    return _possibleConstructorReturn(this, (AlZgJ.__proto__ || Object.getPrototypeOf(AlZgJ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (bRuTH.__proto__ || Object.getPrototypeOf(bRuTH)).apply(this, arguments));
   }
 
-  return AlZgJ;
+  return bRuTH;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(AlZgJ, templates);
-exports.AlZgJ = AlZgJ;
+_metalSoy2.default.register(bRuTH, templates);
+exports.bRuTH = bRuTH;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[310]);
+},[294]);

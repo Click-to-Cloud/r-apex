@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([27],{
+webpackJsonppageComponent([14],{
 
-/***/ 282:
+/***/ 272:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _conditionSoy = __webpack_require__(283);
+var _indexSoy = __webpack_require__(273);
 
-var _conditionSoy2 = _interopRequireDefault(_conditionSoy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var hwkvH = function (_Component) {
-  _inherits(hwkvH, _Component);
+var TWdHx = function (_Component) {
+  _inherits(TWdHx, _Component);
 
-  function hwkvH() {
-    _classCallCheck(this, hwkvH);
+  function TWdHx() {
+    _classCallCheck(this, TWdHx);
 
-    return _possibleConstructorReturn(this, (hwkvH.__proto__ || Object.getPrototypeOf(hwkvH)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (TWdHx.__proto__ || Object.getPrototypeOf(TWdHx)).apply(this, arguments));
   }
 
-  return hwkvH;
+  return TWdHx;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(hwkvH, _conditionSoy2.default);
+_metalSoy2.default.register(TWdHx, _indexSoy2.default);
 
-exports.default = hwkvH;
+exports.default = TWdHx;
 
 /***/ }),
 
-/***/ 283:
+/***/ 273:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = hwkvH;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.hwkvH = undefined;
+exports.templates = exports.TWdHx = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from condition.soy.
+  // This file was automatically generated from index.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace hwkvH.
+   * @fileoverview Templates in namespace TWdHx.
    * @public
    */
 
-  goog.module('hwkvH.incrementaldom');
+  goog.module('TWdHx.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,57 +152,30 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param1057 = function param1057() {
+    var param428 = function param428() {
       ie_open('h6');
-      var dyn34 = opt_data.page.description;
-      if (typeof dyn34 == 'function') dyn34();else if (dyn34 != null) itext(dyn34);
+      var dyn30 = opt_data.page.description;
+      if (typeof dyn30 == 'function') dyn30();else if (dyn30 != null) itext(dyn30);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      itext('cond');
+      itext('R Instance Method Reference');
       ie_close('h2');
       ie_open('p');
-      itext('Returns a function, fn, which encapsulates if/else, if/else, logic. It takes a list of functions, alternated by predicate and transformer. All of the arguments to fn are applied to each of the predicates in turn until one returns a "truthy" value, at which point fn returns the result of applying its arguments to the corresponding transformer.');
+      itext('Here is the reference of the methods from R instance. You can use them in the way below:');
       ie_close('p');
-      $templateAlias2({ code: 'Func testF = (Func)R.cond.runN(new List<Object>{\n    R.lt.apply(0), R.always.run(1),\n    R.gt.apply(0), R.always.run(-1),\n    R.equals.apply(0), R.always.run(0)\n});\ntestF.run(3); // 1', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '2');
-      ie_open('h2');
-      itext('doWhen');
-      ie_close('h2');
-      ie_open('p');
-      itext('Tests the final argument by passing it to the given predicate function. If the predicate is satisfied, the function will return the result of calling the whenTrueFn function with the same argument. If the predicate is not satisfied, the argument is returned as a wrapping list.');
-      ie_close('p');
-      $templateAlias2({ code: 'Func testF = (Func)R.doWhen.run(\n    R.lt.apply(0),\n    R.always.run(1)\n);\ntestF.run(3); // 1', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '3');
-      ie_open('h2');
-      itext('ifElse');
-      ie_close('h2');
-      ie_open('p');
-      itext('Creates a function that will process either the onTrue or the onFalse function depending upon the result of the condition predicate.');
-      ie_close('p');
-      $templateAlias2({ code: 'Func testF = (Func)R.ifElse.run(\n    R.lt.apply(0),\n    R.always.run(1),\n    R.always.run(0)\n);\ntestF.run(3); // 1', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '4');
-      ie_open('h2');
-      itext('unless');
-      ie_close('h2');
-      ie_open('p');
-      itext('Tests the final argument by passing it to the given predicate function. If the predicate is not satisfied, the function will return the result of calling the whenFalseFn function with the same argument. If the predicate is satisfied, the argument is returned as a wrapping list.');
-      ie_close('p');
-      $templateAlias2({ code: 'Func testF = (Func)R.unless.run(\n    R.lt.apply(0),\n    R.always.run(0)\n);\ntestF.run(-3); // 0', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.of(new List<String>{ \'a\', \'b\', \'c\' })\n    .reverse()\n    .join(\'-\')\n    .toString();', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param1057 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param428 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'hwkvH.render';
+    $render.soyTemplateName = 'TWdHx.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -211,24 +184,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var hwkvH = function (_Component) {
-  _inherits(hwkvH, _Component);
+var TWdHx = function (_Component) {
+  _inherits(TWdHx, _Component);
 
-  function hwkvH() {
-    _classCallCheck(this, hwkvH);
+  function TWdHx() {
+    _classCallCheck(this, TWdHx);
 
-    return _possibleConstructorReturn(this, (hwkvH.__proto__ || Object.getPrototypeOf(hwkvH)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (TWdHx.__proto__ || Object.getPrototypeOf(TWdHx)).apply(this, arguments));
   }
 
-  return hwkvH;
+  return TWdHx;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(hwkvH, templates);
-exports.hwkvH = hwkvH;
+_metalSoy2.default.register(TWdHx, templates);
+exports.TWdHx = TWdHx;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[282]);
+},[272]);

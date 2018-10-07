@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([17],{
+webpackJsonppageComponent([28],{
 
-/***/ 302:
+/***/ 280:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _utilitySoy = __webpack_require__(303);
+var _comparatorSoy = __webpack_require__(281);
 
-var _utilitySoy2 = _interopRequireDefault(_utilitySoy);
+var _comparatorSoy2 = _interopRequireDefault(_comparatorSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var QfuLd = function (_Component) {
-  _inherits(QfuLd, _Component);
+var iQcAu = function (_Component) {
+  _inherits(iQcAu, _Component);
 
-  function QfuLd() {
-    _classCallCheck(this, QfuLd);
+  function iQcAu() {
+    _classCallCheck(this, iQcAu);
 
-    return _possibleConstructorReturn(this, (QfuLd.__proto__ || Object.getPrototypeOf(QfuLd)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (iQcAu.__proto__ || Object.getPrototypeOf(iQcAu)).apply(this, arguments));
   }
 
-  return QfuLd;
+  return iQcAu;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(QfuLd, _utilitySoy2.default);
+_metalSoy2.default.register(iQcAu, _comparatorSoy2.default);
 
-exports.default = QfuLd;
+exports.default = iQcAu;
 
 /***/ }),
 
-/***/ 303:
+/***/ 281:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = QfuLd;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.QfuLd = undefined;
+exports.templates = exports.iQcAu = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from utility.soy.
+  // This file was automatically generated from comparator.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace QfuLd.
+   * @fileoverview Templates in namespace iQcAu.
    * @public
    */
 
-  goog.module('QfuLd.incrementaldom');
+  goog.module('iQcAu.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -152,162 +152,75 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param1902 = function param1902() {
+    var param1016 = function param1016() {
       ie_open('h6');
-      var dyn44 = opt_data.page.description;
-      if (typeof dyn44 == 'function') dyn44();else if (dyn44 != null) itext(dyn44);
+      var dyn33 = opt_data.page.description;
+      if (typeof dyn33 == 'function') dyn33();else if (dyn33 != null) itext(dyn33);
       ie_close('h6');
       ie_open('article', null, null, 'id', '1');
       ie_open('h2');
-      itext('F');
+      itext('ascend');
       ie_close('h2');
       ie_open('p');
-      itext('A function that always returns false.');
+      itext('Convert a function into an ascending comparator.');
       ie_close('p');
-      $templateAlias2({ code: 'R.F.run()\n// false', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Func f = (Func)R.ascend.run(R.identity);\nSystem.debug(f.run(1, 2));\n// -1', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '2');
       ie_open('h2');
-      itext('T');
+      itext('cascade');
       ie_close('h2');
       ie_open('p');
-      itext('A function that always returns true.');
+      itext('Combine the comparator functions into one.');
       ie_close('p');
-      $templateAlias2({ code: 'R.T.run()\n// true', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Func f = (Func)R.cascade.run(\n    (Func)R.ascend.run(R.prop.apply(\'FirstName\')),\n    (Func)R.ascend.run(R.prop.apply(\'Description\'))\n);', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '3');
       ie_open('h2');
-      itext('compact');
+      itext('clamp');
       ie_close('h2');
       ie_open('p');
-      itext('Remove any null value from the elements.');
+      itext('Limit the value between the min and the max.');
       ie_close('p');
-      $templateAlias2({ code: 'R.compact.run(R.with(1, null, 2))\n// (1, 2)', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.clamp.run(1, 3, 5)\n// 3', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '4');
       ie_open('h2');
-      itext('debug');
+      itext('comparator');
       ie_close('h2');
       ie_open('p');
-      itext('Print the debug log.');
+      itext('Convert a Boolean-returning comparator to an Integer-returning comparator.');
       ie_close('p');
-      $templateAlias2({ code: 'R.debug.run(1)\n// 1', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Func f = (Func)R.comparator.run(R.lt);\nSystem.debug(f.run(1, 2));\n// -1', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '5');
       ie_open('h2');
-      itext('defaultTo');
+      itext('compare');
       ie_close('h2');
       ie_open('p');
-      itext('Default to a value.');
+      itext('Compare two objects.');
       ie_close('p');
-      $templateAlias2({ code: 'R.defaultTo.run(5, null)\n// 5', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'R.compare.run(1, 2)\n// -1', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('article', null, null, 'id', '6');
       ie_open('h2');
-      itext('doClone');
+      itext('descend');
       ie_close('h2');
       ie_open('p');
-      itext('Get the clone.');
+      itext('Convert a function into an descending comparator.');
       ie_close('p');
-      $templateAlias2({ code: 'R.doClone.run(new Account())\n// Account:{}', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '7');
-      ie_open('h2');
-      itext('isNil');
-      ie_close('h2');
-      ie_open('p');
-      itext('Check if it is null.');
-      ie_close('p');
-      $templateAlias2({ code: 'R.isNil.run(null)\n// true', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '8');
-      ie_open('h2');
-      itext('isNotNil');
-      ie_close('h2');
-      ie_open('p');
-      itext('Check if it is not null.');
-      ie_close('p');
-      $templateAlias2({ code: 'R.isNotNil.run(null)\n// false', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '9');
-      ie_open('h2');
-      itext('isNotNull');
-      ie_close('h2');
-      ie_open('p');
-      itext('Same as ');
-      ie_open('code');
-      itext('isNotNil');
-      ie_close('code');
-      itext('.');
-      ie_close('p');
-      ie_close('article');
-      ie_open('article', null, null, 'id', '10');
-      ie_open('h2');
-      itext('isNull');
-      ie_close('h2');
-      ie_open('p');
-      itext('Same as ');
-      ie_open('code');
-      itext('isNil');
-      ie_close('code');
-      itext('.');
-      ie_close('p');
-      ie_close('article');
-      ie_open('article', null, null, 'id', '11');
-      ie_open('h2');
-      itext('isNumber');
-      ie_close('h2');
-      ie_open('p');
-      itext('Check if it is number.');
-      ie_close('p');
-      $templateAlias2({ code: 'R.isNumber.run(1)\n// true', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '12');
-      ie_open('h2');
-      itext('noop');
-      ie_close('h2');
-      ie_open('p');
-      itext('No op function.');
-      ie_close('p');
-      $templateAlias2({ code: 'R.noop.run()\n// null', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '13');
-      ie_open('h2');
-      itext('assert');
-      ie_close('h2');
-      ie_open('p');
-      itext('Do System assert');
-      ie_close('p');
-      $templateAlias2({ code: 'R.assert.run(1 == 1, \'should equal\');', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '14');
-      ie_open('h2');
-      itext('assertEquals');
-      ie_close('h2');
-      ie_open('p');
-      itext('Do System assertEquals');
-      ie_close('p');
-      $templateAlias2({ code: 'R.assertEquals.run(1, 1, \'should equal\');', mode: 'javascript' }, null, opt_ijData);
-      ie_close('article');
-      ie_open('article', null, null, 'id', '15');
-      ie_open('h2');
-      itext('assertNotEquals');
-      ie_close('h2');
-      ie_open('p');
-      itext('Do System assertNotEquals');
-      ie_close('p');
-      $templateAlias2({ code: 'R.assertNotEquals.run(1, 2, \'should not equal\');', mode: 'javascript' }, null, opt_ijData);
+      $templateAlias2({ code: 'Func f = (Func)R.descend.run(R.identity);\nSystem.debug(f.run(1, 2));\n// 1', mode: 'javascript' }, null, opt_ijData);
       ie_close('article');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
       ie_close('input');
       ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
       ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param1902 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param1016 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'QfuLd.render';
+    $render.soyTemplateName = 'iQcAu.render';
   }
 
   exports.render.params = ["page", "site"];
@@ -316,24 +229,24 @@ goog.loadModule(function (exports) {
   return exports;
 });
 
-var QfuLd = function (_Component) {
-  _inherits(QfuLd, _Component);
+var iQcAu = function (_Component) {
+  _inherits(iQcAu, _Component);
 
-  function QfuLd() {
-    _classCallCheck(this, QfuLd);
+  function iQcAu() {
+    _classCallCheck(this, iQcAu);
 
-    return _possibleConstructorReturn(this, (QfuLd.__proto__ || Object.getPrototypeOf(QfuLd)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (iQcAu.__proto__ || Object.getPrototypeOf(iQcAu)).apply(this, arguments));
   }
 
-  return QfuLd;
+  return iQcAu;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(QfuLd, templates);
-exports.QfuLd = QfuLd;
+_metalSoy2.default.register(iQcAu, templates);
+exports.iQcAu = iQcAu;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[302]);
+},[280]);
